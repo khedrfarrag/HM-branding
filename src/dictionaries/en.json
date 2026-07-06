@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "logo": "Hussam Mabrouk",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Global Reach", "href": "#global" },
+      { "label": "Industries", "href": "#industries" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Journey", "href": "#journey" },
+      { "label": "Clients", "href": "#testimonials" }
+    ],
+    "cta": "Book a Call"
+  },
+  "hero": {
+    "badge": "Founder & CEO — Meridian & Co.",
+    "title": "Moving the world's goods, quietly building trust.",
+    "subtitle": "Two decades of import, export and sourcing across 40+ countries — engineered for manufacturers, investors and enterprises who require certainty at scale.",
+    "phrases": [
+      "Moving the world's goods, quietly building trust.",
+      "Logistics expertise spanning 40+ countries.",
+      "Your strategic partner in global supply chains."
+    ],
+    "ctaPrimary": "Schedule a Consultation",
+    "ctaSecondary": "View Global Reach",
+    "stats": [
+      { "value": "42", "label": "Countries Served" },
+      { "value": "$1.8B", "label": "Trade Volume" },
+      { "value": "19 yrs", "label": "Industry Leadership" }
+    ]
+  },
+  "about": {
+    "eyebrow": "The Founder",
+    "title": "Built on discipline. Driven by relationships.",
+    "lead": "Hussam Mabrouk founded Meridian & Co. in 2008 on a simple premise: global trade should feel effortless for the people on either end of it.",
+    "quote": "Every shipment carries a promise. My job is to make sure it's kept — every time, everywhere.",
+    "author": "— Hussam Mabrouk, Founder & CEO",
+    "values": [
+      {
+        "num": "01",
+        "title": "Mission",
+        "desc": "Connect manufacturers and markets through logistics that are transparent, fast and fair."
+      },
+      {
+        "num": "02",
+        "title": "Vision",
+        "desc": "To be the most trusted trade partner between emerging manufacturers and global enterprise."
+      }
+    ],
+    "timelineTitle": "Two decades of momentum",
+    "timeline": [
+      { "year": "2008", "desc": "Founded in a single office with three active trade lanes." },
+      { "year": "2015", "desc": "Expanded into 20 countries; opened regional hubs." },
+      { "year": "2024", "desc": "Crossed $1.8B in cumulative trade volume." }
+    ]
+  },
+  "global": {
+    "eyebrow": "Global Experience",
+    "title": "A live network spanning six continents.",
+    "subtitle": "Trade lanes, ports and partners tracked in real time across our operating regions.",
+    "metrics": [
+      { "label": "Active Trade Routes", "value": "128", "sub": "lanes", "percentage": 82 },
+      { "label": "Export Volume — 2025", "value": "$940", "sub": "M", "percentage": 64 },
+      { "label": "Import Volume — 2025", "value": "$860", "sub": "M", "percentage": 58 },
+      { "label": "Partner Ports", "value": "76", "sub": "ports", "percentage": 70 }
+    ]
+  },
+  "industries": {
+    "eyebrow": "Industries",
+    "title": "Sector expertise, engineered for scale.",
+    "cta": "Discuss your sector",
+    "sectors": [
+      {
+        "idx": "01 / Electronics & Technology",
+        "title": "Consumer Electronics & Components",
+        "desc": "Semiconductors, assemblies and finished electronics sourced from vetted manufacturers across Asia."
+      },
+      {
+        "idx": "02 / Agriculture & Food",
+        "title": "Agricultural Commodities",
+        "desc": "Cold-chain certified logistics for grains, produce and specialty foods."
+      },
+      {
+        "idx": "03 / Textiles",
+        "title": "Textiles & Fashion",
+        "desc": "Fabric to finished garment, fully traceable."
+      },
+      {
+        "idx": "04 / Construction",
+        "title": "Construction Materials",
+        "desc": "Steel, cement and fittings for infrastructure projects worldwide."
+      },
+      {
+        "idx": "05 / Automotive",
+        "title": "Automotive Parts",
+        "desc": "OEM and aftermarket components, quality-controlled at source."
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "From sourcing to your loading dock.",
+    "hint": "Scroll to explore",
+    "items": [
+      {
+        "num": "01",
+        "title": "Import",
+        "desc": "End-to-end customs clearance and inbound freight management for goods entering any of our 42 markets.",
+        "tags": ["Customs", "Freight", "Duties"]
+      },
+      {
+        "num": "02",
+        "title": "Export",
+        "desc": "Integrated export logistics, cargo insurance, and document management to reach new markets.",
+        "tags": ["Logistics", "Cargo Ins.", "Export"]
+      },
+      {
+        "num": "03",
+        "title": "Sourcing & Procurement",
+        "desc": "Direct relationships with manufacturers, contract negotiation, and quality control at the factory floor.",
+        "tags": ["Supply Chain", "Negotiation", "Quality Control"]
+      },
+      {
+        "num": "04",
+        "title": "Trade Compliance",
+        "desc": "Customs consulting, certificate of origin validation, and full compliance with import/export laws.",
+        "tags": ["Customs Law", "Origin Cert.", "Consulting"]
+      }
+    ]
+  },
+  "journey": {
+    "eyebrow": "Journey & Career",
+    "title": "Building trade lanes across decades.",
+    "items": [
+      {
+        "year": "2008 – Foundation",
+        "title": "First steps in logistics",
+        "desc": "Hussam Mabrouk launched Meridian & Co. with a modest Cairo office and trade lanes to three European countries."
+      },
+      {
+        "year": "2013 – Regional Expansion",
+        "title": "Dubai and Rotterdam hubs",
+        "desc": "Establishing a direct footprint in global shipping lanes to ensure hands-on control over supply chains."
+      },
+      {
+        "year": "2018 – Digitalization",
+        "title": "Real-time tracking systems",
+        "desc": "Introduced dynamic shipment and location mapping, providing partners with full tracking transparency."
+      },
+      {
+        "year": "2024 – Scale Milestone",
+        "title": "$1.8B Cumulative volume",
+        "desc": "Solidified the brand as a key player in trade mediation and secured trade operations for major enterprises."
+      }
+    ]
+  },
+  "achievements": {
+    "eyebrow": "Achievements & Partners",
+    "title": "Certified volume and global reach.",
+    "partners": [
+      "DP World",
+      "Rotterdam Haven",
+      "Maersk Line",
+      "Global Shipping Alliance",
+      "World Customs Organization",
+      "Commercial International Bank"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Client Feedback",
+    "title": "What our partners say about us.",
+    "items": [
+      {
+        "quote": "The logistics capacity and customs speed provided by Hussam and his team are unmatched. They are a true partner to our growth.",
+        "author": "Ahmed Al-Jaber",
+        "role": "Procurement Director — Mashreq Factories"
+      },
+      {
+        "quote": "Thanks to Meridian & Co.'s sourcing and quality control, we reduced production costs by 14% while preserving our high standards.",
+        "author": "Mark de Jong",
+        "role": "VP — EuroTech Electronics"
+      },
+      {
+        "quote": "Integrity and transparency are what define Hussam's operation. Two decades of mutual success prove it.",
+        "author": "Khaled bin Said",
+        "role": "Chairman — Said Holdings"
+      }
+    ]
+  },
+  "book": {
+    "eyebrow": "Contact Us",
+    "title": "Ready to secure your supply chain?",
+    "desc": "Book a direct 30-minute consultation call with Hussam Mabrouk to discuss your enterprise import, export, and sourcing requirements.",
+    "details": {
+      "duration": "Duration: 30 mins",
+      "location": "Format: Video Call (Teams / Zoom)",
+      "timezone": "Timezone: Cairo Time (GMT+3)"
+    },
+    "slots": {
+      "label": "Select a convenient date and time:",
+      "time": "Select Time",
+      "confirm": "Confirm Booking"
+    }
+  },
+  "footer": {
+    "tagline": "Global trade, <span>made certain.</span>",
+    "desc": "Hussam Mabrouk — Meridian & Co. Industry-leading trade brokerage and logistics spanning 40+ countries and two decades of excellence.",
+    "copy": "© 2026 Hussam Mabrouk. All rights reserved."
+  }
+}
