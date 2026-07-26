@@ -62,7 +62,9 @@
       { "label": "حجم الصادرات — 2025", "value": "940$", "sub": "مليون", "percentage": 64 },
       { "label": "حجم الواردات — 2025", "value": "860$", "sub": "مليون", "percentage": 58 },
       { "label": "الموانئ الشريكة", "value": "76", "sub": "ميناء", "percentage": 70 }
-    ]
+    ],
+    "mapTitle": "خريطة اللوجستيات الحية",
+    "mapSyncing": "مزامنة الاتصال..."
   },
   "industries": {
     "eyebrow": "القطاعات",
@@ -204,6 +206,181 @@
   "footer": {
     "tagline": "التجارة الدولية، <span>بكل ثقة.</span>",
     "desc": "حسام مبروك — Meridian & Co. ريادة لوجستية وتوريد دولي يمتد عبر أكثر من 40 دولة ونحو عقدين من التميز.",
-    "copy": "© 2026 حسام مبروك. جميع الحقوق محفوظة."
+    "copy": "© 2026 حسام مبروك. جميع الحقوق محفوظة.",
+    "quickLinks": "روابط سريعة",
+    "contactDetails": "معلومات التواصل",
+    "locations": "دبي · القاهرة · روتردام",
+    "certification": "الترخيص والشهادات"
+  },
+  "admin": {
+    "login": {
+      "title": "تسجيل الدخول",
+      "subtitle": "أدخل البريد الإلكتروني وكلمة المرور الخاصة بالأدمن.",
+      "emailLabel": "البريد الإلكتروني",
+      "passwordLabel": "كلمة المرور",
+      "submitBtn": "دخول",
+      "loadingBtn": "جاري الدخول...",
+      "error": "البريد الإلكتروني أو كلمة المرور غير صحيحة. يرجى المحاولة مرة أخرى.",
+      "footer": "منطقة أدمن محمية. الوصول غير المصرح به محظور."
+    },
+    "sidebar": {
+      "title": "حسام مبروك",
+      "subtitle": "لوحة التحكم",
+      "overview": "نظرة عامة",
+      "bookings": "الحجوزات",
+      "schedules": "المواعيد",
+      "experiences": "التجارب",
+      "signout": "تسجيل الخروج"
+    },
+    "dashboard": {
+      "overview": {
+        "title": "نظرة عامة",
+        "subtitle": "حالة نظام الحجز المباشر",
+        "kpis": {
+          "totalBookings": "إجمالي الحجوزات",
+          "pendingReview": "قيد المراجعة",
+          "confirmed": "مؤكدة",
+          "cancelled": "ملغاة"
+        },
+        "recentBookings": {
+          "title": "أحدث الحجوزات",
+          "viewAll": "عرض الكل ←",
+          "headers": {
+            "code": "الرمز",
+            "client": "العميل",
+            "type": "النوع",
+            "status": "الحالة",
+            "date": "التاريخ"
+          },
+          "noBookings": "لا توجد حجوزات بعد"
+        }
+      },
+      "bookings": {
+        "title": "الحجوزات",
+        "subtitle": "حجز إجمالي",
+        "subtitles": "حجوزات إجمالية",
+        "filterAll": "الكل",
+        "filterPending": "قيد المراجعة",
+        "filterConfirmed": "مؤكدة",
+        "filterCancelled": "ملغاة",
+        "filterRefunded": "مستردة",
+        "headers": {
+          "code": "الرمز",
+          "client": "العميل",
+          "type": "الفئة",
+          "status": "الحالة",
+          "date": "التاريخ",
+          "actions": "الإجراء"
+        },
+        "viewBtn": "مراجعة ←",
+        "noBookings": "لم يتم العثور على حجوزات"
+      },
+      "bookingDetails": {
+        "title": "مراجعة الحجز",
+        "backBtn": "العودة إلى الحجوزات",
+        "detailsCard": "تفاصيل الحجز",
+        "statusCard": "إجراءات الحالة",
+        "notesCard": "ملاحظات الأدمن",
+        "auditCard": "سجل النشاط",
+        "labels": {
+          "code": "معرف إيصال الدفع",
+          "status": "الحالة",
+          "name": "اسم العميل",
+          "email": "البريد الإلكتروني",
+          "phone": "رقم الهاتف",
+          "type": "نوع الحجز",
+          "createdAt": "تاريخ التقديم",
+          "notes": "ملاحظات",
+          "receiptId": "معرف إيصال الدفع",
+          "receiptOptional": "اختياري — تسجيل مرجع الدفع غير المتصل بالإنترنت"
+        },
+        "statusOptions": {
+          "pending": "قيد المراجعة",
+          "confirmed": "مؤكد",
+          "cancelled": "ملغى",
+          "refunded": "مسترد"
+        },
+        "notesPlaceholder": "أضف ملاحظات داخلية حول هذا الحجز...",
+        "saveNotesBtn": "حفظ الملاحظات",
+        "saving": "جاري الحفظ...",
+        "notesSaved": "تم حفظ الملاحظات بنجاح.",
+        "statusUpdated": "تم تحديث الحالة إلى",
+        "markAs": "تغيير إلى",
+        "noTransitions": "لا توجد مراحل انتقال أخرى متاحة.",
+        "auditHeaders": {
+          "event": "تفاصيل الحدث",
+          "performedBy": "بواسطة",
+          "timestamp": "الطابع الزمني"
+        }
+      },
+      "schedules": {
+        "title": "مواعيد الجولات والاستشارات",
+        "subtitle": "إدارة تواريخ الجلسات وسعة الحجز. التغييرات تظهر فوراً في استمارات الحجز العامة.",
+        "addBtn": "إضافة موعد جديد",
+        "modalAddTitle": "إنشاء موعد جديد",
+        "modalEditTitle": "تعديل الموعد",
+        "labels": {
+          "type": "نوع الجولة",
+          "experience": "التجربة *",
+          "date": "تاريخ البدء",
+          "time": "وقت البدء",
+          "capacity": "السعة"
+        },
+        "selectExperience": "— اختر تجربة —",
+        "noExperiencesForSchedule": "لا توجد تجارب بعد. أنشئ تجربة أولاً من قسم التجارب.",
+        "saveBtn": "حفظ الموعد",
+        "cancelBtn": "إلغاء",
+        "headers": {
+          "type": "نوع الجولة",
+          "dateTime": "التاريخ والوقت",
+          "capacity": "السعة",
+          "seatsRemaining": "المقاعد المتبقية",
+          "actions": "الإجراءات"
+        },
+        "actions": {
+          "edit": "تعديل",
+          "delete": "حذف"
+        },
+        "types": {
+          "consultation": "استشارة توريد خاصة",
+          "experience": "جولة الصين الاستكشافية",
+          "corporate": "برنامج مؤسسي",
+          "event": "فعالية",
+          "unknown": "غير معروف"
+        },
+        "noSchedules": "لم يتم تكوين أي مواعيد بعد."
+      },
+      "experiences": {
+        "title": "برامج الخبرات",
+        "subtitle": "إنشاء وإدارة الرحلات الميدانية، البرامج المؤسسية، والاستشارات.",
+        "addBtn": "إضافة تجربة جديدة",
+        "noExperiences": "لم يتم إنشاء أي تجارب بعد.",
+        "headers": {
+          "title": "العنوان",
+          "type": "النوع",
+          "price": "السعر",
+          "status": "الحالة",
+          "actions": "الإجراءات"
+        },
+        "labels": {
+          "titleAr": "العنوان (بالعربية)",
+          "titleEn": "العنوان (بالإنجليزية)",
+          "slug": "الاسم المعرف في الرابط (Slug)",
+          "type": "نوع التجربة",
+          "price": "السعر",
+          "currency": "العملة",
+          "coverImage": "مسار صورة الغلاف",
+          "status": "الحالة",
+          "descriptionAr": "الوصف (بالعربية)",
+          "descriptionEn": "الوصف (بالإنجليزية)"
+        },
+        "saveBtn": "حفظ التجربة",
+        "cancelBtn": "إلغاء",
+        "statusOptions": {
+          "published": "منشور",
+          "draft": "مسودة"
+        }
+      }
+    }
   }
 }

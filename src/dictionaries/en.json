@@ -62,7 +62,9 @@
       { "label": "Export Volume — 2025", "value": "$940", "sub": "M", "percentage": 64 },
       { "label": "Import Volume — 2025", "value": "$860", "sub": "M", "percentage": 58 },
       { "label": "Partner Ports", "value": "76", "sub": "ports", "percentage": 70 }
-    ]
+    ],
+    "mapTitle": "Live Logistics Map",
+    "mapSyncing": "Syncing active channels..."
   },
   "industries": {
     "eyebrow": "Industries",
@@ -204,6 +206,181 @@
   "footer": {
     "tagline": "Global trade, <span>made certain.</span>",
     "desc": "Hussam Mabrouk — Meridian & Co. Industry-leading trade brokerage and logistics spanning 40+ countries and two decades of excellence.",
-    "copy": "© 2026 Hussam Mabrouk. All rights reserved."
+    "copy": "© 2026 Hussam Mabrouk. All rights reserved.",
+    "quickLinks": "Quick Links",
+    "contactDetails": "Contact Details",
+    "locations": "Rotterdam · Dubai · Cairo",
+    "certification": "Certification"
+  },
+  "admin": {
+    "login": {
+      "title": "Sign In",
+      "subtitle": "Enter your admin email and password.",
+      "emailLabel": "Email Address",
+      "passwordLabel": "Password",
+      "submitBtn": "Sign In",
+      "loadingBtn": "Signing in...",
+      "error": "Invalid email or password. Please try again.",
+      "footer": "Protected admin area. Unauthorized access is prohibited."
+    },
+    "sidebar": {
+      "title": "HM Admin",
+      "subtitle": "Admin Dashboard",
+      "overview": "Overview",
+      "bookings": "Bookings",
+      "schedules": "Schedules",
+      "experiences": "Experiences",
+      "signout": "Sign Out"
+    },
+    "dashboard": {
+      "overview": {
+        "title": "Overview",
+        "subtitle": "Live booking system status",
+        "kpis": {
+          "totalBookings": "Total Bookings",
+          "pendingReview": "Pending Review",
+          "confirmed": "Confirmed",
+          "cancelled": "Cancelled"
+        },
+        "recentBookings": {
+          "title": "Recent Bookings",
+          "viewAll": "View all →",
+          "headers": {
+            "code": "Code",
+            "client": "Client",
+            "type": "Type",
+            "status": "Status",
+            "date": "Date"
+          },
+          "noBookings": "No bookings yet"
+        }
+      },
+      "bookings": {
+        "title": "Bookings",
+        "subtitle": "total booking",
+        "subtitles": "total bookings",
+        "filterAll": "All",
+        "filterPending": "Pending",
+        "filterConfirmed": "Confirmed",
+        "filterCancelled": "Cancelled",
+        "filterRefunded": "Refunded",
+        "headers": {
+          "code": "Code",
+          "client": "Client",
+          "type": "Category",
+          "status": "Status",
+          "date": "Date",
+          "actions": "Action"
+        },
+        "viewBtn": "Review →",
+        "noBookings": "No bookings found"
+      },
+      "bookingDetails": {
+        "title": "Review Booking",
+        "backBtn": "Back to Bookings",
+        "detailsCard": "Booking Details",
+        "statusCard": "Status Actions",
+        "notesCard": "Admin Notes",
+        "auditCard": "Activity Log",
+        "labels": {
+          "code": "Payment Receipt ID",
+          "status": "Status",
+          "name": "Client Name",
+          "email": "Client Email",
+          "phone": "Client Phone",
+          "type": "Booking Type",
+          "createdAt": "Submitted At",
+          "notes": "Notes",
+          "receiptId": "Payment Receipt ID",
+          "receiptOptional": "Optional — record offline payment reference"
+        },
+        "statusOptions": {
+          "pending": "Pending Review",
+          "confirmed": "Confirmed",
+          "cancelled": "Cancelled",
+          "refunded": "Refunded"
+        },
+        "notesPlaceholder": "Add internal notes about this booking...",
+        "saveNotesBtn": "Save Notes",
+        "saving": "Saving...",
+        "notesSaved": "Notes saved successfully.",
+        "statusUpdated": "Status updated to",
+        "markAs": "Mark as",
+        "noTransitions": "No further transitions available.",
+        "auditHeaders": {
+          "event": "Event Details",
+          "performedBy": "Performed By",
+          "timestamp": "Timestamp"
+        }
+      },
+      "schedules": {
+        "title": "Experience Schedules",
+        "subtitle": "Manage session dates and booking capacity. Changes are immediately visible on public booking forms.",
+        "addBtn": "Add Schedule Slot",
+        "modalAddTitle": "Create Schedule Slot",
+        "modalEditTitle": "Edit Schedule Slot",
+        "labels": {
+          "type": "Experience Type",
+          "experience": "Experience *",
+          "date": "Start Date",
+          "time": "Start Time",
+          "capacity": "Capacity"
+        },
+        "selectExperience": "— Select experience —",
+        "noExperiencesForSchedule": "No experiences yet. Create one in the Experiences section first.",
+        "saveBtn": "Save Schedule",
+        "cancelBtn": "Cancel",
+        "headers": {
+          "type": "Experience Type",
+          "dateTime": "Date & Time",
+          "capacity": "Capacity",
+          "seatsRemaining": "Seats Remaining",
+          "actions": "Actions"
+        },
+        "actions": {
+          "edit": "Edit",
+          "delete": "Delete"
+        },
+        "types": {
+          "consultation": "Sourcing Consultation",
+          "experience": "China Experience Tour",
+          "corporate": "Corporate Program",
+          "event": "Event",
+          "unknown": "Unknown"
+        },
+        "noSchedules": "No schedules configured yet."
+      },
+      "experiences": {
+        "title": "Experience Programs",
+        "subtitle": "Create and manage field trips, corporate programs, and consultations.",
+        "addBtn": "Add Experience",
+        "noExperiences": "No experiences created yet.",
+        "headers": {
+          "title": "Title",
+          "type": "Type",
+          "price": "Price",
+          "status": "Status",
+          "actions": "Actions"
+        },
+        "labels": {
+          "titleAr": "Title (Arabic)",
+          "titleEn": "Title (English)",
+          "slug": "Slug (URL identifier)",
+          "type": "Experience Type",
+          "price": "Price",
+          "currency": "Currency",
+          "coverImage": "Cover Image Path",
+          "status": "Status",
+          "descriptionAr": "Description (Arabic)",
+          "descriptionEn": "Description (English)"
+        },
+        "saveBtn": "Save Experience",
+        "cancelBtn": "Cancel",
+        "statusOptions": {
+          "published": "Published",
+          "draft": "Draft"
+        }
+      }
+    }
   }
 }
