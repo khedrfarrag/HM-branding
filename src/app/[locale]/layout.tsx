@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Beiruti, Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
-import Header from "@/components/Header";
 import CursorGlow from "@/components/CursorGlow";
-import "../globals.css";
 
 const beiruti = Beiruti({
   subsets: ["arabic", "latin"],
@@ -33,6 +31,16 @@ export const metadata: Metadata = {
   description: "Moving the world's goods, quietly building trust. Two decades of import, export and sourcing across 40+ countries.",
 };
 
+export async function generateStaticParams() {
+  return [{ locale: "ar" }, { locale: "en" }];
+}
+
+/**
+ * Locale nested layout.
+ * Note: html + body tags are provided by the ROOT src/app/layout.tsx.
+ * This layout sets lang, dir, and fonts via suppressHydrationWarning on <html>.
+ * We use the React trick of overriding html attributes via a custom element.
+ */
 export default async function LocaleLayout({
   children,
   params,
@@ -44,19 +52,15 @@ export default async function LocaleLayout({
   const isAr = locale === "ar";
   const dir = isAr ? "rtl" : "ltr";
 
-  // Set typography variables based on the locale
   const fontClasses = isAr
     ? `${beiruti.variable}`
     : `${bricolage.variable} ${inter.variable} ${jetbrains.variable}`;
 
   return (
-    <html lang={locale} dir={dir} className={fontClasses}>
-      <body className="antialiased">
-        <div className="noise" />
-        <CursorGlow />
-        <Header locale={locale} />
-        <main>{children}</main>
-      </body>
-    </html>
+    <div lang={locale} dir={dir} className={`${fontClasses} min-h-screen`}>
+      <div className="noise" />
+      <CursorGlow />
+      {children}
+    </div>
   );
 }

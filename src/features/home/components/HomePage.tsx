@@ -1,17 +1,15 @@
-import { getDictionary, type Locale } from "@/features/i18n";
+import type { Locale } from "@/features/i18n";
+import type { HomeDictionary } from "../types";
 import { cn } from "@/lib/utils";
 import TypingHeadline from "@/components/TypingHeadline";
 import FloatingSocials from "@/components/FloatingSocials";
 
-interface PageProps {
-  params: Promise<{ locale: Locale }>;
+interface HomePageProps {
+  locale: Locale;
+  dict: HomeDictionary;
 }
 
-export default async function Home({ params }: PageProps) {
-  const { locale } = await params;
-  const dict = await getDictionary(locale);
-  const isAr = locale === "ar";
-
+export default function HomePage({ locale, dict }: HomePageProps) {
   return (
     <div className="relative w-full">
       {/* 1. HERO SECTION */}
@@ -26,7 +24,7 @@ export default async function Home({ params }: PageProps) {
 
         <div className="mx-auto grid max-w-[1360px] grid-cols-1 items-center gap-sp-6 lg:grid-cols-[1.15fr_0.85fr] w-full">
 
-          {/* Hero Visual — shown FIRST on mobile, second on desktop */}
+          {/* Hero Visual ظ¤ shown FIRST on mobile, second on desktop */}
           <div className="relative flex items-center justify-center order-first lg:order-last h-[300px] sm:h-[360px] lg:h-[580px]">
             <FloatingSocials locale={locale} />
           </div>
@@ -147,11 +145,11 @@ export default async function Home({ params }: PageProps) {
               <div className="absolute inset-0 bg-[radial-gradient(ellipse_600px_300px_at_50%_50%,rgba(199,161,92,0.06),transparent_80%)]" />
               <div className="relative z-10 flex flex-col items-center">
                 <div className="font-mono text-fs-micro text-gold uppercase tracking-wider">
-                  {isAr ? "خريطة اللوجستيات الحية" : "Live Logistics Map"}
+                  {dict.global.mapTitle ?? "Live Logistics Map"}
                 </div>
                 <div className="mt-sp-4 flex h-[240px] w-[240px] items-center justify-center rounded-full border border-glass/40 bg-glass/10 backdrop-blur-md">
                   <span className="animate-pulse font-mono text-[10px] text-cyan">
-                    {isAr ? "مزامنة الاتصال..." : "Syncing active channels..."}
+                    {dict.global.mapSyncing ?? "Syncing active channels..."}
                   </span>
                 </div>
               </div>
@@ -401,7 +399,7 @@ export default async function Home({ params }: PageProps) {
             
             <div className="flex flex-col items-start text-start">
               <h5 className="font-mono text-fs-micro text-silver-dim uppercase tracking-wider mb-sp-4">
-                {isAr ? "روابط سريعة" : "Quick Links"}
+                {dict.footer.quickLinks ?? "Quick Links"}
               </h5>
               {dict.nav.links.map((link, idx) => (
                 <a key={idx} href={link.href} className="text-fs-small text-silver hover:text-gold mb-sp-2.5 transition-colors">
@@ -412,16 +410,16 @@ export default async function Home({ params }: PageProps) {
 
             <div className="flex flex-col items-start text-start">
               <h5 className="font-mono text-fs-micro text-silver-dim uppercase tracking-wider mb-sp-4">
-                {isAr ? "معلومات التواصل" : "Contact Details"}
+                {dict.footer.contactDetails ?? "Contact Details"}
               </h5>
               <span className="text-fs-small text-silver mb-sp-2">mabrouk@meridian-co.com</span>
               <span className="text-fs-small text-silver mb-sp-2">+20 120 400 9000</span>
-              <span className="text-fs-small text-silver">{isAr ? "دبي · القاهرة · روتردام" : "Rotterdam · Dubai · Cairo"}</span>
+              <span className="text-fs-small text-silver">{dict.footer.locations ?? "Rotterdam · Dubai · Cairo"}</span>
             </div>
 
             <div className="flex flex-col items-start text-start">
               <h5 className="font-mono text-fs-micro text-silver-dim uppercase tracking-wider mb-sp-4">
-                {isAr ? "الترخيص والشهادات" : "Certification"}
+                {dict.footer.certification ?? "Certification"}
               </h5>
               <span className="text-fs-small text-silver mb-sp-2">ISO 9001:2015</span>
               <span className="text-fs-small text-silver">WCO Compliance Assured</span>
