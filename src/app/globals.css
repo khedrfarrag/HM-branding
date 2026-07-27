@@ -98,7 +98,16 @@
   --animate-scroll-drip: scrollDrip 2.2s ease-in-out infinite;
   --animate-swipe: swipe 1.6s ease-in-out infinite;
   --animate-marquee: marquee 22s linear infinite;
+  --animate-gradient-shift: gradientShift 6s ease-in-out infinite;
 
+  @keyframes gradientShift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
   @keyframes beamRotate {
     to {
       transform: rotate(360deg);
@@ -134,6 +143,16 @@
     }
   }
 }
+
+/* Custom Gradient Utilities */
+.text-gradient-gold-animated {
+  background: linear-gradient(135deg, #C7A15C 0%, #FFF5D0 30%, #C7A15C 60%, #E8D2A0 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease infinite;
+}
+
 
 /* Base resets & Ambient glow styles */
 html {

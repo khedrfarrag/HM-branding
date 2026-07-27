@@ -1,29 +1,43 @@
 import type { Metadata } from "next";
-import { Beiruti, Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
+import { Cairo, Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import CursorGlow from "@/components/CursorGlow";
 
-const beiruti = Beiruti({
+/**
+ * ==============================================================================
+ * ARABIC FONT CONFIGURATION (تكوين الخط العربي)
+ * ==============================================================================
+ * To change or customize the Arabic font for the entire website:
+ * 1. Import your preferred font from "next/font/google" (e.g. Cairo, Tajawal, IBM_Plex_Sans_Arabic, Almarai).
+ * 2. Configure weights and variable name below.
+ * 3. The variable "--font-arabic" will automatically apply across all Arabic elements.
+ * ==============================================================================
+ */
+const cairo = Cairo({
   subsets: ["arabic", "latin"],
   variable: "--font-arabic",
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
   variable: "--font-display",
   weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-body",
   weight: ["300", "400", "500", "600"],
+  display: "swap",
 });
 
 const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
   weight: ["400", "500"],
+  display: "swap",
 });
 
 const siteTitle = "حسام مبروك | خبير الاستيراد والتجارة الدولية — Meridian & Co.";
@@ -66,9 +80,7 @@ export async function generateStaticParams() {
 
 /**
  * Locale nested layout.
- * Note: html + body tags are provided by the ROOT src/app/layout.tsx.
- * This layout sets lang, dir, and fonts via suppressHydrationWarning on <html>.
- * We use the React trick of overriding html attributes via a custom element.
+ * Applies `--font-arabic` (Cairo) when locale is "ar".
  */
 export default async function LocaleLayout({
   children,
@@ -82,11 +94,11 @@ export default async function LocaleLayout({
   const dir = isAr ? "rtl" : "ltr";
 
   const fontClasses = isAr
-    ? `${beiruti.variable}`
-    : `${bricolage.variable} ${inter.variable} ${jetbrains.variable}`;
+    ? `${cairo.variable} font-sans`
+    : `${bricolage.variable} ${inter.variable} ${jetbrains.variable} font-sans`;
 
   return (
-    <div lang={locale} dir={dir} className={`${fontClasses} min-h-screen`}>
+    <div lang={locale} dir={dir} className={`${fontClasses} min-h-screen font-sans`}>
       <div className="noise" />
       <CursorGlow />
       {children}

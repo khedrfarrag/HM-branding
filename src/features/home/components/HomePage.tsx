@@ -162,7 +162,7 @@ export default function HomePage({ locale, dict }: HomePageProps) {
           <RevealSection variants={fadeUp}>
             <div className="flex flex-col items-center text-center max-w-3xl mx-auto gap-sp-3">
               <span className="eyebrow">{dict.global.eyebrow}</span>
-              <h2 className="font-display text-fs-h2 font-semibold tracking-tight text-white">
+              <h2 className="font-display text-fs-h2 font-bold tracking-tight text-gradient-gold-animated">
                 {dict.global.title}
               </h2>
               <p className="text-fs-small sm:text-fs-body font-light text-silver leading-lh-relaxed">
@@ -209,7 +209,7 @@ export default function HomePage({ locale, dict }: HomePageProps) {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          4. INDUSTRIES SECTION (BENTO GRID)
+          4. INDUSTRIES SECTION (BENTO GRID WITH BACKGROUND IMAGES)
       ══════════════════════════════════════════════════════════════════════ */}
       <section id="industries" className="bg-black px-sp-6 py-sp-10 md:px-sp-8">
         <div className="mx-auto max-w-[1360px] w-full">
@@ -217,7 +217,9 @@ export default function HomePage({ locale, dict }: HomePageProps) {
             <div className="mb-sp-8 flex flex-wrap items-end justify-between gap-sp-4">
               <div className="flex flex-col items-start text-start">
                 <span className="eyebrow">{dict.industries.eyebrow}</span>
-                <h2 className="mt-sp-3 font-display text-fs-h2 font-semibold tracking-tight">{dict.industries.title}</h2>
+                <h2 className="mt-sp-3 font-display text-fs-h2 font-bold tracking-tight text-gradient-gold-animated">
+                  {dict.industries.title}
+                </h2>
               </div>
               <a href="#book" className="btn btn-glass">
                 {dict.industries.cta}
@@ -227,25 +229,32 @@ export default function HomePage({ locale, dict }: HomePageProps) {
 
           <StaggerReveal className="grid grid-cols-1 gap-sp-5 sm:grid-cols-2 lg:grid-cols-3">
             {dict.industries.sectors.map((sector, idx) => {
-              const bgGradients = [
-                "from-graphite-700 to-black",
-                "from-blue-deep to-black",
-                "from-[#22262e] to-black",
-                "from-[#181B20] to-[#0E1014]",
-                "from-graphite-600 to-black",
+              const sectorImages = [
+                "/images/sectors/electronics.png",
+                "/images/sectors/agriculture.png",
+                "/images/sectors/textiles.png",
+                "/images/sectors/construction.png",
+                "/images/sectors/automotive.png",
               ];
+              const bgImg = sectorImages[idx % sectorImages.length];
+
               return (
                 <StaggerItem key={idx}>
-                  <div
-                    className={cn(
-                      "group relative flex flex-col justify-end overflow-hidden rounded-lg border border-glass bg-gradient-to-br p-sp-6 min-h-[220px] transition-transform hover:-translate-y-1.5 cursor-pointer h-full",
-                      bgGradients[idx % bgGradients.length]
-                    )}
-                  >
-                    <div className="absolute right-[-20px] top-[-20px] h-32 w-32 rounded-full bg-gold/5 group-hover:bg-gold/10 filter blur-xl transition-all" />
+                  <div className="group relative flex flex-col justify-end overflow-hidden rounded-xl border border-white/10 p-sp-6 min-h-[260px] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_12px_40px_rgba(199,161,92,0.25)] hover:border-gold/50 cursor-pointer h-full">
+                    {/* Background Expressive Image */}
+                    <img
+                      src={bgImg}
+                      alt={sector.title}
+                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-85"
+                    />
+                    {/* Dual Dark Glassmorphic Gradient Overlay for 100% Text Legibility */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/30 group-hover:via-black/70 transition-all duration-500" />
+
                     <div className="relative z-10 flex flex-col items-start text-start">
-                      <span className="font-mono text-fs-micro text-gold">{sector.idx}</span>
-                      <h4 className="mt-sp-3 font-display text-fs-h3 font-semibold text-white leading-snug">
+                      <span className="font-mono text-xs font-semibold tracking-widest text-[#C7A15C] uppercase bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-md border border-[#C7A15C]/30 mb-2">
+                        {sector.idx}
+                      </span>
+                      <h4 className="font-display text-xl sm:text-2xl font-bold text-white leading-snug drop-shadow-md">
                         {sector.title}
                       </h4>
                       <p className="mt-sp-2 text-fs-small text-silver font-light leading-lh-relaxed max-h-0 opacity-0 overflow-hidden transition-all duration-300 group-hover:max-h-24 group-hover:opacity-100 group-hover:mt-sp-3">
@@ -261,47 +270,69 @@ export default function HomePage({ locale, dict }: HomePageProps) {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          5. SERVICES TRACK
+          5. SERVICES TRACK (WITH EXPRESSIVE BACKGROUND IMAGES)
       ══════════════════════════════════════════════════════════════════════ */}
-      <section id="services" className="bg-white px-sp-6 py-sp-10 text-black md:px-sp-8">
+      <section id="services" className="bg-[#0B0D11] border-t border-glass px-sp-6 py-sp-10 text-white md:px-sp-8">
         <div className="mx-auto max-w-[1360px] w-full">
           <RevealSection variants={fadeUp}>
             <div className="flex flex-wrap items-end justify-between gap-sp-4">
               <div className="flex flex-col items-start text-start">
-                <span className="eyebrow text-blue-mid before:bg-blue-mid">{dict.services.eyebrow}</span>
-                <h2 className="mt-sp-3 font-display text-fs-h2 font-semibold tracking-tight">{dict.services.title}</h2>
+                <span className="eyebrow">{dict.services.eyebrow}</span>
+                <h2 className="mt-sp-3 font-display text-fs-h2 font-bold tracking-tight text-gradient-gold-animated">
+                  {dict.services.title}
+                </h2>
               </div>
-              <div className="font-mono text-fs-micro text-ink-dim flex items-center gap-sp-1">
+              <div className="font-mono text-fs-micro text-silver-dim flex items-center gap-sp-1">
                 {dict.services.hint} &rarr;
               </div>
             </div>
           </RevealSection>
 
           <StaggerReveal className="mt-sp-8 flex gap-sp-5 overflow-x-auto pb-sp-4 scrollbar-hide snap-x" amount={0.05}>
-            {dict.services.items.map((svc, idx) => (
-              <StaggerItem key={idx}>
-                <div className="flex min-h-[380px] w-[320px] flex-shrink-0 snap-start flex-col justify-between rounded-lg bg-[#F1EFE9] border border-black/5 p-sp-6 transition-transform hover:-translate-y-1.5">
-                  <div className="flex flex-col items-start text-start">
-                    <span className="font-display text-fs-display font-light text-black/15">{svc.num}</span>
-                    <h4 className="mt-sp-4 font-display text-fs-h3 font-semibold leading-snug">{svc.title}</h4>
-                    <p className="mt-sp-3 text-fs-body font-light text-ink-dim leading-lh-relaxed">{svc.desc}</p>
+            {dict.services.items.map((svc, idx) => {
+              const serviceImages = [
+                "/images/services/importing.png",
+                "/images/services/exporting.png",
+                "/images/services/sourcing.png",
+                "/images/services/compliance.png",
+              ];
+              const bgImg = serviceImages[idx % serviceImages.length];
+
+              return (
+                <StaggerItem key={idx}>
+                  <div className="group relative flex min-h-[380px] w-[320px] flex-shrink-0 snap-start flex-col justify-between overflow-hidden rounded-xl border border-white/10 p-sp-6 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_12px_40px_rgba(199,161,92,0.25)] hover:border-gold/50">
+                    {/* Background Expressive Image */}
+                    <img
+                      src={bgImg}
+                      alt={svc.title}
+                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-55 group-hover:opacity-80"
+                    />
+                    {/* Dual Dark Glassmorphic Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/85 to-black/40 group-hover:via-black/75 transition-all duration-500" />
+
+                    <div className="relative z-10 flex flex-col items-start text-start">
+                      <span className="font-display text-4xl font-extrabold text-[#C7A15C]/90 drop-shadow-sm">{svc.num}</span>
+                      <h4 className="mt-sp-4 font-display text-fs-h3 font-bold text-white leading-snug drop-shadow-md">{svc.title}</h4>
+                      <p className="mt-sp-3 text-fs-body font-light text-silver leading-lh-relaxed">{svc.desc}</p>
+                    </div>
+                    <div className="relative z-10 mt-sp-5 flex flex-wrap gap-sp-2">
+                      {svc.tags.map((tag, tIdx) => (
+                        <span
+                          key={tIdx}
+                          className="rounded-full bg-black/60 backdrop-blur-md px-sp-3 py-1 font-mono text-[9px] uppercase tracking-wider text-gold border border-gold/30"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                  <div className="mt-sp-5 flex flex-wrap gap-sp-2">
-                    {svc.tags.map((tag, tIdx) => (
-                      <span
-                        key={tIdx}
-                        className="rounded-full bg-white/60 px-sp-3 py-1 font-mono text-[9px] uppercase tracking-wider text-blue-mid border border-black/5"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </StaggerItem>
-            ))}
+                </StaggerItem>
+              );
+            })}
           </StaggerReveal>
         </div>
       </section>
+
 
       {/* ══════════════════════════════════════════════════════════════════════
           6. JOURNEY (TIMELINE) — Fully optimized for mobile with proper spacing,
@@ -312,7 +343,7 @@ export default function HomePage({ locale, dict }: HomePageProps) {
           <RevealSection variants={fadeUp}>
             <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-sp-2">
               <span className="eyebrow">{dict.journey.eyebrow}</span>
-              <h2 className="font-display text-fs-h2 font-semibold tracking-tight text-white">
+              <h2 className="font-display text-fs-h2 font-bold tracking-tight text-gradient-gold-animated">
                 {dict.journey.title}
               </h2>
             </div>
