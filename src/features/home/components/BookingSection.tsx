@@ -29,13 +29,28 @@ export default function BookingSection({ dict: rawDict, locale }: BookingSection
     async function loadSlots() {
       setLoading(true);
       try {
-        const groups = await getConsultationSlotsAction();
+        let groups: ConsultationDayGroup[] = [];
+        const res = await fetch("/api/consultation-slots", { cache: "no-store" });
+        if (res.ok) {
+          groups = await res.json();
+        } else {
+          groups = await getConsultationSlotsAction();
+        }
+
         setDayGroups(groups);
-        if (groups.length > 0) {
+        if (groups && groups.length > 0) {
           setSelectedDate(groups[0].date);
         }
       } catch (err) {
-        console.error("Failed to load consultation slots", err);
+        console.warn("API fetch failed, attempting direct Server Action fallback...", err);
+        try {
+          const fallback = await getConsultationSlotsAction();
+          setDayGroups(fallback || []);
+          if (fallback && fallback.length > 0) setSelectedDate(fallback[0].date);
+        } catch (actionErr) {
+          console.error("Action fallback failed:", actionErr);
+          setDayGroups([]);
+        }
       } finally {
         setLoading(false);
       }
