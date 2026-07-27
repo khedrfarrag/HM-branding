@@ -18,34 +18,28 @@ export interface ConsultationDayGroup {
 
 /**
  * Fetches available active consultation slots grouped by date for the user portal.
- * Uses supabaseAdmin on the server to reliably bypass RLS restriction for anonymous visitors on Netlify,
- * with automatic fallback to supabasePublic if service key is unconfigured.
+ * Robustly wrapped in try/catch to guarantee zero 500 server errors on production deployments.
+ * Supports legacy keys and new Supabase Server Build API keys seamlessly.
  */
 export async function getConsultationSlotsAction(): Promise<ConsultationDayGroup[]> {
-  const client = process.env.SUPABASE_SERVICE_ROLE_KEY ? supabaseAdmin : supabasePublic;
+  try {
+    const hasAdminKey = Boolean(
+      process.env.SUPABASE_SERVICE_ROLE_KEY ||
+      process.env.SUPABASE_SECRET_KEY ||
+      process.env.SUPABASE_SERVICE_KEY
+    );
 
-  // Calculate today's date in YYYY-MM-DD (server local/UTC)
-  const today = new Date().toISOString().split("T")[0];
-  // Extend range to 90 days ahead to ensure future created slots are always retrieved
-  const untilDate = new Date();
-  untilDate.setDate(untilDate.getDate() + 90);
-  const until = untilDate.toISOString().split("T")[0];
+    const client = hasAdminKey ? supabaseAdmin : supabasePublic;
 
-  console.log(`[getConsultationSlotsAction] Fetching active slots between ${today} and ${until}`);
+    // Use current UTC date string as today's baseline
+    const now = new Date();
+    const today = now.toISOString().split("T")[0];
 
-  let { data, error } = await client
-    .from("consultation_slots")
-    .select("*")
-    .eq("is_active", true)
-    .gte("slot_date", today)
-    .lte("slot_date", until)
-    .order("slot_date", { ascending: true })
-    .order("slot_time", { ascending: true });
+    // Fetch 180 days out to guarantee future created dates are always captured
+    const untilDate = new Date(now.getTime() + 180 * 24 * 60 * 60 * 1000);
+    const until = untilDate.toISOString().split("T")[0];
 
-  // Fallback to public client if admin client query failed
-  if ((error || !data || data.length === 0) && client !== supabasePublic) {
-    console.warn("[getConsultationSlotsAction] Admin query returned 0 rows, trying public client fallback...");
-    const fallbackRes = await supabasePublic
+    let { data, error } = await client
       .from("consultation_slots")
       .select("*")
       .eq("is_active", true)
@@ -54,55 +48,80 @@ export async function getConsultationSlotsAction(): Promise<ConsultationDayGroup
       .order("slot_date", { ascending: true })
       .order("slot_time", { ascending: true });
 
-    if (fallbackRes.data && fallbackRes.data.length > 0) {
-      data = fallbackRes.data;
-      error = fallbackRes.error;
-    }
-  }
+    // Fallback to public client if admin query returned no rows
+    if ((error || !data || data.length === 0) && client !== supabasePublic) {
+      const fallbackRes = await supabasePublic
+        .from("consultation_slots")
+        .select("*")
+        .eq("is_active", true)
+        .gte("slot_date", today)
+        .lte("slot_date", until)
+        .order("slot_date", { ascending: true })
+        .order("slot_time", { ascending: true });
 
-  if (error || !data) {
-    if (error) console.error("[getConsultationSlotsAction] Error fetching slots:", error.message);
+      if (fallbackRes.data && fallbackRes.data.length > 0) {
+        data = fallbackRes.data;
+        error = fallbackRes.error;
+      }
+    }
+
+    if (error || !data) {
+      if (error) console.error("[getConsultationSlotsAction] Supabase Query Error:", error.message);
+      return [];
+    }
+
+    const grouped = new Map<string, ConsultationSlot[]>();
+    for (const row of data) {
+      const key = row.slot_date;
+      if (!grouped.has(key)) grouped.set(key, []);
+      grouped.get(key)!.push({
+        id: row.id,
+        slot_date: row.slot_date,
+        slot_time: row.slot_time,
+        capacity: row.capacity ?? 1,
+        seats_remaining: row.seats_remaining ?? 1,
+        is_active: row.is_active ?? true,
+      });
+    }
+
+    return Array.from(grouped.entries()).map(([date, slots]) => ({ date, slots }));
+  } catch (err) {
+    console.error("[getConsultationSlotsAction] Server Action Exception:", err);
     return [];
   }
+}
 
-  // Filter out any slot with 0 seats remaining if desired, or let UI handle full slots
-  const grouped = new Map<string, ConsultationSlot[]>();
-  for (const row of data) {
-    const key = row.slot_date;
-    if (!grouped.has(key)) grouped.set(key, []);
-    grouped.get(key)!.push({
+/**
+ * Admin: get all slots for management dashboard.
+ */
+export async function getAdminConsultationSlotsAction(): Promise<ConsultationSlot[]> {
+  try {
+    const hasAdminKey = Boolean(
+      process.env.SUPABASE_SERVICE_ROLE_KEY ||
+      process.env.SUPABASE_SECRET_KEY ||
+      process.env.SUPABASE_SERVICE_KEY
+    );
+
+    const client = hasAdminKey ? supabaseAdmin : supabasePublic;
+
+    const { data, error } = await client
+      .from("consultation_slots")
+      .select("*")
+      .order("slot_date", { ascending: true })
+      .order("slot_time", { ascending: true });
+
+    if (error || !data) return [];
+
+    return data.map((row) => ({
       id: row.id,
       slot_date: row.slot_date,
       slot_time: row.slot_time,
       capacity: row.capacity ?? 1,
       seats_remaining: row.seats_remaining ?? 1,
       is_active: row.is_active ?? true,
-    });
+    }));
+  } catch (err) {
+    console.error("[getAdminConsultationSlotsAction] Server Action Exception:", err);
+    return [];
   }
-
-  return Array.from(grouped.entries()).map(([date, slots]) => ({ date, slots }));
-}
-
-/**
- * Admin: get all slots (including inactive/full) for management.
- */
-export async function getAdminConsultationSlotsAction(): Promise<ConsultationSlot[]> {
-  const client = process.env.SUPABASE_SERVICE_ROLE_KEY ? supabaseAdmin : supabasePublic;
-
-  const { data, error } = await client
-    .from("consultation_slots")
-    .select("*")
-    .order("slot_date", { ascending: true })
-    .order("slot_time", { ascending: true });
-
-  if (error || !data) return [];
-
-  return data.map((row) => ({
-    id: row.id,
-    slot_date: row.slot_date,
-    slot_time: row.slot_time,
-    capacity: row.capacity ?? 1,
-    seats_remaining: row.seats_remaining ?? 1,
-    is_active: row.is_active ?? true,
-  }));
 }
