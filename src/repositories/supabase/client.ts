@@ -1,23 +1,34 @@
 import { createClient } from "@supabase/supabase-js";
 
-// Flexible environment resolution to support both legacy keys and new Supabase Server Build API keys
+function getCleanEnv(...keys: string[]): string | undefined {
+  for (const key of keys) {
+    const val = process.env[key];
+    if (val && val.trim() !== "" && val !== "placeholder-key") {
+      return val.trim();
+    }
+  }
+  return undefined;
+}
+
+// Flexible environment resolution to support legacy keys, publishable keys, and standard keys
 const supabaseUrl =
-  process.env.NEXT_PUBLIC_SUPABASE_URL ||
-  process.env.SUPABASE_URL ||
+  getCleanEnv("NEXT_PUBLIC_SUPABASE_URL", "SUPABASE_URL") ||
   "https://placeholder.supabase.co";
 
 const supabaseAnonKey =
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
-  process.env.SUPABASE_ANON_KEY ||
-  process.env.SUPABASE_PUBLISHABLE_KEY ||
-  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
-  "placeholder-key";
+  getCleanEnv(
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+    "SUPABASE_ANON_KEY",
+    "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY",
+    "SUPABASE_PUBLISHABLE_KEY"
+  ) || "placeholder-key";
 
 const supabaseServiceKey =
-  process.env.SUPABASE_SERVICE_ROLE_KEY ||
-  process.env.SUPABASE_SECRET_KEY ||
-  process.env.SUPABASE_SERVICE_KEY ||
-  "placeholder-key";
+  getCleanEnv(
+    "SUPABASE_SERVICE_ROLE_KEY",
+    "SUPABASE_SECRET_KEY",
+    "SUPABASE_SERVICE_KEY"
+  ) || "placeholder-key";
 
 /**
  * Public browser client — uses anon/publishable key.

@@ -4,17 +4,35 @@ import { PublicBookingSchema } from "@/features/booking/schemas/booking.schema";
 import type { BookingTargetType } from "@/domains/booking/repository";
 import { ResendEmailGateway } from "@/integrations/email/resend";
 
-// ─── Validate Supabase env at request time ──────────────────────────────────
-function getSupabaseAdmin() {
-  const url =
-    process.env.NEXT_PUBLIC_SUPABASE_URL ||
-    process.env.SUPABASE_URL;
-  const key =
-    process.env.SUPABASE_SERVICE_ROLE_KEY ||
-    process.env.SUPABASE_SECRET_KEY ||
-    process.env.SUPABASE_SERVICE_KEY;
+function getCleanEnv(...keys: string[]): string | undefined {
+  for (const key of keys) {
+    const val = process.env[key];
+    if (val && val.trim() !== "" && val !== "placeholder-key") {
+      return val.trim();
+    }
+  }
+  return undefined;
+}
 
-  if (!url || !key || key === "placeholder-key" || url === "https://placeholder.supabase.co") {
+// ─── Validate Supabase env at request time ──────────────────────────────────
+function getSupabaseClient() {
+  const url = getCleanEnv("NEXT_PUBLIC_SUPABASE_URL", "SUPABASE_URL");
+
+  // Prefer Service Role / Secret Key, fall back to Anon / Publishable Key
+  const key =
+    getCleanEnv(
+      "SUPABASE_SERVICE_ROLE_KEY",
+      "SUPABASE_SECRET_KEY",
+      "SUPABASE_SERVICE_KEY"
+    ) ||
+    getCleanEnv(
+      "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+      "SUPABASE_ANON_KEY",
+      "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY",
+      "SUPABASE_PUBLISHABLE_KEY"
+    );
+
+  if (!url || !key) {
     return null;
   }
 
@@ -45,9 +63,9 @@ export async function POST(req: NextRequest) {
     const isAr = locale === "ar";
 
     // Step 2: Check Supabase config
-    const supabase = getSupabaseAdmin();
+    const supabase = getSupabaseClient();
     if (!supabase) {
-      console.error("[Booking API] Supabase admin client not configured — missing env vars.");
+      console.error("[Booking API] Supabase client not configured — missing env vars.");
       return NextResponse.json(
         {
           success: false,
@@ -218,7 +236,7 @@ function buildConfirmationEmail({
   return `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#0B0D11;color:#fff;padding:32px;border-radius:12px;">
     <h1 style="color:#C7A15C;">Hussam Mabrouk</h1>
     <h2>Booking Request Received</h2>
-    <p>Dear <strong>${name}</strong>,</p>
+    <p>Dear <strong>${name}</strong>،</p>
     <p>Your request has been received successfully. Our team will contact you shortly.</p>
     <div style="background:#1a1d24;border-radius:8px;padding:16px;margin:24px 0;">
       <p style="margin:0;color:#999;">Booking Code</p>
