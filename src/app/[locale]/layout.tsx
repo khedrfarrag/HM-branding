@@ -26,9 +26,38 @@ const jetbrains = JetBrains_Mono({
   weight: ["400", "500"],
 });
 
+const siteTitle = "حسام مبروك | خبير الاستيراد والتجارة الدولية — Meridian & Co.";
+const siteDescription = "شريكك المستمر لتأمين سلاسل التوريد، حلول الاستيراد المباشر من الصين، وتنفيذ الصفقات التجارية بأعلى معايير الجودة والأمان.";
+
 export const metadata: Metadata = {
-  title: "Hussam Mabrouk — Meridian & Co.",
-  description: "Moving the world's goods, quietly building trust. Two decades of import, export and sourcing across 40+ countries.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://hossammabrouk.com"),
+  title: {
+    default: siteTitle,
+    template: "%s | حسام مبروك",
+  },
+  description: siteDescription,
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: "/",
+    siteName: "Hussam Mabrouk",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "حسام مبروك — خبير التجارة الدولية وسلاسل التوريد",
+      },
+    ],
+    locale: "ar_EG",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/og-image.png"],
+  },
 };
 
 export async function generateStaticParams() {

@@ -97,8 +97,8 @@ export default function FloatingSocials({ locale }: FloatingSocialsProps) {
             key={item.id}
             className={`absolute z-20 ${item.position}`}
             animate={{
-              y: [0, -10, 0],
-              x: [0, 6, 0],
+              y: [0, -5, 0],
+              x: [0, 3, 0],
             }}
             transition={{
               duration: item.duration,

@@ -3,14 +3,14 @@
 import { useRef } from "react";
 import { motion, useInView, type Variants } from "framer-motion";
 
-// ── Shared Variants ───────────────────────────────────────────────────────────
+// ── Ultra-Smooth, Lightweight Variants (No Jumpiness) ─────────────────────────
 
 export const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 40 },
+  hidden: { opacity: 0, y: 16 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.38, ease: "easeOut" },
   },
 };
 
@@ -18,7 +18,7 @@ export const fadeIn: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { duration: 0.5, ease: "easeOut" },
+    transition: { duration: 0.35, ease: "easeOut" },
   },
 };
 
@@ -26,36 +26,36 @@ export const staggerContainer: Variants = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.12,
-      delayChildren: 0.1,
+      staggerChildren: 0.07,
+      delayChildren: 0,
     },
   },
 };
 
 export const staggerItem: Variants = {
-  hidden: { opacity: 0, y: 32 },
+  hidden: { opacity: 0, y: 12 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.35, ease: "easeOut" },
   },
 };
 
 export const slideInLeft: Variants = {
-  hidden: { opacity: 0, x: -40 },
+  hidden: { opacity: 0, x: -16 },
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.38, ease: "easeOut" },
   },
 };
 
 export const slideInRight: Variants = {
-  hidden: { opacity: 0, x: 40 },
+  hidden: { opacity: 0, x: 16 },
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.38, ease: "easeOut" },
   },
 };
 
@@ -70,15 +70,14 @@ interface RevealSectionProps {
 }
 
 /**
- * Wraps any section with a one-shot scroll-triggered reveal animation.
- * Uses `once: true` so the animation only plays once per page load.
- * Automatically respects `prefers-reduced-motion`.
+ * Wraps any section with an ultra-fast, smooth reveal animation that triggers
+ * instantly when entering the viewport without delaying or jumping layout.
  */
 export function RevealSection({
   children,
   className,
   variants = fadeUp,
-  amount = 0.15,
+  amount = 0.01,
 }: RevealSectionProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, amount });
@@ -97,20 +96,19 @@ export function RevealSection({
 }
 
 /**
- * Staggered container that reveals children one-by-one when scrolled into view.
+ * Staggered container that reveals children quickly when scrolled into view.
  */
 interface StaggerRevealProps {
   children: React.ReactNode;
   className?: string;
   amount?: number;
-  /** Extra delay before stagger starts (seconds) */
   delay?: number;
 }
 
 export function StaggerReveal({
   children,
   className,
-  amount = 0.1,
+  amount = 0.01,
   delay = 0,
 }: StaggerRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -120,7 +118,7 @@ export function StaggerReveal({
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.13,
+        staggerChildren: 0.07,
         delayChildren: delay,
       },
     },

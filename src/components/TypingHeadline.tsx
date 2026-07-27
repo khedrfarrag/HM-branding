@@ -1,63 +1,41 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface TypingHeadlineProps {
   phrases: string[];
 }
 
 export default function TypingHeadline({ phrases }: TypingHeadlineProps) {
-  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
-  const [currentText, setCurrentText] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [typingSpeed, setTypingSpeed] = useState(80);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    if (!phrases || phrases.length === 0) return;
+    if (!phrases || phrases.length <= 1) return;
 
-    let timer: NodeJS.Timeout;
-    const fullText = phrases[currentPhraseIndex];
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % phrases.length);
+    }, 4500); // Switch phrase smoothly every 4.5s
 
-    if (isDeleting) {
-      timer = setTimeout(() => {
-        setCurrentText((prev) => prev.slice(0, -1));
-        setTypingSpeed(30); // delete faster
-      }, typingSpeed);
-    } else {
-      timer = setTimeout(() => {
-        setCurrentText(fullText.slice(0, currentText.length + 1));
-        setTypingSpeed(80); // standard typing speed
-      }, typingSpeed);
-    }
+    return () => clearInterval(timer);
+  }, [phrases]);
 
-    if (!isDeleting && currentText === fullText) {
-      // Pause at full word
-      timer = setTimeout(() => {
-        setIsDeleting(true);
-      }, 3000);
-    } else if (isDeleting && currentText === "") {
-      setIsDeleting(false);
-      setCurrentPhraseIndex((prev) => (prev + 1) % phrases.length);
-      setTypingSpeed(250); // Pause before next word
-    }
-
-    return () => clearTimeout(timer);
-  }, [currentText, isDeleting, currentPhraseIndex, phrases, typingSpeed]);
+  if (!phrases || phrases.length === 0) return null;
 
   return (
-    <span className="relative">
-      <span>{currentText}</span>
-      <motion.span
-        animate={{ opacity: [1, 0] }}
-        transition={{
-          duration: 0.8,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="inline-block w-[3px] h-[1em] bg-gold-soft ml-1"
-        style={{ verticalAlign: "middle", marginTop: "-0.15em" }}
-      />
+    <span className="relative block w-full text-start align-top min-h-[2.5em] sm:min-h-[2.2em]">
+      <AnimatePresence mode="wait">
+        <motion.span
+          key={currentIndex}
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -12 }}
+          transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+          className="block w-full"
+        >
+          {phrases[currentIndex]}
+        </motion.span>
+      </AnimatePresence>
     </span>
   );
 }

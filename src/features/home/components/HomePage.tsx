@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import TypingHeadline from "@/components/TypingHeadline";
 import FloatingSocials from "@/components/FloatingSocials";
 import BookingSection from "./BookingSection";
+import InteractiveGlobeMap from "./InteractiveGlobeMap";
 import {
   RevealSection,
   StaggerReveal,
@@ -25,11 +26,11 @@ export default function HomePage({ locale, dict }: HomePageProps) {
   return (
     <div className="relative w-full">
       {/* ══════════════════════════════════════════════════════════════════════
-          1. HERO SECTION — no scroll reveal (already above-the-fold)
+          1. HERO SECTION — Lock height on mobile to prevent shaking
       ══════════════════════════════════════════════════════════════════════ */}
       <section
         id="hero"
-        className="relative flex min-h-screen items-center overflow-hidden bg-gradient-to-b from-black via-[#0B0D11] to-black px-sp-5 pt-[110px] pb-sp-8 md:px-sp-8 lg:pt-sp-12 lg:pb-sp-10"
+        className="relative flex min-h-screen items-center overflow-hidden bg-gradient-to-b from-black via-[#0B0D11] to-black px-sp-5 pt-[120px] pb-sp-8 md:px-sp-8 lg:pt-sp-12 lg:pb-sp-10"
       >
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_70%_at_60%_30%,black,transparent_75%)]" />
         
@@ -50,7 +51,7 @@ export default function HomePage({ locale, dict }: HomePageProps) {
               {dict.hero.badge}
             </div>
 
-            <h1 className="mt-sp-2 font-display text-fs-display font-bold leading-lh-tight tracking-tight text-white w-full min-h-[80px] sm:min-h-[100px] lg:min-h-[180px]">
+            <h1 className="mt-sp-2 font-display text-fs-display font-bold leading-lh-tight tracking-tight text-white w-full">
               <TypingHeadline phrases={dict.hero.phrases} />
             </h1>
 
@@ -152,98 +153,63 @@ export default function HomePage({ locale, dict }: HomePageProps) {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          3. GLOBAL EXPERIENCE SECTION — fade up on scroll
+          3. GLOBAL EXPERIENCE SECTION — Interactive Circular Radar Globe Map
       ══════════════════════════════════════════════════════════════════════ */}
-      <section id="global" className="border-y border-glass bg-graphite-900 px-sp-6 py-sp-10 md:px-sp-8">
-        <div className="mx-auto max-w-[1360px] w-full">
+      <section id="global" className="border-y border-glass bg-graphite-900 px-sp-4 sm:px-sp-6 py-sp-10 md:px-sp-8">
+        <div className="mx-auto max-w-[1360px] w-full flex flex-col gap-sp-8">
 
-          {/* Header */}
+          {/* Section Header */}
           <RevealSection variants={fadeUp}>
-            <div className="flex flex-wrap items-end justify-between gap-sp-5">
-              <div className="flex flex-col items-start text-start">
-                <span className="eyebrow">{dict.global.eyebrow}</span>
-                <h2 className="mt-sp-3 font-display text-fs-h2 font-semibold tracking-tight">{dict.global.title}</h2>
-              </div>
-              <p className="max-w-[380px] text-start text-fs-small font-light text-silver">
+            <div className="flex flex-col items-center text-center max-w-3xl mx-auto gap-sp-3">
+              <span className="eyebrow">{dict.global.eyebrow}</span>
+              <h2 className="font-display text-fs-h2 font-semibold tracking-tight text-white">
+                {dict.global.title}
+              </h2>
+              <p className="text-fs-small sm:text-fs-body font-light text-silver leading-lh-relaxed">
                 {dict.global.subtitle}
               </p>
             </div>
           </RevealSection>
 
-          {/* Map + Metrics */}
+          {/* Interactive Globe Map */}
           <RevealSection variants={fadeUp} amount={0.1}>
-            <div className="mt-sp-8 grid grid-cols-1 items-stretch overflow-hidden rounded-xl border border-glass bg-gradient-to-b from-graphite-800 to-graphite-900 lg:grid-cols-[1fr_320px]">
-              {/* Interactive Map Area */}
-              <div className="relative flex min-h-[400px] items-center justify-center p-sp-6 bg-black/10">
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_600px_300px_at_50%_50%,rgba(199,161,92,0.06),transparent_80%)]" />
-                <div className="relative z-10 w-full h-full flex flex-col items-center justify-center gap-sp-6">
-                  {/* Map Title */}
-                  <div className="text-center">
-                    <div className="font-mono text-fs-micro text-gold uppercase tracking-wider mb-sp-2">
-                      {dict.global.mapTitle ?? "الشبكة اللوجستية الدولية"}
-                    </div>
-                    <p className="text-fs-small text-silver max-w-[340px] text-center leading-lh-relaxed">
-                      {locale === "ar"
-                        ? "شبكة موردين وعملاء تمتد عبر أكثر من 25 دولة في آسيا وأوروبا والشرق الأوسط"
-                        : "Supplier & client network spanning 25+ countries across Asia, Europe & MENA"}
-                    </p>
-                  </div>
+            <InteractiveGlobeMap
+              locale={locale}
+              mapTitle={dict.global.mapTitle}
+              subtitle={dict.global.mapSyncing}
+            />
+          </RevealSection>
 
-                  {/* Geo Points Grid */}
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-sp-4 w-full max-w-[600px]">
-                    {[
-                      { region: locale === "ar" ? "الصين" : "China", detail: locale === "ar" ? "غوانغتشو · يوي" : "Guangzhou · Yiwu", color: "text-red-400" },
-                      { region: locale === "ar" ? "الإمارات" : "UAE", detail: locale === "ar" ? "دبي · أبوظبي" : "Dubai · Abu Dhabi", color: "text-cyan" },
-                      { region: locale === "ar" ? "مصر" : "Egypt", detail: locale === "ar" ? "القاهرة · الإسكندرية" : "Cairo · Alexandria", color: "text-gold" },
-                      { region: locale === "ar" ? "أوروبا" : "Europe", detail: locale === "ar" ? "روتردام · إسطنبول" : "Rotterdam · Istanbul", color: "text-blue-400" },
-                    ].map((point, idx) => (
-                      <div key={idx} className="flex flex-col items-center text-center rounded-lg border border-glass bg-white/[0.03] p-sp-3 gap-sp-1">
-                        <span className={`font-mono text-xs font-semibold ${point.color}`}>●</span>
-                        <span className="font-display text-fs-small font-semibold text-white">{point.region}</span>
-                        <span className="font-mono text-[10px] text-silver-dim leading-tight">{point.detail}</span>
-                      </div>
-                    ))}
+          {/* Global Metrics Cards Grid */}
+          <StaggerReveal className="grid grid-cols-2 sm:grid-cols-4 gap-sp-4 w-full">
+            {dict.global.metrics.map((metric, idx) => (
+              <StaggerItem key={idx}>
+                <div className="flex flex-col items-start text-start rounded-xl border border-glass bg-white/[0.03] p-sp-5 gap-sp-2 h-full">
+                  <span className="font-mono text-[10px] sm:text-fs-micro text-silver-dim uppercase tracking-wider">
+                    {metric.label}
+                  </span>
+                  <div className="font-display text-fs-h2 sm:text-fs-h1 font-bold text-white">
+                    {metric.value} <span className="font-mono text-xs text-gold">{metric.sub}</span>
                   </div>
-
-                  {/* Coverage Line */}
-                  <div className="flex items-center gap-sp-3 font-mono text-[10px] text-silver-dim uppercase tracking-wider">
-                    <span className="h-[1px] w-12 bg-gradient-to-r from-transparent to-gold/50" />
-                    {locale === "ar" ? "تغطية نشطة على مدار الساعة" : "Active coverage 24/7"}
-                    <span className="h-[1px] w-12 bg-gradient-to-l from-transparent to-gold/50" />
+                  <div className="relative mt-auto h-[4px] w-full rounded-full bg-graphite-700 overflow-hidden">
+                    <motion.div
+                      className="h-full bg-gradient-to-r from-gold to-cyan rounded-full"
+                      initial={{ width: 0 }}
+                      whileInView={{ width: `${metric.percentage}%` }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: idx * 0.1 }}
+                    />
                   </div>
                 </div>
-              </div>
-
-              {/* Metrics Sidebar — stagger */}
-              <StaggerReveal className="flex flex-col gap-sp-5 border-t border-glass bg-white/5 p-sp-6 lg:border-t-0 lg:border-l">
-                {dict.global.metrics.map((metric, idx) => (
-                  <StaggerItem key={idx}>
-                    <div className="flex flex-col items-start text-start border-b border-glass pb-sp-4 last:border-b-0 last:pb-0">
-                      <span className="font-mono text-fs-micro text-silver-dim uppercase tracking-wider">{metric.label}</span>
-                      <div className="mt-sp-1 font-display text-fs-h1 font-semibold text-white">
-                        {metric.value} <span className="font-mono text-xs text-gold">{metric.sub}</span>
-                      </div>
-                      <div className="relative mt-sp-3 h-[4px] w-full rounded-full bg-graphite-700 overflow-hidden">
-                        <motion.div
-                          className="h-full bg-gradient-to-r from-gold to-cyan rounded-full"
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${metric.percentage}%` }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: idx * 0.15 }}
-                        />
-                      </div>
-                    </div>
-                  </StaggerItem>
-                ))}
-              </StaggerReveal>
-            </div>
-          </RevealSection>
+              </StaggerItem>
+            ))}
+          </StaggerReveal>
 
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          4. INDUSTRIES SECTION (BENTO GRID) — stagger cards
+          4. INDUSTRIES SECTION (BENTO GRID)
       ══════════════════════════════════════════════════════════════════════ */}
       <section id="industries" className="bg-black px-sp-6 py-sp-10 md:px-sp-8">
         <div className="mx-auto max-w-[1360px] w-full">
@@ -295,7 +261,7 @@ export default function HomePage({ locale, dict }: HomePageProps) {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          5. SERVICES TRACK — fade in header + stagger cards
+          5. SERVICES TRACK
       ══════════════════════════════════════════════════════════════════════ */}
       <section id="services" className="bg-white px-sp-6 py-sp-10 text-black md:px-sp-8">
         <div className="mx-auto max-w-[1360px] w-full">
@@ -338,48 +304,62 @@ export default function HomePage({ locale, dict }: HomePageProps) {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          6. JOURNEY (TIMELINE) — each card staggers in one by one
+          6. JOURNEY (TIMELINE) — Fully optimized for mobile with proper spacing,
+             interactive cards, and a beautiful vertical timeline bar!
       ══════════════════════════════════════════════════════════════════════ */}
-      <section id="journey" className="bg-graphite-900 px-sp-6 py-sp-10 md:px-sp-8">
+      <section id="journey" className="bg-graphite-900 px-sp-4 sm:px-sp-6 py-sp-12 md:py-sp-16 md:px-sp-8 pt-[80px]">
         <div className="mx-auto max-w-[1360px] w-full">
           <RevealSection variants={fadeUp}>
-            <div className="text-center max-w-xl mx-auto flex flex-col items-center">
+            <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-sp-2">
               <span className="eyebrow">{dict.journey.eyebrow}</span>
-              <h2 className="mt-sp-3 font-display text-fs-h2 font-semibold tracking-tight text-white">{dict.journey.title}</h2>
+              <h2 className="font-display text-fs-h2 font-semibold tracking-tight text-white">
+                {dict.journey.title}
+              </h2>
             </div>
           </RevealSection>
 
-          <div className="relative mt-sp-8 flex flex-col">
-            {/* Timeline Center Line */}
-            <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-graphite-700 via-gold to-graphite-700 -translate-x-1/2 hidden md:block" />
+          {/* Timeline Container with Spacing & Line */}
+          <div className="relative mt-sp-10 flex flex-col gap-sp-6 sm:gap-sp-8">
+            {/* Center Line for Desktop, Side Line for Mobile */}
+            <div className="absolute left-4 sm:left-1/2 top-4 bottom-4 w-[2px] bg-gradient-to-b from-gold/20 via-gold to-gold/20 -translate-x-1/2" />
 
             {/* Each journey item staggers in individually */}
-            <StaggerReveal amount={0.05}>
+            <StaggerReveal amount={0.05} className="flex flex-col gap-sp-6 sm:gap-sp-8">
               {dict.journey.items.map((item, idx) => {
                 const isEven = idx % 2 === 0;
                 return (
                   <StaggerItem key={idx}>
-                    <div
+                    <motion.div
+                      whileHover={{ y: -6, scale: 1.01 }}
+                      transition={{ duration: 0.25 }}
                       className={cn(
-                        "relative flex flex-col md:flex-row items-center mb-sp-6 last:mb-0",
+                        "relative flex flex-col md:flex-row items-start md:items-center pl-10 sm:pl-0",
                         isEven ? "md:justify-start" : "md:justify-end"
                       )}
                     >
-                      {/* Bullet Node */}
-                      <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gold border-[4px] border-graphite-900 shadow-[0_0_0_6px_rgba(199,161,92,0.12)] hidden md:block" />
+                      {/* Timeline Bullet Node */}
+                      <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-gold border-[4px] border-graphite-900 shadow-[0_0_15px_rgba(199,161,92,0.6)] z-10" />
 
-                      {/* Card */}
+                      {/* Card Container */}
                       <div
                         className={cn(
-                          "w-full md:w-[45%] rounded-lg border border-glass bg-graphite-800 p-sp-5 flex flex-col text-start",
+                          "w-full md:w-[46%] rounded-2xl border border-glass bg-gradient-to-br from-graphite-800/90 to-graphite-900 p-sp-6 backdrop-blur-md shadow-xl transition-all hover:border-gold/50 flex flex-col text-start gap-sp-2",
                           isEven ? "md:text-right md:items-end" : "md:text-left md:items-start"
                         )}
                       >
-                        <span className="font-mono text-fs-micro text-gold">{item.year}</span>
-                        <h4 className="mt-sp-2 font-display text-fs-h3 font-semibold text-white leading-snug">{item.title}</h4>
-                        <p className="mt-sp-3 text-fs-small leading-lh-relaxed text-silver font-light">{item.desc}</p>
+                        <div className="flex items-center gap-sp-2">
+                          <span className="font-mono text-fs-small font-bold text-gold bg-gold/10 px-sp-3 py-1 rounded-full border border-gold/20">
+                            {item.year}
+                          </span>
+                        </div>
+                        <h4 className="font-display text-fs-h3 font-bold text-white leading-snug">
+                          {item.title}
+                        </h4>
+                        <p className="text-fs-small sm:text-fs-body leading-lh-relaxed text-silver font-light">
+                          {item.desc}
+                        </p>
                       </div>
-                    </div>
+                    </motion.div>
                   </StaggerItem>
                 );
               })}
