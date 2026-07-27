@@ -3,10 +3,10 @@
 import { useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { submitBookingAction } from "../actions/submit-booking";
 import { PublicBookingSchema } from "../schemas/booking.schema";
 import type { PublicBookingInput } from "../schemas/booking.schema";
 import type { Locale } from "@/domains/shared/value-objects";
+import type { BookingActionResult } from "../actions/submit-booking";
 import { cn } from "@/lib/utils";
 
 interface BookingFormProps {
@@ -59,11 +59,24 @@ export function BookingForm({
   function onSubmit(data: PublicBookingInput) {
     setServerError(null);
     startTransition(async () => {
-      const result = await submitBookingAction(data);
-      if (result.success) {
-        onSuccess?.(result.bookingId, result.confirmationCode);
-      } else {
-        setServerError(result.error);
+      try {
+        const res = await fetch("/api/submit-booking", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+        const result: BookingActionResult = await res.json();
+        if (result.success) {
+          onSuccess?.(result.bookingId, result.confirmationCode);
+        } else {
+          setServerError(result.error);
+        }
+      } catch {
+        setServerError(
+          isAr
+            ? "حدث خطأ في الاتصال. يرجى المحاولة مجدداً."
+            : "A connection error occurred. Please try again."
+        );
       }
     });
   }
