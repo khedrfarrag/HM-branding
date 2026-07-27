@@ -1,6 +1,6 @@
 "use server";
 
-import { supabasePublic } from "@/repositories/supabase/client";
+import { supabaseAdmin, supabasePublic } from "@/repositories/supabase/client";
 
 export interface ConsultationSlot {
   id: string;
@@ -17,16 +17,23 @@ export interface ConsultationDayGroup {
 }
 
 /**
- * Fetches available consultation slots grouped by date.
- * Guaranteed compatibility with current database schema.
+ * Fetches available active consultation slots grouped by date for the user portal.
+ * Uses supabaseAdmin on the server to reliably bypass RLS restriction for anonymous visitors on Netlify,
+ * with automatic fallback to supabasePublic if service key is unconfigured.
  */
 export async function getConsultationSlotsAction(): Promise<ConsultationDayGroup[]> {
-  const today = new Date().toISOString().split("T")[0];
-  const until = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000)
-    .toISOString()
-    .split("T")[0];
+  const client = process.env.SUPABASE_SERVICE_ROLE_KEY ? supabaseAdmin : supabasePublic;
 
-  const { data, error } = await supabasePublic
+  // Calculate today's date in YYYY-MM-DD (server local/UTC)
+  const today = new Date().toISOString().split("T")[0];
+  // Extend range to 90 days ahead to ensure future created slots are always retrieved
+  const untilDate = new Date();
+  untilDate.setDate(untilDate.getDate() + 90);
+  const until = untilDate.toISOString().split("T")[0];
+
+  console.log(`[getConsultationSlotsAction] Fetching active slots between ${today} and ${until}`);
+
+  let { data, error } = await client
     .from("consultation_slots")
     .select("*")
     .eq("is_active", true)
@@ -35,12 +42,30 @@ export async function getConsultationSlotsAction(): Promise<ConsultationDayGroup
     .order("slot_date", { ascending: true })
     .order("slot_time", { ascending: true });
 
+  // Fallback to public client if admin client query failed
+  if ((error || !data || data.length === 0) && client !== supabasePublic) {
+    console.warn("[getConsultationSlotsAction] Admin query returned 0 rows, trying public client fallback...");
+    const fallbackRes = await supabasePublic
+      .from("consultation_slots")
+      .select("*")
+      .eq("is_active", true)
+      .gte("slot_date", today)
+      .lte("slot_date", until)
+      .order("slot_date", { ascending: true })
+      .order("slot_time", { ascending: true });
+
+    if (fallbackRes.data && fallbackRes.data.length > 0) {
+      data = fallbackRes.data;
+      error = fallbackRes.error;
+    }
+  }
+
   if (error || !data) {
-    if (error) console.error("[getConsultationSlotsAction] Error:", error.message);
+    if (error) console.error("[getConsultationSlotsAction] Error fetching slots:", error.message);
     return [];
   }
 
-  // Group by date and supply default capacity if columns missing in DB
+  // Filter out any slot with 0 seats remaining if desired, or let UI handle full slots
   const grouped = new Map<string, ConsultationSlot[]>();
   for (const row of data) {
     const key = row.slot_date;
@@ -62,10 +87,11 @@ export async function getConsultationSlotsAction(): Promise<ConsultationDayGroup
  * Admin: get all slots (including inactive/full) for management.
  */
 export async function getAdminConsultationSlotsAction(): Promise<ConsultationSlot[]> {
-  const { data, error } = await supabasePublic
+  const client = process.env.SUPABASE_SERVICE_ROLE_KEY ? supabaseAdmin : supabasePublic;
+
+  const { data, error } = await client
     .from("consultation_slots")
     .select("*")
-    .gte("slot_date", new Date().toISOString().split("T")[0])
     .order("slot_date", { ascending: true })
     .order("slot_time", { ascending: true });
 
