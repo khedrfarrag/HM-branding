@@ -1,6 +1,7 @@
 "use server";
 
 import { supabaseAdmin, supabasePublic } from "@/repositories/supabase/client";
+import { unstable_noStore as noStore } from "next/cache";
 
 export interface ConsultationSlot {
   id: string;
@@ -18,10 +19,10 @@ export interface ConsultationDayGroup {
 
 /**
  * Fetches available active consultation slots grouped by date for the user portal.
- * Robustly wrapped in try/catch to guarantee zero 500 server errors on production deployments.
- * Supports legacy keys and new Supabase Server Build API keys seamlessly.
+ * Uses noStore() to guarantee fresh real-time database queries on Netlify without static caching.
  */
 export async function getConsultationSlotsAction(): Promise<ConsultationDayGroup[]> {
+  noStore();
   try {
     const hasAdminKey = Boolean(
       process.env.SUPABASE_SERVICE_ROLE_KEY ||
@@ -95,6 +96,7 @@ export async function getConsultationSlotsAction(): Promise<ConsultationDayGroup
  * Admin: get all slots for management dashboard.
  */
 export async function getAdminConsultationSlotsAction(): Promise<ConsultationSlot[]> {
+  noStore();
   try {
     const hasAdminKey = Boolean(
       process.env.SUPABASE_SERVICE_ROLE_KEY ||

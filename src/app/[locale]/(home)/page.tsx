@@ -1,11 +1,14 @@
 import { getDictionary, type Locale } from "@/features/i18n";
 import { HomePage } from "@/features/home";
+import type { Metadata } from "next";
+
+// Force real-time dynamic rendering on production (Netlify) for instant consultation slot updates
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 interface PageProps {
   params: Promise<{ locale: Locale }>;
 }
-
-import type { Metadata } from "next";
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
