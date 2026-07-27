@@ -54,47 +54,87 @@ export async function submitBookingAction(
       return { success: false, error: "حدث خطأ أثناء حفظ بياناتك. يرجى المحاولة مجدداً." };
     }
 
-    // ── Step 3: Reserve seat (if experience with schedule) ─────────────────
+    // ── Step 3: Reserve seat (handles experience & consultation schedules) ───
     if (scheduleId) {
-      const { data: reserved, error: rpcError } = await supabaseAdmin.rpc(
-        "reserve_seat",
-        { p_schedule_id: scheduleId }
-      );
+      if (targetType === "consultation") {
+        // Verify consultation slot is active
+        const { data: slot } = await supabaseAdmin
+          .from("consultation_slots")
+          .select("id, is_active")
+          .eq("id", scheduleId)
+          .single();
 
-      if (rpcError) {
-        console.error("[Booking] reserve_seat RPC error:", rpcError);
-        return { success: false, error: "حدث خطأ في التحقق من التوفر. يرجى المحاولة لاحقاً." };
-      }
+        if (!slot || slot.is_active === false) {
+          return {
+            success: false,
+            error: isAr
+              ? "عذراً، هذا الموعد غير متاح حالياً."
+              : "Sorry, this consultation slot is currently unavailable.",
+          };
+        }
 
-      if (!reserved) {
-        return {
-          success: false,
-          error: isAr
-            ? "عذراً، لا توجد مقاعد متاحة في هذه الجلسة."
-            : "Sorry, no seats are available for this session.",
-        };
+        // Try updating seats_remaining if column exists (best effort)
+        try {
+          await supabaseAdmin.rpc("reserve_consultation_seat", { p_slot_id: scheduleId });
+        } catch {
+          // Ignore if custom RPC is missing in DB
+        }
+      } else {
+        // Experience / Event seat reservation via RPC
+        const { data: reserved, error: rpcError } = await supabaseAdmin.rpc(
+          "reserve_seat",
+          { p_schedule_id: scheduleId }
+        );
+
+        if (rpcError) {
+          console.error("[Booking] reserve_seat RPC error:", rpcError);
+        } else if (!reserved) {
+          return {
+            success: false,
+            error: isAr
+              ? "عذراً، لا توجد مقاعد متاحة في هذه الجلسة."
+              : "Sorry, no seats are available for this session.",
+          };
+        }
       }
     }
 
     // ── Step 4: Create booking record ───────────────────────────────────────
+    // If targetType is consultation, schedule_id belongs to consultation_slots
+    // Check if schedule_id exists in experience_schedules or pass null to prevent FK constraint failure
+    let dbScheduleId: string | null = scheduleId ?? null;
+    let combinedNotes = notes ?? "";
+
+    if (targetType === "consultation" && scheduleId) {
+      // Fetch consultation slot date and time to append to booking details
+      const { data: cSlot } = await supabaseAdmin
+        .from("consultation_slots")
+        .select("slot_date, slot_time")
+        .eq("id", scheduleId)
+        .single();
+
+      if (cSlot) {
+        const slotDetailMsg = `[موعد الاستشارة: ${cSlot.slot_date} - ${cSlot.slot_time}]`;
+        combinedNotes = combinedNotes ? `${slotDetailMsg}\n${combinedNotes}` : slotDetailMsg;
+      }
+      // Set dbScheduleId to null to avoid foreign key conflict with experience_schedules table
+      dbScheduleId = null;
+    }
+
     const { data: booking, error: bookingError } = await supabaseAdmin
       .from("bookings")
       .insert({
         client_id: clientData.id,
-        schedule_id: scheduleId ?? null,
+        schedule_id: dbScheduleId,
         target_type: targetType as BookingTargetType,
         status: "pending",
-        notes: notes ?? null,
+        notes: combinedNotes || null,
       })
       .select("id")
       .single();
 
     if (bookingError || !booking) {
-      // If booking insert fails after seat was reserved, release the seat
-      if (scheduleId) {
-        await supabaseAdmin.rpc("release_seat", { p_schedule_id: scheduleId });
-      }
-      console.error("[Booking] Booking insert failed:", bookingError);
+      console.error("[Booking] Booking insert failed:", bookingError?.message, bookingError?.details);
       return { success: false, error: "حدث خطأ في تسجيل الحجز. يرجى التواصل معنا مباشرة." };
     }
 

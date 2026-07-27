@@ -1,7 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+
 import { supabaseAdmin } from "@/repositories/supabase/client";
 import BookingStatusEditor from "@/features/admin/components/BookingStatusEditor";
 import { cookies } from "next/headers";
@@ -18,15 +18,14 @@ export const dynamic = "force-dynamic";
 interface BookingDetail {
   id: string;
   target_type: string;
-  target_slug: string;
   status: string;
-  notes: string;
+  notes: string | null;
   payment_receipt_id: string | null;
   created_at: string;
   clients: {
     name: string;
     email: string;
-    phone: string;
+    phone: string | null;
   } | null;
 }
 
@@ -39,11 +38,18 @@ interface AuditLog {
 }
 
 async function getBooking(id: string): Promise<BookingDetail | null> {
-  const { data } = await supabaseAdmin
+  const { data, error } = await supabaseAdmin
     .from("bookings")
-    .select("id, target_type, target_slug, status, notes, payment_receipt_id, created_at, clients(name, email, phone)")
+    .select("id, target_type, status, notes, payment_receipt_id, created_at, clients(name, email, phone)")
     .eq("id", id)
     .single();
+  if (error) {
+    // PGRST116 = "The result contains 0 rows" — booking truly not found
+    if (error.code !== "PGRST116") {
+      console.error("[BookingDetail] Query error:", error.message, error.code);
+    }
+    return null;
+  }
   return data as unknown as BookingDetail;
 }
 
@@ -62,18 +68,52 @@ interface PageProps {
 
 export default async function BookingDetailsPage({ params }: PageProps) {
   const { id } = await params;
-  const booking = await getBooking(id);
-
-  if (!booking) {
-    notFound();
-  }
-
-  const auditLogs = await getAuditLogs(id);
-
   const cookieStore = await cookies();
   const locale = (cookieStore.get("admin_lang")?.value || "en") as Locale;
   const dict = await getDictionary(locale);
+
+  const booking = id ? await getBooking(id) : null;
+
+  if (!booking) {
+    const isAr = locale === "ar";
+    return (
+      <div className="space-y-6 max-w-4xl py-12" id="admin-booking-not-found">
+        <Link
+          href="/admin/dashboard/bookings"
+          className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+        >
+          <span>←</span> {dict.admin.dashboard.bookingDetails.backBtn}
+        </Link>
+        <div className="rounded-xl border border-red-500/20 bg-red-500/5 p-8 text-center space-y-4">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-red-500/10 text-red-400">
+            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+          <h2 className="text-xl font-bold text-white">
+            {isAr ? "لم يتم العثور على هذا الحجز" : "Booking Not Found"}
+          </h2>
+          <p className="text-sm text-gray-400 max-w-md mx-auto">
+            {isAr
+              ? `الحجز صاحب المرجع (${id}) غير موجود أو تم حذفه.`
+              : `The booking with reference (${id}) could not be found or may have been deleted.`}
+          </p>
+          <div className="pt-2">
+            <Link
+              href="/admin/dashboard/bookings"
+              className="inline-flex items-center justify-center rounded-lg bg-gold/10 border border-gold/30 px-5 py-2.5 text-sm font-medium text-gold hover:bg-gold/20 transition-colors"
+            >
+              {dict.admin.dashboard.bookingDetails.backBtn}
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  const auditLogs = await getAuditLogs(id);
   const t = dict.admin.dashboard.bookingDetails;
+
 
   return (
     <div className="space-y-6 max-w-5xl" id="admin-booking-details-page">
@@ -178,7 +218,7 @@ export default async function BookingDetailsPage({ params }: PageProps) {
           <BookingStatusEditor
             bookingId={booking.id}
             currentStatus={booking.status as BookingStatus}
-            currentNotes={booking.notes}
+            currentNotes={booking.notes ?? ""}
             dict={dict.admin.dashboard.bookingDetails}
           />
         </div>

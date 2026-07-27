@@ -31,7 +31,7 @@ export async function createScheduleAction(rawData: unknown): Promise<ScheduleAc
       price:               d.price,
       currency:            d.currency,
     })
-    .select("id")
+    .select("id, experience_slug, start_date, end_date, enrollment_deadline, capacity, seats_remaining, price, currency")
     .single();
 
   if (error || !data) {
@@ -40,7 +40,7 @@ export async function createScheduleAction(rawData: unknown): Promise<ScheduleAc
   }
 
   revalidatePath("/admin/dashboard/schedules");
-  return { success: true, id: data.id };
+  return { success: true, id: data.id, data };
 }
 
 // ─── Delete Schedule Action ───────────────────────────────────────────────────
@@ -55,6 +55,7 @@ export async function deleteScheduleAction(id: string): Promise<ScheduleActionRe
   if (count && count > 0) {
     return {
       success: false,
+      errorCode: "ACTIVE_BOOKINGS_EXIST",
       error: `Cannot delete: ${count} active booking(s) are tied to this schedule.`,
     };
   }
@@ -71,3 +72,4 @@ export async function deleteScheduleAction(id: string): Promise<ScheduleActionRe
   revalidatePath("/admin/dashboard/schedules");
   return { success: true, id };
 }
+

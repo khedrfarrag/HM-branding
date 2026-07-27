@@ -3,10 +3,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
-import { supabasePublic } from "@/repositories/supabase/client";
 import { useRouter } from "next/navigation";
+import { cn } from "@/lib/utils";
 import type { getDictionary } from "@/features/i18n/get-dictionary";
+import { adminSignOutAction } from "@/features/admin/actions/auth";
+import ToastContainer, { type ToastMessage } from "@/features/admin/components/ToastContainer";
 
 interface NavItem {
   href: string;
@@ -55,6 +56,16 @@ const NAV_ITEMS: NavItem[] = [
       </svg>
     ),
   },
+  {
+    href: "/admin/dashboard/consultations",
+    label: "Consultations",
+    icon: (
+      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+    ),
+  },
 ];
 
 interface DashboardShellProps {
@@ -68,10 +79,17 @@ export default function DashboardShell({ children, adminEmail, locale = "en", di
   const pathname = usePathname();
   const router = useRouter();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [toasts, setToasts] = useState<ToastMessage[]>([]);
+
+  const handleDismissToast = (id: string) => {
+    setToasts((prev) => prev.filter((t) => t.id !== id));
+  };
 
   async function handleSignOut() {
-    await supabasePublic.auth.signOut();
-    router.push("/admin/login");
+    // Call server action — it clears all HttpOnly cookies server-side
+    await adminSignOutAction();
+    // Hard redirect: forces full page reload to flush client-side auth state & React cache
+    window.location.href = "/admin/login";
   }
 
   function handleLocaleChange(newLocale: "ar" | "en") {
@@ -84,6 +102,7 @@ export default function DashboardShell({ children, adminEmail, locale = "en", di
     if (href === "/admin/dashboard/bookings") return dict?.sidebar?.bookings || fallback;
     if (href === "/admin/dashboard/schedules") return dict?.sidebar?.schedules || fallback;
     if (href === "/admin/dashboard/experiences") return dict?.sidebar?.experiences || fallback;
+    if (href === "/admin/dashboard/consultations") return locale === "ar" ? "الاستشارات" : "Consultations";
     return fallback;
   };
 
@@ -208,6 +227,7 @@ export default function DashboardShell({ children, adminEmail, locale = "en", di
           {children}
         </main>
       </div>
+      <ToastContainer toasts={toasts} onDismiss={handleDismissToast} locale={locale} />
     </div>
   );
 }

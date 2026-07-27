@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState, useTransition } from "react";
+import React, { useEffect, useMemo, useState, useTransition } from "react";
+
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -46,6 +47,17 @@ export default function ScheduleManager({
 }: ScheduleManagerProps) {
   const router = useRouter();
   const [schedules, setSchedules] = useState<Schedule[]>(initialSchedules);
+
+  // Sync ONLY on first mount \u2014 not on every server re-render.
+  // Using a ref to track whether we've applied the first server snapshot.
+  const initializedRef = React.useRef(false);
+  useEffect(() => {
+    if (!initializedRef.current) {
+      initializedRef.current = true;
+      setSchedules(initialSchedules);
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   const [showForm, setShowForm] = useState(false);
   const [isPending, startTransition] = useTransition();
   const [deleteId, setDeleteId] = useState<string | null>(null);
@@ -94,17 +106,34 @@ export default function ScheduleManager({
     return titleBySlug.get(slug) ?? slug;
   }
 
+  function getLocalizedErrorMessage(err?: string, errorCode?: string): string {
+    if (errorCode === "ACTIVE_BOOKINGS_EXIST" || (err && err.includes("active booking"))) {
+      return isAr
+        ? "لا يمكن حذف هذا الموعد لوجود حجوزات نشطة مرتبطة به."
+        : "Cannot delete: active booking(s) are tied to this schedule.";
+    }
+    return err || (isAr ? "حدث خطأ أثناء معالجة الطلب." : "An error occurred while processing the request.");
+  }
+
   function onSubmit(data: ScheduleManageInput) {
     setFeedback(null);
     startTransition(async () => {
       const result = await createScheduleAction(data);
       if (result.success) {
+        if (result.data) {
+          // Optimistically prepend the new schedule — do NOT call router.refresh()
+          // because refresh() triggers a server re-render that resets initialSchedules
+          // via useEffect, overwriting the optimistic state.
+          setSchedules((prev) => [result.data as unknown as Schedule, ...prev]);
+        } else {
+          // No data returned — fall back to server refresh
+          router.refresh();
+        }
         setFeedback({ type: "success", msg: successMsg });
         setShowForm(false);
         reset();
-        router.refresh();
       } else {
-        setFeedback({ type: "error", msg: result.error });
+        setFeedback({ type: "error", msg: getLocalizedErrorMessage(result.error) });
       }
     });
   }
@@ -119,10 +148,12 @@ export default function ScheduleManager({
         setSchedules((prev) => prev.filter((s) => s.id !== id));
         router.refresh();
       } else {
-        setFeedback({ type: "error", msg: result.error });
+        const errorMsg = getLocalizedErrorMessage(result.error, result.errorCode);
+        setFeedback({ type: "error", msg: errorMsg });
       }
     });
   }
+
 
   const inputClass =
     "w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2.5 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-gold/40 transition-colors";

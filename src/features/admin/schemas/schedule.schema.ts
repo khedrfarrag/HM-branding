@@ -21,5 +21,6 @@ export const ScheduleManageSchema = z.object({
 
 export type ScheduleManageInput = z.infer<typeof ScheduleManageSchema>;
 export type ScheduleActionResult =
-  | { success: true; id: string }
-  | { success: false; error: string; fieldErrors?: Record<string, string[]> };
+  | { success: true; id: string; data?: Record<string, unknown> }
+  | { success: false; error: string; errorCode?: string; fieldErrors?: Record<string, string[]> };
+

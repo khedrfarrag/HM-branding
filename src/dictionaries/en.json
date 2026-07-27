@@ -54,17 +54,17 @@
     ]
   },
   "global": {
-    "eyebrow": "Global Experience",
-    "title": "A live network spanning six continents.",
-    "subtitle": "Trade lanes, ports and partners tracked in real time across our operating regions.",
+    "eyebrow": "Global Reach & Expertise",
+    "title": "A proven logistics and trade network across industrial hubs & major ports.",
+    "subtitle": "Comprehensive supply chain coverage across Asia, MENA, and Europe.",
     "metrics": [
-      { "label": "Active Trade Routes", "value": "128", "sub": "lanes", "percentage": 82 },
-      { "label": "Export Volume — 2025", "value": "$940", "sub": "M", "percentage": 64 },
-      { "label": "Import Volume — 2025", "value": "$860", "sub": "M", "percentage": 58 },
-      { "label": "Partner Ports", "value": "76", "sub": "ports", "percentage": 70 }
+      { "label": "Active Trade Routes", "value": "28", "sub": "lanes", "percentage": 85 },
+      { "label": "Export Volume — 2025", "value": "$45", "sub": "M", "percentage": 75 },
+      { "label": "Import Volume — 2025", "value": "$65", "sub": "M", "percentage": 82 },
+      { "label": "Partner Ports & Hubs", "value": "24", "sub": "hubs", "percentage": 90 }
     ],
-    "mapTitle": "Live Logistics Map",
-    "mapSyncing": "Syncing active channels..."
+    "mapTitle": "Logistics & Global Coverage Network",
+    "mapSyncing": "Direct coverage across key manufacturing hubs in China, GCC & Europe"
   },
   "industries": {
     "eyebrow": "Industries",
@@ -380,7 +380,55 @@
           "published": "Published",
           "draft": "Draft"
         }
+      },
+      "toast": {
+        "activeBookingsError": "Cannot delete: active booking(s) are tied to this schedule.",
+        "genericError": "An error occurred while processing the request.",
+        "scheduleCreated": "Schedule created successfully!",
+        "scheduleDeleted": "Schedule deleted successfully!"
+      },
+      "experienceForm": {
+        "createTitle": "Create New Experience",
+        "editTitle": "Edit Experience",
+        "labels": {
+          "slug": "Slug (URL identifier)",
+          "type": "Experience Type",
+          "titleAr": "Title (Arabic)",
+          "titleEn": "Title (English)",
+          "shortDescAr": "Short Description (Arabic)",
+          "shortDescEn": "Short Description (English)",
+          "fullDescAr": "Full Description (Arabic)",
+          "fullDescEn": "Full Description (English)",
+          "coverImage": "Cover Image *",
+          "coverImageOptional": "Cover Image (optional — leave empty to keep current image)",
+          "price": "Price",
+          "currency": "Currency",
+          "citySlug": "City Slug (optional)",
+          "status": "Status"
+        },
+        "placeholders": {
+          "slug": "e.g. canton-fair-2026",
+          "titleAr": "Experience title in Arabic",
+          "titleEn": "Experience title in English",
+          "shortDescAr": "Short summary of the experience...",
+          "shortDescEn": "Short summary of the experience...",
+          "fullDescAr": "Comprehensive details and itinerary...",
+          "fullDescEn": "Comprehensive details and itinerary...",
+          "price": "2500",
+          "citySlug": "guangzhou"
+        },
+        "statusOptions": {
+          "published": "Published",
+          "draft": "Draft"
+        },
+        "buttons": {
+          "save": "Save Experience",
+          "update": "Update Experience",
+          "saving": "Saving...",
+          "cancel": "Cancel"
+        }
       }
     }
   }
 }
+

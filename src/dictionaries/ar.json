@@ -54,17 +54,17 @@
     ]
   },
   "global": {
-    "eyebrow": "الخبرة العالمية",
-    "title": "شبكة حية تمتد عبر ست قارات.",
-    "subtitle": "ممرات تجارية، موانئ وشركاء يتم تتبعهم في الوقت الفعلي عبر مناطق عملياتنا.",
+    "eyebrow": "الخبرة والتغطية العالمية",
+    "title": "شبكة لوجستية وتجارية تمتد عبر العواصم الصناعية والموانئ العالمية.",
+    "subtitle": "تغطية شاملة لسلاسل التوريد، الموانئ الشريكة، والمصانع المعتمدة في آسيا والشرق الأوسط وأوروبا.",
     "metrics": [
-      { "label": "الممرات التجارية النشطة", "value": "128", "sub": "ممر تجاري", "percentage": 82 },
-      { "label": "حجم الصادرات — 2025", "value": "940$", "sub": "مليون", "percentage": 64 },
-      { "label": "حجم الواردات — 2025", "value": "860$", "sub": "مليون", "percentage": 58 },
-      { "label": "الموانئ الشريكة", "value": "76", "sub": "ميناء", "percentage": 70 }
+      { "label": "الممرات التجارية النشطة", "value": "28", "sub": "ممر دولي", "percentage": 85 },
+      { "label": "حجم الصادرات — 2025", "value": "45$", "sub": "مليون دولار", "percentage": 75 },
+      { "label": "حجم الواردات — 2025", "value": "65$", "sub": "مليون دولار", "percentage": 82 },
+      { "label": "الموانئ والمحطات الشريكة", "value": "24", "sub": "ميناء رئيسي", "percentage": 90 }
     ],
-    "mapTitle": "خريطة اللوجستيات الحية",
-    "mapSyncing": "مزامنة الاتصال..."
+    "mapTitle": "شبكة التغطية والعمليات اللوجستية",
+    "mapSyncing": "تغطية مباشرة لأهم مراكز التصنيع في الصين والخليج وأوروبا"
   },
   "industries": {
     "eyebrow": "القطاعات",
@@ -380,7 +380,55 @@
           "published": "منشور",
           "draft": "مسودة"
         }
+      },
+      "toast": {
+        "activeBookingsError": "لا يمكن حذف هذا الموعد لوجود حجوزات نشطة مرتبطة به.",
+        "genericError": "حدث خطأ أثناء معالجة الطلب.",
+        "scheduleCreated": "تم إنشاء الموعد بنجاح!",
+        "scheduleDeleted": "تم حذف الموعد بنجاح!"
+      },
+      "experienceForm": {
+        "createTitle": "إضافة تجربة جديدة",
+        "editTitle": "تعديل التجربة",
+        "labels": {
+          "slug": "المعرف الفريد (Slug)",
+          "type": "نوع التجربة",
+          "titleAr": "العنوان (بالعربية)",
+          "titleEn": "العنوان (بالإنجليزية)",
+          "shortDescAr": "وصف مختصر (عربي)",
+          "shortDescEn": "وصف مختصر (إنجليزي)",
+          "fullDescAr": "وصف كامل (عربي)",
+          "fullDescEn": "وصف كامل (إنجليزي)",
+          "coverImage": "صورة الغلاف *",
+          "coverImageOptional": "صورة الغلاف (اختياري — اتركه فارغاً للاحتفاظ بالصورة الحالية)",
+          "price": "السعر",
+          "currency": "العملة",
+          "citySlug": "معرف المدينة (اختياري)",
+          "status": "الحالة"
+        },
+        "placeholders": {
+          "slug": "مثال: canton-fair-2026",
+          "titleAr": "عنوان التجربة بالعربية",
+          "titleEn": "Experience title in English",
+          "shortDescAr": "ملخص قصير للتجربة...",
+          "shortDescEn": "Short summary of the experience...",
+          "fullDescAr": "التفاصيل الشاملة للتجربة وجدول الأعمال...",
+          "fullDescEn": "Comprehensive details and itinerary...",
+          "price": "2500",
+          "citySlug": "guangzhou"
+        },
+        "statusOptions": {
+          "published": "منشورة (Published)",
+          "draft": "مسودة (Draft)"
+        },
+        "buttons": {
+          "save": "حفظ التجربة",
+          "update": "تحديث التجربة",
+          "saving": "جاري الحفظ...",
+          "cancel": "إلغاء"
+        }
       }
     }
   }
 }
+

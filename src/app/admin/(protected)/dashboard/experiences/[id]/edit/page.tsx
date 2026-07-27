@@ -1,6 +1,8 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
+import { getDictionary, type Locale } from "@/features/i18n";
 import { SupabaseExperienceRepository } from "@/repositories/supabase/experiences";
 import { updateExperienceAction } from "@/features/admin/actions/manage-experiences";
 import ExperienceForm from "@/features/admin/components/ExperienceForm";
@@ -26,17 +28,26 @@ export default async function EditExperiencePage({ params }: PageProps) {
     notFound();
   }
 
+  const cookieStore = await cookies();
+  const locale = (cookieStore.get("admin_lang")?.value || "en") as Locale;
+  const dict = await getDictionary(locale);
+  const formDict = dict.admin.dashboard.experienceForm;
+  const isAr = locale === "ar";
+
   async function submitUpdate(formData: FormData) {
     "use server";
     return updateExperienceAction(id, formData);
   }
 
   return (
-    <div className="max-w-2xl space-y-6" id="edit-experience-page">
+    <div className="max-w-3xl space-y-6" id="edit-experience-page">
       <div>
-        <h1 className="text-2xl font-bold text-white">تعديل التجربة / Edit Experience</h1>
+        <h1 className="text-2xl font-bold text-white">
+          {formDict?.editTitle || (isAr ? "تعديل التجربة" : "Edit Experience")}
+        </h1>
         <p className="text-gray-400 text-sm mt-1">
-          Slug: <span className="font-mono text-amber-400">{experience.slug}</span> (cannot be changed)
+          {isAr ? "المعرف الفريد (Slug): " : "Slug: "}
+          <span className="font-mono text-amber-400">{experience.slug}</span>
         </p>
       </div>
 
@@ -57,6 +68,8 @@ export default async function EditExperiencePage({ params }: PageProps) {
           status: experience.status as "published" | "draft",
         }}
         submitAction={submitUpdate}
+        locale={locale}
+        dict={formDict}
       />
     </div>
   );

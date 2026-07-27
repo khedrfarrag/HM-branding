@@ -105,12 +105,13 @@ export default async function DashboardPage() {
                   <th className="px-4 py-3 text-left text-gray-400 font-medium">{t.recentBookings.headers.type}</th>
                   <th className="px-4 py-3 text-left text-gray-400 font-medium">{t.recentBookings.headers.status}</th>
                   <th className="px-4 py-3 text-left text-gray-400 font-medium">{t.recentBookings.headers.date}</th>
+                  <th className="px-4 py-3 text-left text-gray-400 font-medium">{dict.admin.dashboard.bookings.headers.actions}</th>
                 </tr>
               </thead>
               <tbody>
                 {recentBookings.length === 0 ? (
                   <tr>
-                    <td colSpan={5} className="px-4 py-8 text-center text-gray-600">
+                    <td colSpan={6} className="px-4 py-8 text-center text-gray-600">
                       {t.recentBookings.noBookings}
                     </td>
                   </tr>
@@ -146,6 +147,15 @@ export default async function DashboardPage() {
                           year: "numeric", month: "short", day: "numeric"
                         })}
                       </td>
+                      <td className="px-4 py-3">
+                        <Link
+                          href={`/admin/dashboard/bookings/${b.id}`}
+                          className="text-xs text-[#C7A15C] hover:underline"
+                          id={`overview-review-${b.id.slice(0, 8)}`}
+                        >
+                          {dict.admin.dashboard.bookings.viewBtn}
+                        </Link>
+                      </td>
                     </tr>
                   ))
                 )}
@@ -153,6 +163,7 @@ export default async function DashboardPage() {
             </table>
           </div>
         </div>
+
       </div>
     </div>
   );
