@@ -8,7 +8,10 @@ interface HomeLayoutProps {
   params: Promise<{ locale: string }>;
 }
 
-export default async function HomeLayout({ children, params }: HomeLayoutProps) {
+export default async function HomeLayout({
+  children,
+  params,
+}: HomeLayoutProps) {
   const { locale } = await params;
   return (
     <div className="flex flex-col min-h-screen">

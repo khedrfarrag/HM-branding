@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { Menu, X, Calendar } from "lucide-react";
@@ -22,11 +23,32 @@ export default function Header({ locale }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const isAr = locale === "ar";
+  const pathname = usePathname();
 
-  // Use navigation config for multi-page routing; fallback to hash links for landing
+  // Detect if we're on the home page (e.g. /ar or /en)
+  const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
+
+  // Use navigation config for header anchor links
   const navConfig = getNavigationConfig(locale as Locale);
   const links = navConfig.header.map((item) => ({ label: item.label, href: item.href }));
   const cta = navConfig.cta;
+
+  /**
+   * Smooth scroll when on home page, full navigation otherwise.
+   * Works for both desktop and mobile menu links.
+   */
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    const hashIdx = href.indexOf("#");
+    if (hashIdx !== -1 && isHome) {
+      e.preventDefault();
+      const sectionId = href.slice(hashIdx + 1);
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+      setMenuOpen(false);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -75,6 +97,7 @@ export default function Header({ locale }: HeaderProps) {
               <Link
                 key={link.href}
                 href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className="relative py-1 text-xs text-silver transition-colors duration-300 hover:text-white after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-gold after:transition-all after:duration-500 after:ease-[var(--ease)] hover:after:w-full"
               >
                 {link.label}
@@ -128,7 +151,7 @@ export default function Header({ locale }: HeaderProps) {
                 >
                   <Link
                     href={link.href}
-                    onClick={() => setMenuOpen(false)}
+                    onClick={(e) => { handleNavClick(e, link.href); setMenuOpen(false); }}
                     className="text-fs-h3 text-silver font-light hover:text-white transition-colors duration-300 border-b border-glass/40 pb-sp-3 flex items-center justify-between"
                   >
                     <span>{link.label}</span>

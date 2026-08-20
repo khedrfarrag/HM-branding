@@ -7,6 +7,8 @@ import TypingHeadline from "@/components/TypingHeadline";
 import FloatingSocials from "@/components/FloatingSocials";
 import BookingSection from "./BookingSection";
 import InteractiveGlobeMap from "./InteractiveGlobeMap";
+import TrustBar from "./TrustBar";
+import AnimatedCounter from "@/components/AnimatedCounter";
 import {
   RevealSection,
   StaggerReveal,
@@ -17,10 +19,32 @@ import {
 } from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
 
+interface HeroDict {
+  trustBar?: {
+    labels?: string[];
+  };
+}
+
+interface AboutDict {
+  paragraph2?: string;
+  interests?: string[];
+  interestsTitle?: string;
+  cta?: string;
+}
+
+interface TimelineItem {
+  year?: string;
+  title?: string;
+  desc?: string;
+}
+
 interface HomePageProps {
   locale: Locale;
   dict: HomeDictionary;
 }
+
+import WhatYouWillFindSection from "./WhatYouWillFindSection";
+import MerchantToolsTeaser from "./MerchantToolsTeaser";
 
 export default function HomePage({ locale, dict }: HomePageProps) {
   return (
@@ -74,57 +98,111 @@ export default function HomePage({ locale, dict }: HomePageProps) {
               </a>
             </div>
 
-            {/* Stats */}
-            <div className="mt-sp-8 grid grid-cols-3 gap-sp-4 w-full sm:flex sm:gap-sp-8">
-              {dict.hero.stats.map((stat, idx) => (
-                <div key={idx} className="flex flex-col items-start">
-                  <b className="font-mono text-fs-h3 sm:text-fs-h2 font-medium text-white">{stat.value}</b>
-                  <span className="mt-sp-1 text-[10px] sm:text-fs-micro tracking-wider text-silver-dim uppercase">{stat.label}</span>
-                </div>
-              ))}
+            {/* 4-Card Animated Statistics */}
+            <div className="mt-sp-8 w-full border-t border-white/10 pt-sp-6">
+              <div className="grid grid-cols-2 gap-sp-3 sm:gap-sp-4 lg:grid-cols-4 w-full">
+                {dict.hero.stats.map((stat, idx) => (
+                  <div
+                    key={idx}
+                    className="group relative flex flex-col items-start justify-center rounded-2xl border border-gold/20 bg-gradient-to-br from-[#12151c]/90 via-[#181c26]/80 to-[#101218]/90 p-sp-4 sm:p-sp-5 backdrop-blur-xl shadow-lg transition-all duration-300 hover:border-gold/60 hover:shadow-[0_8px_30px_rgba(199,161,92,0.2)] hover:-translate-y-1"
+                  >
+                    <div className="font-mono text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gradient-gold-animated tracking-tight">
+                      <AnimatedCounter value={stat.value} />
+                    </div>
+                    <span className="mt-sp-1 text-[11px] sm:text-xs font-medium leading-lh-snug text-silver group-hover:text-white transition-colors">
+                      {stat.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
+
           </div>
 
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          2. ABOUT SECTION — fade up on scroll
+          1.5 TRUST BAR — Interactive Motion Marquee below Hero
       ══════════════════════════════════════════════════════════════════════ */}
-      <section id="about" className="bg-white px-sp-6 py-sp-10 text-black md:px-sp-8">
-        <div className="mx-auto grid max-w-[1360px] grid-cols-1 gap-sp-8 lg:grid-cols-[0.9fr_1.1fr]">
+      <TrustBar labels={(dict.hero as HeroDict).trustBar?.labels} locale={locale} />
 
-          {/* Left: text — slides in from left */}
+      {/* ══════════════════════════════════════════════════════════════════════
+          2. ABOUT SECTION — "Who is Hossam Mabrouk?" Summary with CTA to /about
+      ══════════════════════════════════════════════════════════════════════ */}
+      <section id="about" className="bg-[#0B0D11] border-t border-glass px-sp-6 py-sp-12 text-white md:px-sp-8">
+        <div className="mx-auto grid max-w-[1360px] grid-cols-1 gap-sp-10 lg:grid-cols-[1.1fr_0.9fr] items-center">
+
+          {/* Left: Bio & Strengths — slides in from left */}
           <RevealSection variants={slideInLeft}>
-            <div className="flex flex-col items-start text-start">
-              <span className="eyebrow text-blue-mid before:bg-blue-mid">{dict.about.eyebrow}</span>
-              <h2 className="mt-sp-4 font-display text-fs-h2 font-semibold leading-lh-snug tracking-tight">
+            <div className="flex flex-col items-start text-start gap-sp-4">
+              <span className="eyebrow">{dict.about.eyebrow}</span>
+              <h2 className="font-display text-fs-h2 font-bold tracking-tight text-white">
                 {dict.about.title}
               </h2>
-              <p className="mt-sp-5 text-fs-body-lg font-light leading-lh-relaxed text-ink-dim">
+              
+              <p className="text-fs-body-lg font-light leading-lh-relaxed text-silver">
                 {dict.about.lead}
               </p>
-              <div className="mt-sp-6 border-l-2 border-gold pl-sp-5 text-lg font-normal leading-normal text-ink">
+
+              {((dict.about as AboutDict).paragraph2) && (
+                <p className="text-fs-body font-light leading-lh-relaxed text-silver-dim">
+                  {(dict.about as AboutDict).paragraph2}
+                </p>
+              )}
+
+              {/* Fields of Interest & Expertise Badges */}
+              {((dict.about as AboutDict).interests) && (
+                <div className="mt-sp-2 flex flex-col gap-sp-2 w-full">
+                  <span className="font-mono text-xs font-semibold text-gold uppercase tracking-wider">
+                    {(dict.about as AboutDict).interestsTitle ?? (locale === "ar" ? "مجالات الاهتمام والخبرة" : "Fields of Expertise")}
+                  </span>
+                  <div className="flex flex-wrap gap-sp-2">
+                    {(dict.about as AboutDict).interests?.map((item, idx) => (
+                      <span
+                        key={idx}
+                        className="inline-flex items-center gap-sp-1.5 rounded-full border border-gold/30 bg-black/60 px-sp-3 py-1 font-mono text-[11px] font-medium text-white backdrop-blur-md"
+                      >
+                        <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Quote */}
+              <div className="mt-sp-4 border-r-2 md:border-r-0 md:border-l-2 border-gold px-sp-4 text-fs-body italic font-normal text-silver bg-white/[0.02] p-sp-4 rounded-r-lg md:rounded-r-none md:rounded-l-lg border-glass">
                 &ldquo;{dict.about.quote}&rdquo;
-                <span className="mt-sp-3 block font-mono text-fs-small text-ink-dim font-light">{dict.about.author}</span>
+                <span className="mt-sp-2 block font-mono text-fs-small text-gold not-italic font-medium">{dict.about.author}</span>
+              </div>
+
+              {/* CTA Button to Full About Page */}
+              <div className="mt-sp-4">
+                <a
+                  href={`/${locale}/about`}
+                  className="inline-flex h-[52px] items-center justify-center rounded-full bg-gradient-to-b from-gold-soft to-gold px-sp-8 text-sm font-bold text-black shadow-gold transition-all duration-300 hover:translate-y-[-2px] hover:shadow-[0_14px_50px_rgba(199,161,92,0.35)]"
+                >
+                  {(dict.about as AboutDict).cta ?? (locale === "ar" ? "اقرأ السيرة الذاتية كاملة ←" : "Read Full Profile & Bio ←")}
+                </a>
               </div>
             </div>
           </RevealSection>
 
-          {/* Right: value cards + timeline — stagger */}
+          {/* Right: Mission/Vision cards + Timeline */}
           <StaggerReveal className="flex flex-col gap-sp-5">
             <div className="grid grid-cols-1 gap-sp-5 sm:grid-cols-2">
               {dict.about.values.map((val, idx) => (
                 <StaggerItem key={idx}>
                   <div
                     className={cn(
-                      "rounded-lg p-sp-6 border border-black/5 bg-[#F1EFE9] transition-all hover:-translate-y-1 hover:shadow-md h-full",
-                      idx === 1 && "bg-ink text-white"
+                      "rounded-xl p-sp-6 border border-glass bg-graphite-800/80 backdrop-blur-md transition-all hover:-translate-y-1 hover:border-gold/40 shadow-lg h-full",
+                      idx === 1 && "bg-gradient-to-br from-graphite-700 to-black text-white"
                     )}
                   >
                     <div className="font-mono text-fs-micro text-gold">{val.num}</div>
-                    <h4 className="mt-sp-3 font-display text-fs-h3 font-semibold">{val.title}</h4>
-                    <p className={cn("mt-sp-2 text-fs-small leading-lh-relaxed text-ink-dim", idx === 1 && "text-silver")}>
+                    <h4 className="mt-sp-3 font-display text-fs-h3 font-semibold text-white">{val.title}</h4>
+                    <p className="mt-sp-2 text-fs-small leading-lh-relaxed text-silver">
                       {val.desc}
                     </p>
                   </div>
@@ -134,14 +212,19 @@ export default function HomePage({ locale, dict }: HomePageProps) {
 
             {/* Timeline Widget */}
             <StaggerItem>
-              <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-ink to-blue-deep p-sp-6 text-white">
-                <div className="absolute right-0 top-0 h-32 w-32 rounded-full bg-cyan/10 filter blur-3xl" />
-                <h4 className="relative z-10 font-display text-fs-h3 font-semibold text-start">{dict.about.timelineTitle}</h4>
-                <div className="mt-sp-5 grid grid-cols-1 gap-sp-5 sm:grid-cols-3">
+              <div className="relative overflow-hidden rounded-xl border border-glass bg-gradient-to-br from-graphite-800 to-black p-sp-6 text-white backdrop-blur-md shadow-xl">
+                <div className="absolute right-0 top-0 h-32 w-32 rounded-full bg-gold/10 filter blur-3xl pointer-events-none" />
+                <h4 className="relative z-10 font-display text-fs-h3 font-semibold text-start text-white">{dict.about.timelineTitle}</h4>
+                <div className="mt-sp-5 grid grid-cols-2 gap-sp-4 sm:grid-cols-3">
                   {dict.about.timeline.map((item, idx) => (
                     <div key={idx} className="flex flex-col items-start text-start">
-                      <b className="font-mono text-fs-small text-gold">{item.year}</b>
-                      <p className="mt-sp-2 text-fs-micro leading-lh-relaxed text-silver">{item.desc}</p>
+                      <b className="font-mono text-[11px] text-gold">{item.year}</b>
+                      {(item as TimelineItem).title && (
+                        <span className="text-[11px] font-semibold text-white mt-0.5 leading-tight">
+                          {(item as TimelineItem).title}
+                        </span>
+                      )}
+                      <p className="mt-sp-1 text-[10px] leading-lh-relaxed text-silver">{item.desc}</p>
                     </div>
                   ))}
                 </div>
@@ -151,6 +234,16 @@ export default function HomePage({ locale, dict }: HomePageProps) {
 
         </div>
       </section>
+
+      {/* ══════════════════════════════════════════════════════════════════════
+          2.5 WHAT YOU WILL FIND SECTION — 6 Bento Cards
+      ══════════════════════════════════════════════════════════════════════ */}
+      <WhatYouWillFindSection locale={locale} />
+
+      {/* ══════════════════════════════════════════════════════════════════════
+          2.7 FREE MERCHANT TOOLS TEASER
+      ══════════════════════════════════════════════════════════════════════ */}
+      <MerchantToolsTeaser locale={locale} />
 
       {/* ══════════════════════════════════════════════════════════════════════
           3. GLOBAL EXPERIENCE SECTION — Interactive Circular Radar Globe Map

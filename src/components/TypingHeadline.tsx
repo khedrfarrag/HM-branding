@@ -10,7 +10,7 @@ export default function TypingHeadline({ phrases }: TypingHeadlineProps) {
   if (!phrases || phrases.length === 0) return null;
 
   return (
-    <div className="relative w-full min-h-[3.2em] sm:min-h-[2.8em] flex items-center justify-start">
+    <div className="relative text-3xl w-full min-h-[3.2em] sm:min-h-[2.8em] flex items-center justify-start">
       <HeroTypewriter
         phrases={phrases}
         typingSpeed={60}

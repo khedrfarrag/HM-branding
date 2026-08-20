@@ -21,16 +21,34 @@ export interface NavigationConfig {
   cta: NavItem;
 }
 
-/** Locale-relative path segments — prepended with /{locale} at runtime. */
-const PRIMARY_NAV = [
+/**
+ * Header anchor nav — links scroll to home-page sections.
+ * Hrefs starting with /#  are converted to /{locale}#section at runtime.
+ * Hrefs without a matching home section keep their full page path.
+ */
+const HEADER_NAV = [
+  { labelAr: "عن حسام",          labelEn: "About Hossam",       href: "/#about" },
+  { labelAr: "ماذا ستجد هنا",    labelEn: "What You'll Find",   href: "/#what-you-will-find" },
+  { labelAr: "الخدمات",          labelEn: "Services",           href: "/#services" },
+  { labelAr: "الخبرات",          labelEn: "Experiences",        href: "/#journey" },
+  { labelAr: "الخبرة والتغطية",  labelEn: "Global Reach",       href: "/#global" },
+  { labelAr: "ذكاء التجارة",     labelEn: "Trade Intel",        href: "/trade-intelligence" },
+  { labelAr: "أدوات التاجر",     labelEn: "Merchant Tools",     href: "/tools" },
+] as const;
+
+/** Full nav tree — used for sitemap and full reference. */
+export const PRIMARY_NAV = [
   {
-    labelAr: "المعرفة",
-    labelEn: "Knowledge",
-    href: "/knowledge",
+    labelAr: "عن حسام",
+    labelEn: "About Hossam",
+    href: "/about/bio",
     children: [
-      { labelAr: "المقالات", labelEn: "Articles", href: "/knowledge" },
-      { labelAr: "قاموس المصطلحات", labelEn: "Glossary", href: "/knowledge/glossary" },
-      { labelAr: "الأسئلة الشائعة", labelEn: "FAQ", href: "/knowledge/faq" },
+      { labelAr: "السيرة الذاتية", labelEn: "Biography", href: "/about/bio" },
+      { labelAr: "الإنجازات", labelEn: "Achievements", href: "/about/achievements" },
+      { labelAr: "مسيرة العمل", labelEn: "Timeline", href: "/about/timeline" },
+      { labelAr: "الحسابات المعتمدة", labelEn: "Verified Directory", href: "/about/directory" },
+      { labelAr: "الأسئلة الشائعة", labelEn: "FAQ", href: "/about/faq" },
+      { labelAr: "الوسائط", labelEn: "Media", href: "/media" },
     ],
   },
   {
@@ -67,17 +85,6 @@ const PRIMARY_NAV = [
       { labelAr: "الموانئ", labelEn: "Ports", href: "/china/ports" },
     ],
   },
-  {
-    labelAr: "ذكاء التجارة",
-    labelEn: "Trade Intel",
-    href: "/trade-intelligence",
-    children: [
-      { labelAr: "أخبار الشحن", labelEn: "Shipping News", href: "/trade-intelligence/shipping-news" },
-      { labelAr: "تحديثات الجمارك", labelEn: "Customs Updates", href: "/trade-intelligence/customs-updates" },
-      { labelAr: "أسعار العملات", labelEn: "Currency Rates", href: "/trade-intelligence/currency-rates" },
-      { labelAr: "تنبيهات سلسلة التوريد", labelEn: "Supply Chain Alerts", href: "/trade-intelligence/supply-chain-alerts" },
-    ],
-  },
 ] as const;
 
 const FOOTER_COLUMNS = [
@@ -87,26 +94,31 @@ const FOOTER_COLUMNS = [
     links: [
       { labelAr: "السيرة الذاتية", labelEn: "Biography", href: "/about/bio" },
       { labelAr: "الإنجازات", labelEn: "Achievements", href: "/about/achievements" },
-      { labelAr: "الشهادات", labelEn: "Certificates", href: "/about/certificates" },
       { labelAr: "المسيرة المهنية", labelEn: "Timeline", href: "/about/timeline" },
+      { labelAr: "الحسابات المعتمدة", labelEn: "Verified Directory", href: "/about/directory" },
+      { labelAr: "الأسئلة الشائعة", labelEn: "FAQ", href: "/about/faq" },
       { labelAr: "الوسائط", labelEn: "Media", href: "/media" },
     ],
   },
   {
-    labelAr: "المعرفة",
-    labelEn: "Knowledge",
-    links: PRIMARY_NAV[0].children,
-  },
-  {
     labelAr: "الخبرات",
     labelEn: "Experiences",
-    links: PRIMARY_NAV[1].children,
+    links: [
+      { labelAr: "رحلات الأعمال", labelEn: "Business Trips", href: "/experiences/business-trips" },
+      { labelAr: "جولات المصانع", labelEn: "Factory Tours", href: "/experiences/factory-tours" },
+      { labelAr: "برنامج كانتون", labelEn: "Canton Fair", href: "/experiences/canton-fair-programs" },
+      { labelAr: "برامج الشركات", labelEn: "Corporate Programs", href: "/experiences/corporate-programs" },
+      { labelAr: "VIP", labelEn: "VIP Experiences", href: "/experiences/vip-experiences" },
+      { labelAr: "الإرشاد الخاص", labelEn: "Private Mentorship", href: "/experiences/private-mentorship" },
+    ],
   },
   {
     labelAr: "الخدمات",
     labelEn: "Services",
     links: [
-      ...PRIMARY_NAV[2].children,
+      { labelAr: "مصادر المنتجات", labelEn: "Product Sourcing", href: "/services/sourcing" },
+      { labelAr: "فحص الجودة", labelEn: "Quality Control", href: "/services/quality-control" },
+      { labelAr: "التحقق من الموردين", labelEn: "Supplier Verification", href: "/services/verification" },
       { labelAr: "قصص النجاح", labelEn: "Success Stories", href: "/success-stories" },
       { labelAr: "تواصل معنا", labelEn: "Contact", href: "/contact" },
     ],
@@ -116,9 +128,21 @@ const FOOTER_COLUMNS = [
     labelEn: "China & Trade",
     links: [
       { labelAr: "دليل الصين", labelEn: "China Guide", href: "/china" },
-      ...PRIMARY_NAV[3].children,
+      { labelAr: "المدن والأسواق", labelEn: "Cities & Markets", href: "/china/cities" },
+      { labelAr: "المصانع والموانئ", labelEn: "Factories & Ports", href: "/china/factories" },
       { labelAr: "ذكاء التجارة", labelEn: "Trade Intel", href: "/trade-intelligence" },
-      ...PRIMARY_NAV[4].children,
+      { labelAr: "أخبار الشحن والجمارك", labelEn: "Shipping & Customs", href: "/trade-intelligence/shipping-news" },
+    ],
+  },
+  {
+    labelAr: "أدوات مجانية",
+    labelEn: "Free Tools",
+    links: [
+      { labelAr: "حاسبة CBM والحاوية", labelEn: "CBM Calculator", href: "/tools" },
+      { labelAr: "حاسبة الوزن الحجمي", labelEn: "Volumetric Weight", href: "/tools" },
+      { labelAr: "حاسبة التكلفة الواصلة", labelEn: "Landed Cost", href: "/tools" },
+      { labelAr: "حاسبة هامش الربح", labelEn: "Profit Margin & ROI", href: "/tools" },
+      { labelAr: "مقدر تكاليف الشحن", labelEn: "Freight Estimator", href: "/tools" },
     ],
   },
 ] as const;
@@ -152,6 +176,10 @@ function localizePath(locale: Locale, href: string): string {
   if (href.startsWith("http") || href.startsWith("/sitemap")) {
     return href;
   }
+  // /#about  →  /ar#about  (home-section anchor)
+  if (href.startsWith("/#")) {
+    return `/${locale}${href.slice(1)}`;
+  }
   return `/${locale}${href}`;
 }
 
@@ -167,7 +195,7 @@ export const getNavigationConfig = (locale: Locale): NavigationConfig => {
   const isAr = locale === "ar";
 
   return {
-    header: PRIMARY_NAV.map((item) => toNavItem(locale, isAr, item)),
+    header: HEADER_NAV.map((item) => toNavItem(locale, isAr, item)),
     footer: {
       columns: FOOTER_COLUMNS.map((col) => ({
         label: isAr ? col.labelAr : col.labelEn,

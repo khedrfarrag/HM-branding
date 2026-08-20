@@ -20,10 +20,10 @@ export function HeroSection({ locale, dict }: HomeSectionProps) {
         </div>
 
         <div className="relative z-10 flex flex-col items-start text-start order-last lg:order-first">
-          <div className="badge mb-sp-4">
+          {/* <div className="badge mb-sp-4">
             <span className="dot" />
             {dict.hero.badge}
-          </div>
+          </div> */}
 
           <h1 className="mt-sp-2 font-display text-fs-display font-bold leading-lh-tight tracking-tight text-white w-full min-h-[80px] sm:min-h-[100px] lg:min-h-[180px]">
             <TypingHeadline phrases={dict.hero.phrases} />
@@ -51,8 +51,12 @@ export function HeroSection({ locale, dict }: HomeSectionProps) {
           <div className="mt-sp-8 grid grid-cols-3 gap-sp-4 w-full sm:flex sm:gap-sp-8">
             {dict.hero.stats.map((stat, idx) => (
               <div key={idx} className="flex flex-col items-start">
-                <b className="font-mono text-fs-h3 sm:text-fs-h2 font-medium text-white">{stat.value}</b>
-                <span className="mt-sp-1 text-[10px] sm:text-fs-micro tracking-wider text-silver-dim uppercase">{stat.label}</span>
+                <b className="font-mono text-fs-h3 sm:text-fs-h2 font-medium text-white">
+                  {stat.value}
+                </b>
+                <span className="mt-sp-1 text-[10px] sm:text-fs-micro tracking-wider text-silver-dim uppercase">
+                  {stat.label}
+                </span>
               </div>
             ))}
           </div>

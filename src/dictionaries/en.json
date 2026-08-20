@@ -23,48 +23,69 @@
     "ctaPrimary": "Schedule a Consultation",
     "ctaSecondary": "View Global Reach",
     "stats": [
-      { "value": "42", "label": "Countries Served" },
-      { "value": "$1.8B", "label": "Trade Volume" },
-      { "value": "19 yrs", "label": "Industry Leadership" }
+      { "value": "+7", "label": "Years of Practical Experience" },
+      { "value": "+900", "label": "Traders & Entrepreneurs" },
+      { "value": "+400", "label": "Manufacturers & Suppliers" },
+      { "value": "+42", "label": "Countries & Markets" }
     ]
   },
   "about": {
     "eyebrow": "The Founder",
-    "title": "Built on discipline. Driven by relationships.",
-    "lead": "Hussam Mabrouk founded Meridian & Co. in 2008 on a simple premise: global trade should feel effortless for the people on either end of it.",
-    "quote": "Every shipment carries a promise. My job is to make sure it's kept — every time, everywhere.",
-    "author": "— Hussam Mabrouk, Founder & CEO",
+    "title": "Who is Hossam Mabrouk?",
+    "lead": "Hossam Mabrouk is an international trade, sourcing, and manufacturing specialist focused on China. He shares practical experience across importing, exporting, product sourcing, supplier negotiations, product development, shipping, and supply chain operations.",
+    "paragraph2": "His journey began through direct hands-on execution across China's major industrial hubs, factories, and trade centers — navigating every phase from product research and supplier selection to quality control, manufacturing, and global shipping.",
+    "paragraph3": "Through this practical experience, his primary focus is guiding entrepreneurs, business owners, and traders to navigate the Chinese market effectively, minimize commercial risks, and make data-driven decisions when selecting suppliers and manufacturing partners.",
+    "paragraph4": "Hossam is dedicated to simplifying global trade knowledge through educational content, combining field-tested sourcing experience with modern business technology and AI solutions.",
+    "quote": "Our mission is empowering the next generation of entrepreneurs to build professional global trade ventures with confidence.",
+    "author": "— Hossam Mabrouk",
+    "cta": "Read Full Profile & Bio ←",
+    "interestsTitle": "Fields of Expertise & Focus",
+    "interests": [
+      "International Trade",
+      "Import & Export",
+      "China Sourcing",
+      "Manufacturing",
+      "Product Development",
+      "OEM & ODM",
+      "Quality Control",
+      "Supply Chain & Freight",
+      "Entrepreneurship",
+      "AI for Business"
+    ],
     "values": [
       {
         "num": "01",
         "title": "Mission",
-        "desc": "Connect manufacturers and markets through logistics that are transparent, fast and fair."
+        "desc": "Connecting business owners and global markets through transparent, efficient, and reliable sourcing."
       },
       {
         "num": "02",
         "title": "Vision",
-        "desc": "To be the most trusted trade partner between emerging manufacturers and global enterprise."
+        "desc": "To be the most trusted authority bridging emerging entrepreneurs and global manufacturing."
       }
     ],
-    "timelineTitle": "Two decades of momentum",
+    "timelineTitle": "7 Years of Field Experience",
     "timeline": [
-      { "year": "2008", "desc": "Founded in a single office with three active trade lanes." },
-      { "year": "2015", "desc": "Expanded into 20 countries; opened regional hubs." },
-      { "year": "2024", "desc": "Crossed $1.8B in cumulative trade volume." }
+      { "year": "2017", "title": "The Beginning", "desc": "First steps into international trade and building foundational practical knowledge." },
+      { "year": "2018", "title": "Expanding Trade & Sourcing", "desc": "Scaling commercial operations and establishing an initial network of suppliers and partners." },
+      { "year": "2019", "title": "Working with China's Markets & Factories", "desc": "Direct hands-on field execution across China's industrial hubs and major trade centers." },
+      { "year": "2024", "title": "Mastering Import, Freight & Supply Chains", "desc": "Deep expertise in import/export operations, international freight, and supply chain management." },
+      { "year": "2025", "title": "Knowledge Sharing & Content Creation", "desc": "Launching educational content to simplify China trade and transfer expertise to entrepreneurs." },
+      { "year": "2026", "title": "Present Stage", "desc": "Integrating field experience with AI tools and expanding impact across markets." }
     ]
   },
   "global": {
-    "eyebrow": "Global Reach & Expertise",
-    "title": "A proven logistics and trade network across industrial hubs & major ports.",
-    "subtitle": "Comprehensive supply chain coverage across Asia, MENA, and Europe.",
+    "eyebrow": "Field Expertise & Global Reach",
+    "title": "Hands-on field experience & network spanning key industrial hubs & markets.",
+    "subtitle": "Over 7 years of direct on-the-ground presence in China, backed by verified partners across Asia, MENA & Europe to protect and grow your business.",
     "metrics": [
-      { "label": "Active Trade Routes", "value": "28", "sub": "lanes", "percentage": 85 },
-      { "label": "Export Volume — 2025", "value": "$45", "sub": "M", "percentage": 75 },
-      { "label": "Import Volume — 2025", "value": "$65", "sub": "M", "percentage": 82 },
-      { "label": "Partner Ports & Hubs", "value": "24", "sub": "hubs", "percentage": 90 }
+      { "label": "Industrial Cities & Markets", "value": "28", "sub": "hubs", "percentage": 85 },
+      { "label": "Vetted Factories & Suppliers", "value": "+400", "sub": "suppliers", "percentage": 90 },
+      { "label": "Entrepreneurs & Businesses", "value": "+900", "sub": "clients", "percentage": 88 },
+      { "label": "Partner Ports & Channels", "value": "24", "sub": "ports", "percentage": 92 }
     ],
-    "mapTitle": "Logistics & Global Coverage Network",
-    "mapSyncing": "Direct coverage across key manufacturing hubs in China, GCC & Europe"
+    "mapTitle": "Global Presence & Operations Coverage",
+    "mapSyncing": "Direct presence across key manufacturing & sourcing hubs in China, GCC & Europe"
   },
   "industries": {
     "eyebrow": "Industries",
@@ -130,28 +151,38 @@
     ]
   },
   "journey": {
-    "eyebrow": "Journey & Career",
-    "title": "Building trade lanes across decades.",
+    "eyebrow": "Professional Journey",
+    "title": "7 years of field experience.",
     "items": [
       {
-        "year": "2008 – Foundation",
-        "title": "First steps in logistics",
-        "desc": "Hussam Mabrouk launched Meridian & Co. with a modest Cairo office and trade lanes to three European countries."
+        "year": "2017 – The Start",
+        "title": "First Steps into International Trade",
+        "desc": "Entering the world of international trade and building foundational practical knowledge in sourcing and importing."
       },
       {
-        "year": "2013 – Regional Expansion",
-        "title": "Dubai and Rotterdam hubs",
-        "desc": "Establishing a direct footprint in global shipping lanes to ensure hands-on control over supply chains."
+        "year": "2018 – Expansion",
+        "title": "Expanding Trade & Sourcing Operations",
+        "desc": "Scaling commercial operations and establishing an initial integrated network of suppliers and business partners."
       },
       {
-        "year": "2018 – Digitalization",
-        "title": "Real-time tracking systems",
-        "desc": "Introduced dynamic shipment and location mapping, providing partners with full tracking transparency."
+        "year": "2019 – China",
+        "title": "Working with China's Markets & Factories",
+        "desc": "Direct hands-on execution across Chinese industrial hubs and major trade centers, building trusted supplier relationships."
       },
       {
-        "year": "2024 – Scale Milestone",
-        "title": "$1.8B Cumulative volume",
-        "desc": "Solidified the brand as a key player in trade mediation and secured trade operations for major enterprises."
+        "year": "2021 – Supply Chains",
+        "title": "Mastering Import, Freight & Supply Chains",
+        "desc": "Deep expertise in import/export operations, international freight, and high-efficiency supply chain management."
+      },
+      {
+        "year": "2023 – Content",
+        "title": "Knowledge Sharing & Content Creation",
+        "desc": "Launching educational content to simplify China trade and transfer field-tested expertise to entrepreneurs and traders."
+      },
+      {
+        "year": "2024 – Present",
+        "title": "Current Stage",
+        "desc": "Integrating field experience with AI tools and expanding impact across broader global markets."
       }
     ]
   },
@@ -429,6 +460,26 @@
         }
       }
     }
+  },
+  "tools": {
+    "badge": "Free Merchant Tools · No Signup Needed",
+    "title": "Merchant Calculators Suite",
+    "subtitle": "100% free trade calculators engineered to help merchants compute CBM, volumetric weight, landed cost, and net margins instantly.",
+    "cbmTitle": "CBM & Container Calculator",
+    "cbmDesc": "Calculate cubic volume and container space utilization (20ft, 40ft, 40HQ).",
+    "volumetricTitle": "Volumetric Weight Calculator",
+    "volumetricDesc": "Determine chargeable shipping weight for air, courier, and sea freight.",
+    "landedCostTitle": "Total Landed Cost Calculator",
+    "landedCostDesc": "Itemize unit FOB price, freight, customs tariff, VAT, and clearance into final per-unit landed cost.",
+    "profitMarginTitle": "Net Margin & ROI Calculator",
+    "profitMarginDesc": "Compute net profit, margin %, ROI %, and break-even selling price for e-commerce and wholesale.",
+    "freightTitle": "Freight Rate Estimator",
+    "freightDesc": "Quick cost range estimates for ocean and air shipping from China ports.",
+    "copySummary": "Copy Calculation Summary",
+    "reset": "Reset Form",
+    "copiedSuccess": "Calculation summary copied to clipboard!",
+    "ctaText": "Need expert help auditing supplier quotes or inspecting production?",
+    "ctaBtn": "Book Import Consultation ←"
   }
 }
 

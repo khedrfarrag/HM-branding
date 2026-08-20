@@ -53,7 +53,7 @@ export default function Footer({ locale }: FooterProps) {
               <h3 className="text-white font-semibold text-sm mb-4">{column.label}</h3>
               <ul className="space-y-2">
                 {column.links.map((item) => (
-                  <li key={item.href}>
+                  <li key={item.label}>
                     <Link
                       href={item.href}
                       className="text-gray-400 hover:text-amber-400 text-sm transition-colors duration-200"
