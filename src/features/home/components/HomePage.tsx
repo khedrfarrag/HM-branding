@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import type { Locale } from "@/features/i18n";
 import type { HomeDictionary } from "../types";
 import { cn } from "@/lib/utils";
@@ -17,7 +18,42 @@ import {
   fadeIn,
   slideInLeft,
 } from "@/components/ScrollReveal";
+import Link from "next/link";
+import { ArrowRight, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
+
+const SECTOR_IMAGE_MAP: Record<string, string> = {
+  "electronics": "/images/sectors/electronics.png",
+  "machinery": "/images/sectors/machinery.png",
+  "construction": "/images/sectors/construction.png",
+  "automotive": "/images/sectors/automotive.png",
+  "electrical": "/images/sectors/electrical.png",
+  "hardware-tools": "/images/sectors/hardware-tools.png",
+  "iron-steel": "/images/sectors/iron-steel.png",
+  "plastics-rubber": "/images/sectors/plastics-rubber.png",
+  "solar-renewables": "/images/sectors/solar-renewables.png",
+  "ev-batteries": "/images/sectors/ev-batteries.png",
+  "chemicals": "/images/sectors/chemicals.png",
+  "lighting-led": "/images/sectors/lighting-led.png",
+  "agriculture": "/images/sectors/agriculture.png",
+  "processed-food": "/images/sectors/processed-food.png",
+  "cold-chain": "/images/sectors/cold-chain.png",
+  "spices-tea": "/images/sectors/spices-tea.png",
+  "textiles": "/images/sectors/textiles.png",
+  "apparel": "/images/sectors/apparel.png",
+  "footwear-leather": "/images/sectors/footwear-leather.png",
+  "home-textiles": "/images/sectors/home-textiles.png",
+  "furniture": "/images/sectors/furniture.png",
+  "household-appliances": "/images/sectors/household-appliances.png",
+  "gifts-decor": "/images/sectors/gifts-decor.png",
+  "kitchenware": "/images/sectors/kitchenware.png",
+  "beauty-cosmetics": "/images/sectors/beauty-cosmetics.png",
+  "medical-devices": "/images/sectors/medical-devices.png",
+  "packaging-printing": "/images/sectors/packaging-printing.png",
+  "sports-recreation": "/images/sectors/sports-recreation.png",
+  "office-supplies": "/images/sectors/office-supplies.png",
+  "pet-products": "/images/sectors/pet-products.png",
+};
 
 interface HeroDict {
   trustBar?: {
@@ -47,6 +83,8 @@ import WhatYouWillFindSection from "./WhatYouWillFindSection";
 import MerchantToolsTeaser from "./MerchantToolsTeaser";
 
 export default function HomePage({ locale, dict }: HomePageProps) {
+  const [activeCategory, setActiveCategory] = useState("all");
+
   return (
     <div className="relative w-full">
       {/* ══════════════════════════════════════════════════════════════════════
@@ -320,24 +358,47 @@ export default function HomePage({ locale, dict }: HomePageProps) {
             </div>
           </RevealSection>
 
-          <StaggerReveal className="grid grid-cols-1 gap-sp-5 sm:grid-cols-2 lg:grid-cols-3">
-            {dict.industries.sectors.map((sector, idx) => {
-              const sectorImages = [
-                "/images/sectors/electronics.png",
-                "/images/sectors/agriculture.png",
-                "/images/sectors/textiles.png",
-                "/images/sectors/construction.png",
-                "/images/sectors/automotive.png",
-              ];
-              const bgImg = sectorImages[idx % sectorImages.length];
+          {/* Category Filter Tabs */}
+          {dict.industries.categories && dict.industries.categories.length > 0 && (
+            <div className="mb-sp-8 flex flex-wrap gap-2 justify-start border-b border-white/10 pb-sp-5">
+              {dict.industries.categories.map((cat: { key: string; label: string }) => {
+                const isActive = activeCategory === cat.key;
+                return (
+                  <button
+                    key={cat.key}
+                    onClick={() => setActiveCategory(cat.key)}
+                    className={cn(
+                      "px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 cursor-pointer border",
+                      isActive
+                        ? "bg-[#C7A15C] text-black border-[#C7A15C] font-semibold shadow-[0_0_20px_rgba(199,161,92,0.35)]"
+                        : "bg-white/5 text-silver border-white/10 hover:border-gold/40 hover:text-white hover:bg-white/10"
+                    )}
+                  >
+                    {cat.label}
+                  </button>
+                );
+              })}
+            </div>
+          )}
+
+          <StaggerReveal key={activeCategory} className="grid grid-cols-1 gap-sp-5 sm:grid-cols-2 lg:grid-cols-2">
+            {(activeCategory === "all"
+              ? dict.industries.sectors
+              : dict.industries.sectors.filter(
+                  (sector: { category?: string }) => sector.category === activeCategory
+                )
+            ).slice(0, 4).map((sector: { idx: string; title: string; desc: string; slug?: string }, idx: number) => {
+              const bgImg =
+                (sector.slug && SECTOR_IMAGE_MAP[sector.slug]) || "/images/sectors/electronics.png";
 
               return (
-                <StaggerItem key={idx}>
+                <StaggerItem key={sector.slug || idx}>
                   <div className="group relative flex flex-col justify-end overflow-hidden rounded-xl border border-white/10 p-sp-6 min-h-[260px] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_12px_40px_rgba(199,161,92,0.25)] hover:border-gold/50 cursor-pointer h-full">
                     {/* Background Expressive Image */}
                     <img
                       src={bgImg}
                       alt={sector.title}
+                      loading="lazy"
                       className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-85"
                     />
                     {/* Dual Dark Glassmorphic Gradient Overlay for 100% Text Legibility */}
@@ -359,6 +420,21 @@ export default function HomePage({ locale, dict }: HomePageProps) {
               );
             })}
           </StaggerReveal>
+
+          {/* CTA Button to Dedicated Industries Page */}
+          <div className="mt-sp-8 flex justify-center">
+            <Link
+              href={`/${locale}/industries`}
+              className="group inline-flex items-center gap-sp-3 rounded-full bg-gradient-to-r from-[#C7A15C] to-[#E5C17C] px-8 py-3.5 text-sm font-semibold text-black shadow-[0_4px_20px_rgba(199,161,92,0.3)] transition-all duration-300 hover:scale-105 hover:shadow-[0_6px_28px_rgba(199,161,92,0.5)]"
+            >
+              <span>{dict.industries.viewMore || (locale === "ar" ? "المزيد من القطاعات" : "Explore All 30 Sectors")}</span>
+              {locale === "ar" ? (
+                <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
+              ) : (
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              )}
+            </Link>
+          </div>
         </div>
       </section>
 

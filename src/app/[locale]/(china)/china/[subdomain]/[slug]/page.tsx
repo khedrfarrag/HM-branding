@@ -1,5 +1,5 @@
 import React from "react";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { Metadata } from "next";
 import { LocalFsChinaRepository } from "@/repositories/local-fs/china";
 import { Locale } from "@/domains/shared/value-objects";
@@ -70,23 +70,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ChinaSubdomainDetailPage({ params }: PageProps) {
   const { locale, subdomain, slug } = await params;
+
+  // Redirect /china/cities/[slug] -> /china-cities/[slug] for comprehensive profile
+  if (subdomain === "cities") {
+    redirect(`/${locale}/china-cities/${slug}`);
+  }
+
   const activeLocale = locale as Locale;
   const isAr = activeLocale === "ar";
 
-  // Resolve content based on subdomain
   let description = "";
   let name = "";
   let region = "";
-  let coverImage: string | null = null;
+  const coverImage: string | null = null;
 
-  if (subdomain === "cities") {
-    const city = await chinaRepo.getCityBySlug(activeLocale, slug);
-    if (!city) notFound();
-    description = city!.seo.description;
-    name = city!.name;
-    region = city!.region;
-    coverImage = city!.coverImage || null;
-  } else if (subdomain === "markets") {
+  if (subdomain === "markets") {
     const market = await chinaRepo.getMarketBySlug(activeLocale, slug);
     if (!market) notFound();
     description = market!.seo.description;

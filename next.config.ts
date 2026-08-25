@@ -3,8 +3,15 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   // Prevent webpack from trying to bundle these server-only packages.
-  // gray-matter pulls in esprima which is not compatible with the webpack bundler.
   serverExternalPackages: ["gray-matter", "esprima"],
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

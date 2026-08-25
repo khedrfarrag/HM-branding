@@ -2,9 +2,10 @@
   "nav": {
     "logo": "Hussam Mabrouk",
     "links": [
-      { "label": "About", "href": "#about" },
+      { "label": "About Founder", "href": "#about" },
       { "label": "Global Reach", "href": "#global" },
-      { "label": "Industries", "href": "#industries" },
+      { "label": "Sectors", "href": "/industries" },
+      { "label": "China Cities", "href": "/china-cities" },
       { "label": "Services", "href": "#services" },
       { "label": "Journey", "href": "#journey" },
       { "label": "Clients", "href": "#testimonials" }
@@ -91,31 +92,237 @@
     "eyebrow": "Industries",
     "title": "Sector expertise, engineered for scale.",
     "cta": "Discuss your sector",
+    "viewMore": "Explore All 30 Sectors",
+    "subtitle": "Discover 30 specialized trade sectors engineered for cross-border sourcing, freight logistics, and supply chain management across China and the Middle East.",
+    "page": "Page",
+    "of": "of",
+    "prev": "Previous",
+    "next": "Next",
+    "showing": "Showing",
+    "to": "to",
+    "ofTotal": "of",
+    "customSectorTitle": "Didn't find your specific sector?",
+    "customSectorDesc": "We handle custom sourcing and specialized procurement across unlisted industries.",
+    "customSectorCta": "Discuss Custom Sourcing",
+    "categories": [
+      { "key": "all", "label": "All Sectors" },
+      { "key": "industrial", "label": "Industrial & Manufacturing" },
+      { "key": "energy", "label": "Energy & Chemicals" },
+      { "key": "food", "label": "Food & Agriculture" },
+      { "key": "textiles", "label": "Textiles & Fashion" },
+      { "key": "consumer", "label": "Consumer & Lifestyle" },
+      { "key": "professional", "label": "Health, Tech & Professional" }
+    ],
     "sectors": [
       {
         "idx": "01 / Electronics & Technology",
         "title": "Consumer Electronics & Components",
-        "desc": "Semiconductors, assemblies and finished electronics sourced from vetted manufacturers across Asia."
+        "desc": "Semiconductors, assemblies, and finished electronics sourced from vetted manufacturers across Asia.",
+        "slug": "electronics",
+        "category": "industrial"
       },
       {
-        "idx": "02 / Agriculture & Food",
-        "title": "Agricultural Commodities",
-        "desc": "Cold-chain certified logistics for grains, produce and specialty foods."
+        "idx": "02 / Heavy Machinery",
+        "title": "Industrial Machinery & Equipment",
+        "desc": "Heavy machinery, CNC equipment, and industrial automation units for large manufacturing setups.",
+        "slug": "machinery",
+        "category": "industrial"
       },
       {
-        "idx": "03 / Textiles",
-        "title": "Textiles & Fashion",
-        "desc": "Fabric to finished garment, fully traceable."
-      },
-      {
-        "idx": "04 / Construction",
+        "idx": "03 / Construction",
         "title": "Construction Materials",
-        "desc": "Steel, cement and fittings for infrastructure projects worldwide."
+        "desc": "Steel, cement, cladding, and fittings engineered for global infrastructure projects.",
+        "slug": "construction",
+        "category": "industrial"
       },
       {
-        "idx": "05 / Automotive",
-        "title": "Automotive Parts",
-        "desc": "OEM and aftermarket components, quality-controlled at source."
+        "idx": "04 / Automotive",
+        "title": "Automotive Parts & Accessories",
+        "desc": "OEM and aftermarket vehicle components, quality-controlled at source for major automotive markets.",
+        "slug": "automotive",
+        "category": "industrial"
+      },
+      {
+        "idx": "05 / Electrical Power",
+        "title": "Electrical Equipment & Wiring",
+        "desc": "Transformers, high-voltage switchgear, cables, and industrial power distribution systems.",
+        "slug": "electrical",
+        "category": "industrial"
+      },
+      {
+        "idx": "06 / Hardware & Tools",
+        "title": "Precision Hardware & Tools",
+        "desc": "Hand tools, power tools, industrial fasteners, and precision workshop gear.",
+        "slug": "hardware-tools",
+        "category": "industrial"
+      },
+      {
+        "idx": "07 / Metallurgy",
+        "title": "Iron, Steel & Metal Products",
+        "desc": "Raw steel, copper piping, structural aluminum profiles, and specialized industrial alloys.",
+        "slug": "iron-steel",
+        "category": "industrial"
+      },
+      {
+        "idx": "08 / Polymers & Rubber",
+        "title": "Plastics & Rubber Products",
+        "desc": "Raw polymer granules, industrial rubber seals, and custom injection-molded components.",
+        "slug": "plastics-rubber",
+        "category": "industrial"
+      },
+      {
+        "idx": "09 / Solar Energy",
+        "title": "Solar Panels & Renewables",
+        "desc": "Photovoltaic modules, solar inverters, and clean energy storage solutions for utility projects.",
+        "slug": "solar-renewables",
+        "category": "energy"
+      },
+      {
+        "idx": "10 / EV Technology",
+        "title": "EV Batteries & Mobility Tech",
+        "desc": "Lithium-ion cells, electric vehicle battery packs, and commercial charging infrastructure.",
+        "slug": "ev-batteries",
+        "category": "energy"
+      },
+      {
+        "idx": "11 / Chemicals",
+        "title": "Industrial Chemicals & Petrochemicals",
+        "desc": "Specialty chemical reagents, raw petrochemical inputs, and agricultural fertilizers.",
+        "slug": "chemicals",
+        "category": "energy"
+      },
+      {
+        "idx": "12 / Lighting Solutions",
+        "title": "Architectural & Industrial LED",
+        "desc": "Commercial LED systems, street lighting, and smart architectural luminaire fixtures.",
+        "slug": "lighting-led",
+        "category": "energy"
+      },
+      {
+        "idx": "13 / Agriculture",
+        "title": "Agricultural Commodities",
+        "desc": "Grains, oilseeds, and raw agricultural harvests sourced directly from certified farming hubs.",
+        "slug": "agriculture",
+        "category": "food"
+      },
+      {
+        "idx": "14 / Processed Foods",
+        "title": "Processed Food & Beverages",
+        "desc": "Shelf-stable goods, packaged foods, and commercial beverage concentrates with export compliance.",
+        "slug": "processed-food",
+        "category": "food"
+      },
+      {
+        "idx": "15 / Cold-Chain Logistics",
+        "title": "Cold-Chain & Perishables",
+        "desc": "Temperature-controlled logistics for fresh produce, frozen meats, and delicate food imports.",
+        "slug": "cold-chain",
+        "category": "food"
+      },
+      {
+        "idx": "16 / Specialty Produce",
+        "title": "Spices, Tea & Specialty Goods",
+        "desc": "Bulk spices, premium tea grades, and specialty culinary ingredients with complete traceability.",
+        "slug": "spices-tea",
+        "category": "food"
+      },
+      {
+        "idx": "17 / Raw Fabrics",
+        "title": "Textiles & Raw Fabrics",
+        "desc": "Cotton yarn, synthetic fabrics, silk, and raw textile materials for garment factories.",
+        "slug": "textiles",
+        "category": "textiles"
+      },
+      {
+        "idx": "18 / Fashion & Apparel",
+        "title": "Apparel & Ready-Made Garments",
+        "desc": "Commercial clothing lines, outerwear, and fashion apparel produced to exact brand specifications.",
+        "slug": "apparel",
+        "category": "textiles"
+      },
+      {
+        "idx": "19 / Footwear & Leather",
+        "title": "Footwear & Leather Goods",
+        "desc": "Genuine leather goods, athletic footwear, and formal shoes quality-checked at source.",
+        "slug": "footwear-leather",
+        "category": "textiles"
+      },
+      {
+        "idx": "20 / Home Furnishings",
+        "title": "Home Textiles & Linens",
+        "desc": "Bedding, luxury drapes, upholstery fabrics, and commercial hospitality linens.",
+        "slug": "home-textiles",
+        "category": "textiles"
+      },
+      {
+        "idx": "21 / Furniture",
+        "title": "Furniture & Interior Fittings",
+        "desc": "Residential furniture, commercial office setups, and bespoke interior wood products.",
+        "slug": "furniture",
+        "category": "consumer"
+      },
+      {
+        "idx": "22 / Home Appliances",
+        "title": "Household Appliances",
+        "desc": "Smart kitchen appliances, HVAC climate units, and home automation devices.",
+        "slug": "household-appliances",
+        "category": "consumer"
+      },
+      {
+        "idx": "23 / Decor & Gifts",
+        "title": "Gifts, Décor & Premiums",
+        "desc": "Promotional merchandise, luxury home decor, art pieces, and corporate gifts.",
+        "slug": "gifts-decor",
+        "category": "consumer"
+      },
+      {
+        "idx": "24 / Kitchenware",
+        "title": "Kitchenware & Fine Ceramics",
+        "desc": "Stainless steel cookware, hotel ceramic tableware, and commercial kitchen supplies.",
+        "slug": "kitchenware",
+        "category": "consumer"
+      },
+      {
+        "idx": "25 / Personal Care",
+        "title": "Beauty, Cosmetics & Personal Care",
+        "desc": "Skincare formulations, cosmetic packaging, and personal hygiene consumer goods.",
+        "slug": "beauty-cosmetics",
+        "category": "consumer"
+      },
+      {
+        "idx": "26 / Healthcare",
+        "title": "Medical Devices & Health Supplies",
+        "desc": "Diagnostic equipment, clinical disposables, and personal health monitors meeting CE/FDA standards.",
+        "slug": "medical-devices",
+        "category": "professional"
+      },
+      {
+        "idx": "27 / Packaging",
+        "title": "Packaging & Printing Materials",
+        "desc": "Corrugated boxes, eco-friendly flexible packaging, and custom printed branding materials.",
+        "slug": "packaging-printing",
+        "category": "professional"
+      },
+      {
+        "idx": "28 / Sports & Leisure",
+        "title": "Sports, Recreation & Outdoor Gear",
+        "desc": "Fitness machinery, outdoor camping equipment, and professional sports gear.",
+        "slug": "sports-recreation",
+        "category": "professional"
+      },
+      {
+        "idx": "29 / Office Supplies",
+        "title": "Office Supplies & Stationery",
+        "desc": "Bulk paper products, corporate stationery, and office organization systems.",
+        "slug": "office-supplies",
+        "category": "professional"
+      },
+      {
+        "idx": "30 / Pet Care",
+        "title": "Pet Products & Accessories",
+        "desc": "Pet food packaging, grooming supplies, luxury pet accessories, and care goods.",
+        "slug": "pet-products",
+        "category": "professional"
       }
     ]
   },
@@ -480,6 +687,33 @@
     "copiedSuccess": "Calculation summary copied to clipboard!",
     "ctaText": "Need expert help auditing supplier quotes or inspecting production?",
     "ctaBtn": "Book Import Consultation ←"
+  },
+  "chinaCities": {
+    "title": "Comprehensive China Cities Commercial & Sourcing Guide",
+    "subtitle": "Discover major Chinese commercial hubs, wholesale markets, manufacturing zones, and logistics for importers and traders.",
+    "heroBadge": "China Commercial Cities Guide",
+    "searchPlaceholder": "Search for a city, product, wholesale market, or industrial zone...",
+    "allCities": "All Cities",
+    "tier1": "Top Commercial Cities (Tier 1)",
+    "tier2": "Manufacturing Cities (Tier 2)",
+    "tier3": "Emerging Industrial Hubs (Tier 3)",
+    "topCommercialCities": "Top Commercial Cities",
+    "manufacturingHubs": "Manufacturing Hubs",
+    "wholesaleMarkets": "Wholesale Markets",
+    "industrialZones": "Industrial Zones",
+    "logisticsHubs": "Logistics & Shipping Hubs",
+    "compareCities": "Compare Cities",
+    "whatToImport": "What can you import from this city?",
+    "businessTravelerGuide": "Business Traveler Guide",
+    "bestFor": "Best For",
+    "nearestPortsAirports": "Nearest Ports & Airports",
+    "informationComingSoon": "Information coming soon",
+    "relatedCities": "Related Cities",
+    "relatedProducts": "Related Industries & Products",
+    "exploreCity": "Explore City",
+    "marketsCount": "Wholesale Markets",
+    "industrialZonesCount": "Industrial Zones",
+    "commercialImportance": "Trade Importance Score"
   }
 }
 

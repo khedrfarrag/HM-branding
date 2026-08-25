@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import HubIndexPage from "@/components/HubIndexPage";
 import { LocalFsChinaRepository } from "@/repositories/local-fs/china";
 import type { ChinaSubdomain, Locale } from "@/domains/shared/value-objects";
@@ -46,6 +46,11 @@ export default async function ChinaSubdomainHubPage({ params }: PageProps) {
   const { locale, subdomain } = await params;
   if (!SUBDOMAINS.includes(subdomain as ChinaSubdomain)) notFound();
 
+  // Redirect /china/cities -> /china-cities for the comprehensive hub
+  if (subdomain === "cities") {
+    redirect(`/${locale}/china-cities`);
+  }
+
   const sub = subdomain as ChinaSubdomain;
   const activeLocale = locale as Locale;
   const isAr = activeLocale === "ar";
@@ -53,14 +58,7 @@ export default async function ChinaSubdomainHubPage({ params }: PageProps) {
 
   let cards: { title: string; description?: string; href: string }[] = [];
 
-  if (sub === "cities") {
-    const cities = await chinaRepo.getCities(activeLocale);
-    cards = cities.map((c) => ({
-      title: c.name,
-      description: c.description,
-      href: `/${activeLocale}/china/cities/${c.slug}`,
-    }));
-  } else if (sub === "markets") {
+  if (sub === "markets") {
     const markets = await chinaRepo.getMarkets(activeLocale);
     cards = markets.map((m) => ({
       title: m.name,
