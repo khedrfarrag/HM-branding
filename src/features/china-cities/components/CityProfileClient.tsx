@@ -22,7 +22,7 @@ interface CityProfileClientProps {
 export function CityProfileClient({ city, relatedCities, dict, locale }: CityProfileClientProps) {
   const isAr = locale === 'ar';
   const ArrowIcon = isAr ? ArrowLeft : ArrowRight;
-  const t = dict?.chinaCities || {};
+  const t = (dict?.chinaCities as Record<string, string> | undefined) || {};
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 pb-24">

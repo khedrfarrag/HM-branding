@@ -19,7 +19,7 @@ interface ChinaCitiesHubClientProps {
 function HubContent({ initialCities, dict, locale }: ChinaCitiesHubClientProps) {
   const isAr = locale === 'ar';
   const ArrowIcon = isAr ? ArrowLeft : ArrowRight;
-  const t = dict?.chinaCities || {};
+  const t = (dict?.chinaCities as Record<string, string> | undefined) || {};
   const searchParams = useSearchParams();
   const industryParam = searchParams.get('industry');
 
