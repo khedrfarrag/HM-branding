@@ -129,7 +129,7 @@ export default function HomePage({ locale, dict }: HomePageProps) {
                 {dict.hero.ctaPrimary}
               </a>
               <a
-                href="#global"
+                href="#what-you-will-find"
                 className="inline-flex h-[52px] w-full sm:w-auto items-center justify-center rounded-full border border-glass bg-glass px-sp-6 text-sm font-medium text-white backdrop-blur-[24px] transition-all duration-300 hover:bg-glass-strong hover:translate-y-[-2px]"
               >
                 {dict.hero.ctaSecondary}

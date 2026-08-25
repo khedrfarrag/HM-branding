@@ -214,22 +214,29 @@ export default function WhatYouWillFindSection({ locale }: WhatYouWillFindSectio
     },
   ];
 
-  // Auto scroll active tab into view on mobile
+  // Auto scroll active tab into view safely inside mobile container only
   useEffect(() => {
     if (mobileTabRef.current) {
-      const activeTabEl = mobileTabRef.current.children[activeIdx] as HTMLElement;
-      if (activeTabEl) {
-        activeTabEl.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      const container = mobileTabRef.current;
+      const innerFlex = container.children[0] as HTMLElement;
+      if (innerFlex) {
+        const activeTabEl = innerFlex.children[activeIdx] as HTMLElement;
+        if (activeTabEl) {
+          const containerWidth = container.clientWidth;
+          const tabOffsetLeft = activeTabEl.offsetLeft;
+          const tabWidth = activeTabEl.clientWidth;
+          const targetScrollLeft = tabOffsetLeft - (containerWidth / 2) + (tabWidth / 2);
+          container.scrollTo({
+            left: targetScrollLeft,
+            behavior: "smooth"
+          });
+        }
       }
     }
   }, [activeIdx]);
 
   const handleSelectTab = (idx: number) => {
     setActiveIdx(idx);
-    // On mobile screens, scroll stage smoothly into view if tab was pressed
-    if (window.innerWidth < 1024 && stageRef.current) {
-      stageRef.current.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    }
   };
 
   const currentPillar = pillars[activeIdx];
@@ -301,7 +308,7 @@ export default function WhatYouWillFindSection({ locale }: WhatYouWillFindSectio
         </RevealSection>
 
         {/* 📱 MOBILE HORIZONTAL CAROUSEL BAR (Shown on Mobile & Tablet < lg) */}
-        <div className="flex lg:hidden mb-sp-5 overflow-x-auto pb-sp-3 scrollbar-hide snap-x" ref={mobileTabRef}>
+        <div className="flex lg:hidden mb-sp-5 overflow-x-auto pb-sp-3 scrollbar-hide snap-x w-full max-w-full" ref={mobileTabRef}>
           <div className="flex items-center gap-sp-2 min-w-max px-sp-1">
             {pillars.map((pillar, idx) => {
               const Icon = pillar.icon;
