@@ -28,7 +28,21 @@
       { "value": "+900", "label": "Traders & Entrepreneurs" },
       { "value": "+400", "label": "Manufacturers & Suppliers" },
       { "value": "+42", "label": "Countries & Markets" }
-    ]
+    ],
+    "trustBar": {
+      "labels": [
+        "Practical Experience",
+        "Sourcing & Manufacturing",
+        "Import & Export",
+        "China Trade",
+        "Supply Chain",
+        "Chinese Factories",
+        "Product Development",
+        "Quality Control",
+        "Customs Clearance",
+        "Expert Negotiation"
+      ]
+    }
   },
   "about": {
     "eyebrow": "The Founder",

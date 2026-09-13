@@ -17,8 +17,10 @@ export interface IWholesaleMarket {
   address: {
     ar: string;
     en: string;
+    zh?: string;
   };
   nearestMetro?: string;
+  nearestStation?: string;
   nearestAirport?: string;
   operatingHours?: string;
   moqLevel?: 'Low' | 'Medium' | 'High' | 'Flexible';
@@ -32,13 +34,14 @@ export interface IDistrict {
   name: {
     ar: string;
     en: string;
+    zh?: string;
   };
   activityType: {
     ar: string;
     en: string;
   };
   mainProducts: string[];
-  tradeFocus: 'Wholesale' | 'Retail' | 'Commercial Office' | 'Mixed' | 'Manufacturing';
+  tradeFocus: 'Wholesale' | 'Retail' | 'Commercial Office' | 'Mixed' | 'Manufacturing' | 'Industrial';
   suitableForImporter: boolean;
   suitableForBusinessTravel: boolean;
   nearestMetro?: string;
@@ -51,6 +54,7 @@ export interface IIndustrialZone {
   name: {
     ar: string;
     en: string;
+    zh?: string;
   };
   clusterSpecialization: {
     ar: string;
@@ -63,7 +67,7 @@ export interface IIndustrialZone {
 
 export interface ISourcingProduct {
   id: string;
-  productName: { ar: string; en: string };
+  productName: { ar: string; en: string; zh?: string };
   industryCategory: string;
   whyThisCity: { ar: string; en: string };
   mainManufacturingArea: { ar: string; en: string };
@@ -96,7 +100,7 @@ export interface IRecommendedHotel {
   category: { ar: string; en: string };
   area: { ar: string; en: string };
   highlights: { ar: string; en: string };
-  address?: { ar: string; en: string };
+  address?: { ar: string; en: string; zh?: string };
 }
 
 export interface IRecommendedRestaurant {
@@ -104,14 +108,14 @@ export interface IRecommendedRestaurant {
   name: { ar: string; en: string; zh?: string };
   cuisineType: { ar: string; en: string };
   isHalal: boolean;
-  address: { ar: string; en: string };
+  address: { ar: string; en: string; zh?: string };
   recommendedFor: { ar: string; en: string };
 }
 
 export interface ITravelerService {
   id: string;
   serviceType: { ar: string; en: string };
-  title: { ar: string; en: string };
+  title: { ar: string; en: string; zh?: string };
   description: { ar: string; en: string };
   details?: { ar: string; en: string };
 }
@@ -132,9 +136,9 @@ export interface IBusinessTravelGuide {
 
 export interface ITradeFair {
   id: string;
-  name: { ar: string; en: string };
+  name: { ar: string; en: string; zh?: string };
   industry: string;
-  venue: { ar: string; en: string };
+  venue: { ar: string; en: string; zh?: string };
   occurrence: { ar: string; en: string };
   officialWebsite?: string;
   bestFor: string[];
@@ -151,6 +155,7 @@ export interface ICity {
   province: {
     ar: string;
     en: string;
+    zh?: string;
   };
   region: string;
   tier: TradeTier;

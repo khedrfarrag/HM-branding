@@ -185,4 +185,10 @@ export type ChinaSubdomain =
   | "restaurants"
   | "translators"
   | "shipping-companies"
-  | "ports";
+  | "shipping-lines"
+  | "logistics"
+  | "ports"
+  | "industrial-zones"
+  | "economic-zones"
+  | "airports"
+  | "trade-fairs";
