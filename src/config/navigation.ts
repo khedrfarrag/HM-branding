@@ -31,6 +31,7 @@ const HEADER_NAV = [
   { labelAr: "ماذا ستجد هنا",    labelEn: "What You'll Find",   href: "/#what-you-will-find" },
   { labelAr: "الخدمات",          labelEn: "Services",           href: "/#services" },
   { labelAr: "الخبرات",          labelEn: "Experiences",        href: "/#journey" },
+  { labelAr: "دليل الصين",       labelEn: "China Guide",        href: "/china" },
   { labelAr: "الخبرة والتغطية",  labelEn: "Global Reach",       href: "/#global" },
   { labelAr: "ذكاء التجارة",     labelEn: "Trade Intel",        href: "/trade-intelligence" },
   { labelAr: "أدوات التاجر",     labelEn: "Merchant Tools",     href: "/tools" },
@@ -154,9 +155,11 @@ const LEGAL_LINKS = [
 ] as const;
 
 const SOCIALS = [
-  { platform: "LinkedIn", url: "https://linkedin.com/in/hossammabrouk" },
-  { platform: "YouTube", url: "https://youtube.com/@hossammabrouk" },
-  { platform: "Facebook", url: "https://facebook.com/hossammabrouk" },
+  { platform: "WhatsApp", url: "https://wa.me/201070707166" },
+  { platform: "Instagram", url: "https://www.instagram.com/hossam.mabrouk9" },
+  { platform: "Snapchat", url: "https://snapchat.com/t/EwaOf46A" },
+  { platform: "Facebook", url: "https://www.facebook.com/share/1Buf9pVnFe/?mibextid=wwXIfr" },
+  { platform: "TikTok", url: "https://www.tiktok.com/@hossammabrouk9" },
 ] as const;
 
 const CTA = {

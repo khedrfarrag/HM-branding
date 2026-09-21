@@ -16,10 +16,10 @@ export const yiwuCity: ICity = {
   tier: 'tier-1',
   commercialImportanceScore: 98,
   heroImage: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1200&q=80',
-  skylineImage: 'https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=1200&q=80',
+  skylineImage: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80',
   gallery: [
     'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=800&q=80'
+    'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80'
   ],
   description: {
     ar: 'عاصمة السلع الصغيرة والمنتجات الاستهلاكية الأولى في العالم ومستودع الكوكب التجاري (Supermarket of the World). تضم مدينة التجارة الدولية الشهيرة بـ "سوق فوتيان" (Futian Market) بمناطقه الـ 5 العملاقة التي تحتوي على أكثر من 75,000 كشك وصالة عرض جملة، وتعد الوجهة التجارية المفضلة لمستوردي الشرق الأوسط والخليج العربي.',

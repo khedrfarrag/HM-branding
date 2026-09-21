@@ -11,9 +11,12 @@ interface CityCardProps {
   locale: 'ar' | 'en';
 }
 
+const DEFAULT_FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80';
+
 export function CityCard({ city, locale }: CityCardProps) {
   const isAr = locale === 'ar';
   const ArrowIcon = isAr ? ArrowLeft : ArrowRight;
+  const [imgSrc, setImgSrc] = React.useState(city.heroImage || DEFAULT_FALLBACK_IMAGE);
 
   const tierBadgeClass = 
     city.tier === 'tier-1' 
@@ -34,12 +37,13 @@ export function CityCard({ city, locale }: CityCardProps) {
       {/* Background Image Header */}
       <div className="relative h-48 w-full overflow-hidden">
         <Image
-          src={city.heroImage}
+          src={imgSrc}
           alt={city.name[locale] || city.name.en}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
+          onError={() => setImgSrc(DEFAULT_FALLBACK_IMAGE)}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
         

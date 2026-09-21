@@ -2,18 +2,18 @@
 
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Linkedin, Mail, MessageCircle } from "lucide-react";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  SnapchatIcon,
+  TikTokIcon,
+  WhatsAppIcon,
+} from "@/components/SocialIcons";
 import { useState } from "react";
 
 interface FloatingSocialsProps {
   locale: string;
 }
-
-const XIcon = () => (
-  <svg className="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24">
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-  </svg>
-);
 
 export default function FloatingSocials({ locale }: FloatingSocialsProps) {
   const isAr = locale === "ar";
@@ -21,44 +21,59 @@ export default function FloatingSocials({ locale }: FloatingSocialsProps) {
 
   const socials = [
     {
-      id: "linkedin",
-      icon: Linkedin,
-      url: "https://www.linkedin.com/in/hussam-mabrouk/",
-      label: isAr ? "تواصل عبر لينكد إن" : "Connect on LinkedIn",
-      colorClass: "hover:bg-[#0A66C2] hover:text-white hover:border-[#0A66C2] hover:shadow-[0_0_20px_rgba(10,102,194,0.5)]",
-      position: "top-[12%] right-[2%]",
-      duration: 5,
+      id: "whatsapp",
+      icon: WhatsAppIcon,
+      url: "https://wa.me/201070707166",
+      label: isAr ? "راسلني على واتساب" : "Message on WhatsApp",
+      colorClass:
+        "hover:bg-[#25D366] hover:text-white hover:border-[#25D366] hover:shadow-[0_0_20px_rgba(37,211,102,0.5)]",
+      position: "top-[10%] -right-2 sm:right-0",
+      duration: 6,
       delay: 0,
     },
     {
-      id: "whatsapp",
-      icon: MessageCircle,
-      url: "https://wa.me/201204009000",
-      label: isAr ? "راسلني على واتساب" : "Message on WhatsApp",
-      colorClass: "hover:bg-[#25D366] hover:text-white hover:border-[#25D366] hover:shadow-[0_0_20px_rgba(37,211,102,0.5)]",
-      position: "bottom-[16%] right-[2%]",
-      duration: 6,
+      id: "instagram",
+      icon: InstagramIcon,
+      url: "https://www.instagram.com/hossam.mabrouk9",
+      label: isAr ? "تابعني على انستجرام" : "Follow on Instagram",
+      colorClass:
+        "hover:bg-[#E4405F] hover:text-white hover:border-[#E4405F] hover:shadow-[0_0_20px_rgba(228,64,95,0.5)]",
+      position: "bottom-[14%] -right-2 sm:right-0",
+      duration: 5.5,
       delay: 0.8,
     },
     {
-      id: "email",
-      icon: Mail,
-      url: "mailto:mabrouk@meridian-co.com",
-      label: isAr ? "أرسل بريد إلكتروني" : "Send an Email",
-      colorClass: "hover:bg-[#C7A15C] hover:text-black hover:border-[#C7A15C] hover:shadow-[0_0_20px_rgba(199,161,92,0.5)]",
-      position: "top-[25%] left-[-4%]",
-      duration: 5.5,
+      id: "snapchat",
+      icon: SnapchatIcon,
+      url: "https://snapchat.com/t/EwaOf46A",
+      label: isAr ? "تابعني على سناب شات" : "Follow on Snapchat",
+      colorClass:
+        "hover:bg-[#FFFC00] hover:text-black hover:border-[#FFFC00] hover:shadow-[0_0_20px_rgba(255,252,0,0.5)]",
+      position: "top-[10%] -left-2 sm:left-0",
+      duration: 5,
       delay: 0.4,
     },
     {
-      id: "x",
-      icon: XIcon,
-      url: "https://x.com/",
-      label: isAr ? "تابعني على إكس" : "Follow on X",
-      colorClass: "hover:bg-white hover:text-black hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]",
-      position: "bottom-[22%] left-[-1%]",
+      id: "tiktok",
+      icon: TikTokIcon,
+      url: "https://www.tiktok.com/@hossammabrouk9",
+      label: isAr ? "تابعني على تيك توك" : "Follow on TikTok",
+      colorClass:
+        "hover:bg-black hover:text-[#25F4EE] hover:border-[#FE2C55] hover:shadow-[0_0_20px_rgba(254,44,85,0.5)]",
+      position: "bottom-[14%] -left-2 sm:left-0",
       duration: 6.5,
       delay: 1.2,
+    },
+    {
+      id: "facebook",
+      icon: FacebookIcon,
+      url: "https://www.facebook.com/share/1Buf9pVnFe/?mibextid=wwXIfr",
+      label: isAr ? "تابعني على فيسبوك" : "Follow on Facebook",
+      colorClass:
+        "hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] hover:shadow-[0_0_20px_rgba(24,119,242,0.5)]",
+      position: "-top-3 sm:-top-4 left-1/2 -translate-x-1/2",
+      duration: 5.8,
+      delay: 0.6,
     },
   ];
 

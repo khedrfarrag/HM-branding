@@ -12,13 +12,14 @@ import { buildBreadcrumbSchema } from "@/lib/schema/breadcrumb";
 import {
   CheckCircle2,
   Globe,
-  Linkedin,
-  Youtube,
-  Instagram,
-  Facebook,
-  MessageCircle,
-  Mail,
 } from "lucide-react";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  SnapchatIcon,
+  TikTokIcon,
+  WhatsAppIcon,
+} from "@/components/SocialIcons";
 
 interface PageProps {
   params: Promise<{
@@ -116,12 +117,36 @@ export default async function AboutCatchAllPage({ params }: PageProps) {
   ]);
 
   const socialLinks = [
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/hussam-mabrouk/", handle: "@hussam-mabrouk", icon: Linkedin },
-    { name: "WhatsApp", url: "https://wa.me/201204009000", handle: "+20 120 400 9000", icon: MessageCircle },
-    { name: "Email", url: "mailto:mabrouk@meridian-co.com", handle: "mabrouk@meridian-co.com", icon: Mail },
-    { name: "YouTube", url: "https://youtube.com/@hossammabrouk", handle: "@hossammabrouk", icon: Youtube },
-    { name: "Instagram", url: "https://instagram.com/hossammabrouk", handle: "@hossammabrouk", icon: Instagram },
-    { name: "Facebook", url: "https://facebook.com/hossammabrouk", handle: "hossammabrouk", icon: Facebook },
+    {
+      name: isAr ? "واتساب" : "WhatsApp",
+      url: "https://wa.me/201070707166",
+      handle: "+20 107 070 7166",
+      icon: WhatsAppIcon,
+    },
+    {
+      name: isAr ? "انستجرام" : "Instagram",
+      url: "https://www.instagram.com/hossam.mabrouk9",
+      handle: "@hossam.mabrouk9",
+      icon: InstagramIcon,
+    },
+    {
+      name: isAr ? "سناب شات" : "Snapchat",
+      url: "https://snapchat.com/t/EwaOf46A",
+      handle: "@hossammabrouk",
+      icon: SnapchatIcon,
+    },
+    {
+      name: isAr ? "تيك توك" : "TikTok",
+      url: "https://www.tiktok.com/@hossammabrouk9",
+      handle: "@hossammabrouk9",
+      icon: TikTokIcon,
+    },
+    {
+      name: isAr ? "فيسبوك" : "Facebook",
+      url: "https://www.facebook.com/share/1Buf9pVnFe/?mibextid=wwXIfr",
+      handle: "Hossam Mabrouk",
+      icon: FacebookIcon,
+    },
   ];
 
   const expertiseCards = isAr
@@ -206,7 +231,7 @@ export default async function AboutCatchAllPage({ params }: PageProps) {
           schema={{
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            "mainEntity": FAQS_DATA.filter((f) => f.category === "bio").slice(0, 10).map((f) => ({
+            "mainEntity": FAQS_DATA.slice(0, 50).map((f) => ({
               "@type": "Question",
               "name": isAr ? f.questionAr : f.questionEn,
               "acceptedAnswer": {

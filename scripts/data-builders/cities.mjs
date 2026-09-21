@@ -11,6 +11,65 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const DATA_DIR = path.resolve(__dirname, '../../src/data/china-directory');
 
+export const SPECIFIC_CITY_IMAGES = {
+  'beijing': 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80',
+  'shanghai': 'https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80',
+  'guangzhou': 'https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80',
+  'shenzhen': 'https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80',
+  'tianjin': 'https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80',
+  'chongqing': 'https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80',
+  'hangzhou': 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80',
+  'suzhou': 'https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80',
+  'qingdao': 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80',
+  'yiwu': 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80',
+  'foshan': 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80',
+  'shunde': 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80',
+  'dongguan': 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80',
+  'xiamen': 'https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80',
+  'wuhan': 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80',
+  'chengdu': 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80',
+  'xian': 'https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80',
+  'ningbo': 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80',
+  'dalian': 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80',
+  'changzhou': 'https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80',
+  'wenzhou': 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1200&auto=format&fit=crop&q=80',
+  'shaoxing': 'https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80',
+  'wuxi': 'https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80',
+  'nanjing': 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80',
+  'jinan': 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80',
+  'yantai': 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80',
+  'weihai': 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80',
+  'zhengzhou': 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&auto=format&fit=crop&q=80',
+  'changsha': 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80',
+  'quanzhou': 'https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80',
+  'fuzhou': 'https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80',
+  'ningde': 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1200&auto=format&fit=crop&q=80',
+  'shenyang': 'https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80',
+  'zhongshan': 'https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80',
+  'huizhou': 'https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80',
+  'zhuhai': 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80',
+};
+
+export const VIBRANT_CITY_IMAGES = [
+  'https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80'
+];
+
 export const PROVINCES_MAP = {
   'beijing': { ar: 'بكين', en: 'Beijing', zh: '北京', lat: 39.9042, lng: 116.4074 },
   'shanghai': { ar: 'شنغهاي', en: 'Shanghai', zh: '上海', lat: 31.2304, lng: 121.4737 },
@@ -184,7 +243,7 @@ while (FINAL_CITIES.length < 315) {
 console.log(`Total cities generated: ${FINAL_CITIES.length}`);
 
 // Transform to IChinaDirectoryEntity
-const TS_CITIES = FINAL_CITIES.map(c => {
+const TS_CITIES = FINAL_CITIES.map((c, index) => {
   const pObj = PROVINCES_MAP[c.prov] || { ar: c.prov, en: c.prov, zh: c.prov };
   const isAudited = ['guangzhou', 'shenzhen', 'yiwu', 'foshan', 'dongguan', 'ningbo', 'shunde', 'zhongshan', 'shanghai', 'cixi', 'shaoxing', 'yongkang', 'haining', 'changzhou'].includes(c.slug);
 
@@ -227,7 +286,7 @@ const TS_CITIES = FINAL_CITIES.map(c => {
       latitude: parseFloat(c.lat.toFixed(4)),
       longitude: parseFloat(c.lng.toFixed(4))
     },
-    coverImage: 'https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80',
+    coverImage: SPECIFIC_CITY_IMAGES[c.slug] || VIBRANT_CITY_IMAGES[index % VIBRANT_CITY_IMAGES.length],
     tags: [c.prov, ...c.ind],
     features: {
       ar: c.ind,

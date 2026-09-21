@@ -8,12 +8,12 @@ export const qingdaoCity: ICity = {
   region: 'North China / Shandong',
   tier: 'tier-2',
   commercialImportanceScore: 95,
-  heroImage: 'https://images.unsplash.com/photo-1548625361-185d2eb7b17d?auto=format&fit=crop&w=1600&q=85',
+  heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=85',
   skylineImage: 'https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1600&q=85',
   gallery: [
-    'https://images.unsplash.com/photo-1548625361-185d2eb7b17d?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
     'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80'
+    'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80'
   ],
   description: {
     ar: 'العاصمة الصناعية والميناء التجاري الأول لشمال الصين (ميناء تشينغداو رابع أضخم ميناء في العالم)، والمقر الرئيسي لعمالقة الأجهزة المنزلية والإلكترونيات العالمية (Haier Group وHisense Group). مهد تصنيع قطارات الصين السريعة فوشينغ (CRRC Sifang)، والمركز العالمي الأول لتصنيع وتصدير إطارات السيارات والشاحنات (Sailun & Doublestar)، وأضخم أسواق ملابس الجملة في شمال الصين (سوق جيمو).',

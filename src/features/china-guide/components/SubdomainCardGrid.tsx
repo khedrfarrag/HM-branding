@@ -23,6 +23,26 @@ interface SubdomainCardGridProps {
 }
 
 const ITEMS_PER_PAGE = 24;
+const DEFAULT_FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80';
+
+function CardImage({ src, alt }: { src: string; alt: string }) {
+  const [imgSrc, setImgSrc] = useState(src || DEFAULT_FALLBACK_IMAGE);
+
+  React.useEffect(() => {
+    setImgSrc(src || DEFAULT_FALLBACK_IMAGE);
+  }, [src]);
+
+  return (
+    <Image
+      src={imgSrc}
+      alt={alt}
+      fill
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      className="object-cover group-hover:scale-105 transition-transform duration-500"
+      onError={() => setImgSrc(DEFAULT_FALLBACK_IMAGE)}
+    />
+  );
+}
 
 export default function SubdomainCardGrid({
   locale,
@@ -169,14 +189,11 @@ export default function SubdomainCardGrid({
               >
                 {/* Cover Image with Badges */}
                 <div className="relative h-48 w-full bg-slate-950 overflow-hidden">
-                  <Image
+                  <CardImage
                     src={item.coverImage}
                     alt={item.name[locale] || item.name.ar}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
 
                   {/* City Badge & Rating Pill */}
                   <div className="absolute top-3 inset-x-3 flex items-center justify-between z-10">

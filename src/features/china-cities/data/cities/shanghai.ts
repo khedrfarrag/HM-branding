@@ -8,10 +8,10 @@ export const shanghaiCity: ICity = {
   region: 'Yangtze River Delta',
   tier: 'tier-1',
   commercialImportanceScore: 99,
-  heroImage: 'https://images.unsplash.com/photo-1538428494232-9c0d8a3ab396?auto=format&fit=crop&w=1600&q=85',
+  heroImage: 'https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1600&q=85',
   skylineImage: 'https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1600&q=85',
   gallery: [
-    'https://images.unsplash.com/photo-1538428494232-9c0d8a3ab396?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=800&q=80',
     'https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?auto=format&fit=crop&w=800&q=80',
     'https://images.unsplash.com/photo-1548919973-5cef591cdbc9?auto=format&fit=crop&w=800&q=80',
     'https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=800&q=80'

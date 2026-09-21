@@ -3,6 +3,22 @@ import Link from "next/link";
 import { getNavigationConfig } from "@/config/navigation";
 import type { Locale } from "@/domains/shared/value-objects";
 
+import {
+  FacebookIcon,
+  InstagramIcon,
+  SnapchatIcon,
+  TikTokIcon,
+  WhatsAppIcon,
+} from "@/components/SocialIcons";
+
+const SOCIAL_ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
+  WhatsApp: WhatsAppIcon,
+  Instagram: InstagramIcon,
+  Snapchat: SnapchatIcon,
+  TikTok: TikTokIcon,
+  Facebook: FacebookIcon,
+};
+
 interface FooterProps {
   locale: Locale;
 }
@@ -30,19 +46,23 @@ export default function Footer({ locale }: FooterProps) {
               ? "مستشار الاستيراد من الصين — مؤسس شركة دلتا للاستيراد والتصدير."
               : "China Import Consultant — Founder of Delta Import & Export."}
           </p>
-          <div className="flex gap-3 mt-5">
-            {nav.footer.socials.map((s) => (
-              <a
-                key={s.platform}
-                href={s.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={s.platform}
-                className="bg-white/5 hover:bg-amber-500/20 border border-white/10 hover:border-amber-500/40 text-gray-400 hover:text-amber-400 rounded-lg px-3 py-1.5 text-xs font-medium transition-all duration-300"
-              >
-                {s.platform}
-              </a>
-            ))}
+          <div className="flex flex-wrap gap-2.5 mt-5">
+            {nav.footer.socials.map((s) => {
+              const Icon = SOCIAL_ICON_MAP[s.platform];
+              return (
+                <a
+                  key={s.platform}
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.platform}
+                  className="flex items-center gap-2 bg-white/5 hover:bg-amber-500/20 border border-white/10 hover:border-amber-500/40 text-gray-300 hover:text-amber-400 rounded-lg px-3 py-1.5 text-xs font-medium transition-all duration-300"
+                >
+                  {Icon && <Icon className="w-3.5 h-3.5 shrink-0" />}
+                  <span>{s.platform}</span>
+                </a>
+              );
+            })}
           </div>
         </div>
 

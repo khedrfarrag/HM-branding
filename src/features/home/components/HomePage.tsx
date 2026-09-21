@@ -637,8 +637,14 @@ export default function HomePage({ locale, dict }: HomePageProps) {
                 <h5 className="font-mono text-fs-micro text-silver-dim uppercase tracking-wider mb-sp-4">
                   {dict.footer.contactDetails ?? "Contact Details"}
                 </h5>
-                <span className="text-fs-small text-silver mb-sp-2">mabrouk@meridian-co.com</span>
-                <span className="text-fs-small text-silver mb-sp-2">+20 120 400 9000</span>
+                <a
+                  href="https://wa.me/201070707166"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-fs-small text-silver hover:text-gold mb-sp-2 transition-colors"
+                >
+                  +20 107 070 7166
+                </a>
                 <span className="text-fs-small text-silver">{dict.footer.locations ?? "Rotterdam · Dubai · Cairo"}</span>
               </div>
 
@@ -654,13 +660,22 @@ export default function HomePage({ locale, dict }: HomePageProps) {
             <div className="mt-sp-5 flex flex-wrap justify-between items-center gap-sp-3">
               <span className="font-mono text-fs-micro text-silver-dim">{dict.footer.copy}</span>
               <div className="flex gap-sp-2">
-                {["LinkedIn", "Twitter", "Email"].map((social, idx) => (
+                {[
+                  { name: "WhatsApp", url: "https://wa.me/201070707166", label: "WA" },
+                  { name: "Instagram", url: "https://www.instagram.com/hossam.mabrouk9", label: "IG" },
+                  { name: "Snapchat", url: "https://snapchat.com/t/EwaOf46A", label: "SC" },
+                  { name: "TikTok", url: "https://www.tiktok.com/@hossammabrouk9", label: "TT" },
+                  { name: "Facebook", url: "https://www.facebook.com/share/1Buf9pVnFe/?mibextid=wwXIfr", label: "FB" },
+                ].map((social, idx) => (
                   <a
                     key={idx}
-                    href="#"
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.name}
                     className="h-9 w-9 rounded-full border border-glass flex items-center justify-center font-mono text-fs-micro text-silver hover:bg-gold hover:text-black hover:border-gold hover:-translate-y-1 transition-all"
                   >
-                    {social[0]}
+                    {social.label}
                   </a>
                 ))}
               </div>

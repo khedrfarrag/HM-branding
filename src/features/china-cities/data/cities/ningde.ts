@@ -8,11 +8,11 @@ export const ningdeCity: ICity = {
   region: 'East Coast (Fujian)',
   tier: 'tier-3',
   commercialImportanceScore: 92,
-  heroImage: 'https://images.unsplash.com/photo-1558441719-67450807e50a?auto=format&fit=crop&w=1600&q=85',
+  heroImage: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=85',
   skylineImage: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=85',
   gallery: [
-    'https://images.unsplash.com/photo-1558441719-67450807e50a?auto=format&fit=crop&w=800&q=80',
     'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80',
     'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=80'
   ],
   description: {

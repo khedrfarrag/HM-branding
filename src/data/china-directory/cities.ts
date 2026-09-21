@@ -40,7 +40,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 39.9042,
       "longitude": 116.4074
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "beijing",
       "الإلكترونيات المتقدمة",
@@ -133,7 +133,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 31.2304,
       "longitude": 121.4737
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shanghai",
       "ميناء الحاويات الأكبر عالمياً",
@@ -230,7 +230,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 39.0842,
       "longitude": 117.2009
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "tianjin",
       "تجميع طائرات إيرباص A320",
@@ -323,7 +323,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.563,
       "longitude": 106.5516
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "chongqing",
       "أجهزة الحواسيب المحمولة",
@@ -416,7 +416,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.1291,
       "longitude": 113.2644
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "معرض كانتون الدولي",
@@ -513,7 +513,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.5431,
       "longitude": 114.0579
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "سوق هواكيانغبي للإلكترونيات",
@@ -610,7 +610,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.0215,
       "longitude": 113.1214
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "أثاث لوفر ولكونغ",
@@ -707,7 +707,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.8028,
       "longitude": 113.2925
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "أكبر سوق أثاث في العالم",
@@ -804,7 +804,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.0207,
       "longitude": 113.7518
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "تجميع الهواتف الذكية (أوبو/فيفو)",
@@ -901,7 +901,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.5176,
       "longitude": 113.3928
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "سوق قوجين العالمي للإضاءة",
@@ -998,7 +998,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.2707,
       "longitude": 113.5767
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "مكيفات جري Gree العالمية",
@@ -1091,7 +1091,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.1118,
       "longitude": 114.4162
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "بطاريات الليثيوم للإلكترونيات",
@@ -1184,7 +1184,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.5787,
       "longitude": 113.0815
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "خلاطات ومحابس المياه شوكوه",
@@ -1277,7 +1277,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.3541,
       "longitude": 116.682
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "ألعاب الأطفال تشنغهاي العالمية",
@@ -1370,7 +1370,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 21.2707,
       "longitude": 110.3594
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "أواني الطهي الكهربائية ليانتانغ",
@@ -1463,7 +1463,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.0515,
       "longitude": 112.4725
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "مقاطع وبثق الألومنيوم",
@@ -1556,7 +1556,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.6569,
       "longitude": 116.6226
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "السيراميك والأطقم الصحية",
@@ -1649,7 +1649,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.5499,
       "longitude": 116.3729
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "أدوات المائدة الفولاذية والسكاكين",
@@ -1742,7 +1742,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.6817,
       "longitude": 113.056
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "سيراميك الأرضيات الإنشائي",
@@ -1835,7 +1835,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 24.8104,
       "longitude": 113.5975
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "مراكز الحوسبة السحابية الوطنية",
@@ -1924,7 +1924,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 24.2886,
       "longitude": 116.1225
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "لوحات الدوائر المطبوعة النحاسية PCB",
@@ -2013,7 +2013,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.7862,
       "longitude": 115.3753
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "توربينات طاقة الرياح البحرية",
@@ -2106,7 +2106,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.7435,
       "longitude": 114.7006
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "قوالب الهواتف المحمولة الدقيقة",
@@ -2195,7 +2195,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 21.856,
       "longitude": 111.9827
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "السكاكين والمقصات وأدوات المطبخ (تنتج 70% من صادرات الصين)",
@@ -2284,7 +2284,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 21.663,
       "longitude": 110.9255
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "البتروكيماويات وتكرير النفط",
@@ -2377,7 +2377,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.9298,
       "longitude": 112.0444
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "الرخام والأحجار والغرانيت الطبيعي",
@@ -2470,7 +2470,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.3762,
       "longitude": 112.6984
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "بلدة شوكوه للأدوات الصحية",
@@ -2563,7 +2563,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.2514,
       "longitude": 112.7939
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "المعدات الكهربائية الصناعية",
@@ -2656,7 +2656,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.3618,
       "longitude": 112.7342
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "سوق وتصنيع اليشم والزمرد الطبيعي",
@@ -2745,7 +2745,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.2974,
       "longitude": 116.1656
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "الملابس الجاهزة والبيجامات واللانجري",
@@ -2834,7 +2834,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.0289,
       "longitude": 113.1432
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "مقاطع الألومنيوم دالي",
@@ -2927,7 +2927,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.0261,
       "longitude": 112.4578
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "مسابك صب المعادن الدقيقة",
@@ -3016,7 +3016,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.2741,
       "longitude": 120.1551
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "التجارة الإلكترونية (علي بابا)",
@@ -3109,7 +3109,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.8683,
       "longitude": 121.544
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "ميناء نينغبو-تشوشان العالمي",
@@ -3206,7 +3206,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 27.9943,
       "longitude": 120.6994
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "الأحذية والجلود العالمية",
@@ -3299,7 +3299,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.746,
       "longitude": 120.7555
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "المنسوجات والألياف الكيماوية",
@@ -3392,7 +3392,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.8943,
       "longitude": 120.0868
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "أرضيات الباركيه والأخشاب نانشون",
@@ -3485,7 +3485,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.0024,
       "longitude": 120.5822
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "مدينة المنسوجات كوتشياو العالمية",
@@ -3582,7 +3582,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.0792,
       "longitude": 119.6474
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "التجارة الدولية واللوجستيات",
@@ -3675,7 +3675,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.9701,
       "longitude": 118.8726
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "الكيماويات الفلورية والسيليكون",
@@ -3768,7 +3768,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.9853,
       "longitude": 122.2072
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "تكرير وتخزين البترول والغاز",
@@ -3861,7 +3861,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.6564,
       "longitude": 121.4286
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "قوالب البلاستيك هوانغيان العالمية",
@@ -3954,7 +3954,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.4677,
       "longitude": 119.923
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "أدوات التوجيه والمسارات الميكانيكية الخطية",
@@ -4047,7 +4047,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.3069,
       "longitude": 120.0751
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "سوق فوتيان الدولي (سوق السلع الصغيرة الأكبر عالمياً)",
@@ -4144,7 +4144,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.1696,
       "longitude": 121.2664
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "الأجهزة المنزلية الصغيرة (مبردات مياه/مراوح/سخانات)",
@@ -4241,7 +4241,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.0384,
       "longitude": 121.1534
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "مدينة البلاستيك الصينية",
@@ -4334,7 +4334,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.944,
       "longitude": 120.0473
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "أبواب الأمان والصلب (70% من إنتاج الصين)",
@@ -4431,7 +4431,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.5097,
       "longitude": 120.6813
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "مدينة الجلود والفرّاء العالمية",
@@ -4528,7 +4528,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.6304,
       "longitude": 120.5451
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "سوق بويوان للملابس الصوفية والتريكو",
@@ -4617,7 +4617,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 27.7804,
       "longitude": 120.6551
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "قطع غيار السيارات والدراجات النارية",
@@ -4710,7 +4710,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.1219,
       "longitude": 120.9634
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "الأجهزة الكهربائية منخفضة الجهد ليوشي",
@@ -4799,7 +4799,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.7188,
       "longitude": 120.2407
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "اللؤلؤ الزراعي الطبيعي شانشياوهو",
@@ -4892,7 +4892,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.2687,
       "longitude": 120.2415
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "أثاث خشب الورد المنحوت كلاسيكياً",
@@ -4985,7 +4985,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.3664,
       "longitude": 121.3654
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "مضخات المياه الكهربائية دايوان",
@@ -5078,7 +5078,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.1342,
       "longitude": 121.2332
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "صمامات النحاس ومحابس المياه والغاز",
@@ -5171,7 +5171,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 32.3117,
       "longitude": 119.0132
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangsu",
       "التصنيع الخفيف والتجميع",
@@ -5264,7 +5264,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 32.5617,
       "longitude": 119.2632
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangsu",
       "التصنيع الخفيف والتجميع",
@@ -5357,7 +5357,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 32.8117,
       "longitude": 119.5132
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangsu",
       "التصنيع الخفيف والتجميع",
@@ -5450,7 +5450,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.9012,
       "longitude": 117.3701
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shandong",
       "التصنيع الخفيف والتجميع",
@@ -5543,7 +5543,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 37.1512,
       "longitude": 117.6201
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shandong",
       "التصنيع الخفيف والتجميع",
@@ -5636,7 +5636,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 37.4012,
       "longitude": 117.8701
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shandong",
       "التصنيع الخفيف والتجميع",
@@ -5729,7 +5729,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 26.3245,
       "longitude": 119.5465
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "fujian",
       "التصنيع الخفيف والتجميع",
@@ -5822,7 +5822,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 26.5745,
       "longitude": 119.7965
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "fujian",
       "التصنيع الخفيف والتجميع",
@@ -5915,7 +5915,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 26.8245,
       "longitude": 120.0465
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "fujian",
       "التصنيع الخفيف والتجميع",
@@ -6008,7 +6008,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.2928,
       "longitude": 114.7649
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hebei",
       "التصنيع الخفيف والتجميع",
@@ -6101,7 +6101,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.5428,
       "longitude": 115.0149
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hebei",
       "التصنيع الخفيف والتجميع",
@@ -6194,7 +6194,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.7928,
       "longitude": 115.2649
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hebei",
       "التصنيع الخفيف والتجميع",
@@ -6287,7 +6287,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 34.9966,
       "longitude": 113.8753
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "henan",
       "التصنيع الخفيف والتجميع",
@@ -6380,7 +6380,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 35.2466,
       "longitude": 114.1253
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "henan",
       "التصنيع الخفيف والتجميع",
@@ -6473,7 +6473,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 35.4966,
       "longitude": 114.3753
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "henan",
       "التصنيع الخفيف والتجميع",
@@ -6566,7 +6566,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.8428,
       "longitude": 114.5555
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hubei",
       "التصنيع الخفيف والتجميع",
@@ -6659,7 +6659,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 31.0928,
       "longitude": 114.8055
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hubei",
       "التصنيع الخفيف والتجميع",
@@ -6752,7 +6752,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 31.3428,
       "longitude": 115.0555
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hubei",
       "التصنيع الخفيف والتجميع",
@@ -6845,7 +6845,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.4782,
       "longitude": 113.1888
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hunan",
       "التصنيع الخفيف والتجميع",
@@ -6938,7 +6938,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.7282,
       "longitude": 113.4388
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hunan",
       "التصنيع الخفيف والتجميع",
@@ -7031,7 +7031,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.9782,
       "longitude": 113.6888
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hunan",
       "التصنيع الخفيف والتجميع",
@@ -7124,7 +7124,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 32.1112,
       "longitude": 117.533
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "anhui",
       "التصنيع الخفيف والتجميع",
@@ -7217,7 +7217,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 32.3612,
       "longitude": 117.783
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "anhui",
       "التصنيع الخفيف والتجميع",
@@ -7310,7 +7310,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 32.6112,
       "longitude": 118.033
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "anhui",
       "التصنيع الخفيف والتجميع",
@@ -7403,7 +7403,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.933,
       "longitude": 116.1079
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangxi",
       "التصنيع الخفيف والتجميع",
@@ -7496,7 +7496,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.183,
       "longitude": 116.3579
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangxi",
       "التصنيع الخفيف والتجميع",
@@ -7589,7 +7589,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.433,
       "longitude": 116.6079
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangxi",
       "التصنيع الخفيف والتجميع",
@@ -7682,7 +7682,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.8228,
       "longitude": 104.3168
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "sichuan",
       "التصنيع الخفيف والتجميع",
@@ -7775,7 +7775,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 31.0728,
       "longitude": 104.5668
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "sichuan",
       "التصنيع الخفيف والتجميع",
@@ -7868,7 +7868,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 31.3228,
       "longitude": 104.8168
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "sichuan",
       "التصنيع الخفيف والتجميع",
@@ -7961,7 +7961,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 34.5916,
       "longitude": 109.1898
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shaanxi",
       "التصنيع الخفيف والتجميع",
@@ -8054,7 +8054,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 34.8416,
       "longitude": 109.4398
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shaanxi",
       "التصنيع الخفيف والتجميع",
@@ -8147,7 +8147,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 35.0916,
       "longitude": 109.6898
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shaanxi",
       "التصنيع الخفيف والتجميع",
@@ -8240,7 +8240,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 42.0557,
       "longitude": 123.6815
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "liaoning",
       "التصنيع الخفيف والتجميع",
@@ -8333,7 +8333,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 42.3057,
       "longitude": 123.9315
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "liaoning",
       "التصنيع الخفيف والتجميع",
@@ -8426,7 +8426,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 42.5557,
       "longitude": 124.1815
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "liaoning",
       "التصنيع الخفيف والتجميع",
@@ -8519,7 +8519,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 44.0671,
       "longitude": 125.5735
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jilin",
       "التصنيع الخفيف والتجميع",
@@ -8612,7 +8612,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 44.3171,
       "longitude": 125.8235
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jilin",
       "التصنيع الخفيف والتجميع",
@@ -8705,7 +8705,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 44.5671,
       "longitude": 126.0735
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jilin",
       "التصنيع الخفيف والتجميع",
@@ -8798,7 +8798,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 46.0538,
       "longitude": 126.785
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "heilongjiang",
       "التصنيع الخفيف والتجميع",
@@ -8891,7 +8891,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 46.3038,
       "longitude": 127.035
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "heilongjiang",
       "التصنيع الخفيف والتجميع",
@@ -8984,7 +8984,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 46.5538,
       "longitude": 127.285
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "heilongjiang",
       "التصنيع الخفيف والتجميع",
@@ -9077,7 +9077,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.1206,
       "longitude": 112.7989
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shanxi",
       "التصنيع الخفيف والتجميع",
@@ -9170,7 +9170,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.3706,
       "longitude": 113.0489
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shanxi",
       "التصنيع الخفيف والتجميع",
@@ -9263,7 +9263,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.6206,
       "longitude": 113.2989
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shanxi",
       "التصنيع الخفيف والتجميع",
@@ -9356,7 +9356,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 26.8977,
       "longitude": 106.8802
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guizhou",
       "التصنيع الخفيف والتجميع",
@@ -9449,7 +9449,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 27.1477,
       "longitude": 107.1302
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guizhou",
       "التصنيع الخفيف والتجميع",
@@ -9542,7 +9542,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 27.3977,
       "longitude": 107.3802
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guizhou",
       "التصنيع الخفيف والتجميع",
@@ -9635,7 +9635,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 25.2906,
       "longitude": 102.9623
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "yunnan",
       "التصنيع الخفيف والتجميع",
@@ -9728,7 +9728,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 25.5406,
       "longitude": 103.2123
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "yunnan",
       "التصنيع الخفيف والتجميع",
@@ -9821,7 +9821,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 25.7906,
       "longitude": 103.4623
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "yunnan",
       "التصنيع الخفيف والتجميع",
@@ -9914,7 +9914,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.067,
       "longitude": 108.6165
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangxi",
       "التصنيع الخفيف والتجميع",
@@ -10007,7 +10007,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.317,
       "longitude": 108.8665
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangxi",
       "التصنيع الخفيف والتجميع",
@@ -10100,7 +10100,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.567,
       "longitude": 109.1165
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangxi",
       "التصنيع الخفيف والتجميع",
@@ -10193,7 +10193,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 41.0915,
       "longitude": 112.0011
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "inner-mongolia",
       "التصنيع الخفيف والتجميع",
@@ -10286,7 +10286,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 41.3415,
       "longitude": 112.2511
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "inner-mongolia",
       "التصنيع الخفيف والتجميع",
@@ -10379,7 +10379,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 41.5915,
       "longitude": 112.5011
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "inner-mongolia",
       "التصنيع الخفيف والتجميع",
@@ -10472,7 +10472,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 44.0756,
       "longitude": 87.8668
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "xinjiang",
       "التصنيع الخفيف والتجميع",
@@ -10565,7 +10565,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 44.3256,
       "longitude": 88.1168
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "xinjiang",
       "التصنيع الخفيف والتجميع",
@@ -10658,7 +10658,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 44.5756,
       "longitude": 88.3668
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "xinjiang",
       "التصنيع الخفيف والتجميع",
@@ -10751,7 +10751,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.3111,
       "longitude": 104.0843
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "gansu",
       "التصنيع الخفيف والتجميع",
@@ -10844,7 +10844,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.5611,
       "longitude": 104.3343
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "gansu",
       "التصنيع الخفيف والتجميع",
@@ -10937,7 +10937,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.8111,
       "longitude": 104.5843
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "gansu",
       "التصنيع الخفيف والتجميع",
@@ -11030,7 +11030,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 20.294,
       "longitude": 110.4499
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hainan",
       "التصنيع الخفيف والتجميع",
@@ -11123,7 +11123,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 20.544,
       "longitude": 110.6999
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hainan",
       "التصنيع الخفيف والتجميع",
@@ -11216,7 +11216,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 20.794,
       "longitude": 110.9499
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hainan",
       "التصنيع الخفيف والتجميع",
@@ -11309,7 +11309,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.7372,
       "longitude": 106.4809
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "ningxia",
       "التصنيع الخفيف والتجميع",
@@ -11402,7 +11402,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.9872,
       "longitude": 106.7309
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "ningxia",
       "التصنيع الخفيف والتجميع",
@@ -11495,7 +11495,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 39.2372,
       "longitude": 106.9809
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "ningxia",
       "التصنيع الخفيف والتجميع",
@@ -11588,7 +11588,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.8709,
       "longitude": 102.0301
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "qinghai",
       "التصنيع الخفيف والتجميع",
@@ -11681,7 +11681,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 37.1209,
       "longitude": 102.2801
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "qinghai",
       "التصنيع الخفيف والتجميع",
@@ -11774,7 +11774,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 37.3709,
       "longitude": 102.5301
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "qinghai",
       "التصنيع الخفيف والتجميع",
@@ -11867,7 +11867,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.9025,
       "longitude": 91.4221
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "tibet",
       "التصنيع الخفيف والتجميع",
@@ -11960,7 +11960,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.1525,
       "longitude": 91.6721
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "tibet",
       "التصنيع الخفيف والتجميع",
@@ -12053,7 +12053,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.4025,
       "longitude": 91.9221
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "tibet",
       "التصنيع الخفيف والتجميع",
@@ -12146,7 +12146,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.6107,
       "longitude": 120.3712
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "التصنيع التصديري",
@@ -12239,7 +12239,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 32.4254,
       "longitude": 118.5967
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangsu",
       "التصنيع التصديري",
@@ -12332,7 +12332,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.7076,
       "longitude": 116.7241
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shandong",
       "التصنيع التصديري",
@@ -12425,7 +12425,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 25.7718,
       "longitude": 119.035
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "fujian",
       "التصنيع التصديري",
@@ -12518,7 +12518,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 37.6592,
       "longitude": 114.6284
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hebei",
       "التصنيع التصديري",
@@ -12611,7 +12611,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 34.6348,
       "longitude": 114.0094
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "henan",
       "التصنيع التصديري",
@@ -12704,7 +12704,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.8556,
       "longitude": 114.6071
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hubei",
       "التصنيع التصديري",
@@ -12797,7 +12797,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.6239,
       "longitude": 112.8806
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hunan",
       "التصنيع التصديري",
@@ -12890,7 +12890,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 32.026,
       "longitude": 116.9185
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "anhui",
       "التصنيع التصديري",
@@ -12983,7 +12983,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.4654,
       "longitude": 115.5223
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangxi",
       "التصنيع التصديري",
@@ -13076,7 +13076,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.1728,
       "longitude": 104.0686
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "sichuan",
       "التصنيع التصديري",
@@ -13169,7 +13169,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 34.127,
       "longitude": 109.2773
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shaanxi",
       "التصنيع التصديري",
@@ -13262,7 +13262,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 41.9738,
       "longitude": 123.7945
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "liaoning",
       "التصنيع التصديري",
@@ -13355,7 +13355,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 44.2133,
       "longitude": 125.3782
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jilin",
       "التصنيع التصديري",
@@ -13448,7 +13448,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 46.0639,
       "longitude": 126.2311
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "heilongjiang",
       "التصنيع التصديري",
@@ -13541,7 +13541,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 37.7554,
       "longitude": 112.1658
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shanxi",
       "التصنيع التصديري",
@@ -13634,7 +13634,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 26.2631,
       "longitude": 106.5201
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guizhou",
       "التصنيع التصديري",
@@ -13727,7 +13727,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 24.7402,
       "longitude": 102.9764
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "yunnan",
       "التصنيع التصديري",
@@ -13820,7 +13820,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.877,
       "longitude": 108.762
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangxi",
       "التصنيع التصديري",
@@ -13913,7 +13913,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 41.2067,
       "longitude": 111.9143
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "inner-mongolia",
       "التصنيع التصديري",
@@ -14006,7 +14006,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 44.1603,
       "longitude": 87.3977
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "xinjiang",
       "التصنيع التصديري",
@@ -14099,7 +14099,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.0576,
       "longitude": 103.4343
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "gansu",
       "التصنيع التصديري",
@@ -14192,7 +14192,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 19.7055,
       "longitude": 109.9868
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hainan",
       "التصنيع التصديري",
@@ -14285,7 +14285,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.125,
       "longitude": 106.4006
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "ningxia",
       "التصنيع التصديري",
@@ -14378,7 +14378,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.568,
       "longitude": 102.1766
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "qinghai",
       "التصنيع التصديري",
@@ -14471,7 +14471,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.9575,
       "longitude": 91.4309
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "tibet",
       "التصنيع التصديري",
@@ -14564,7 +14564,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.7019,
       "longitude": 114.0525
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hong-kong",
       "التصنيع التصديري",
@@ -14657,7 +14657,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.3071,
       "longitude": 113.1589
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "macau",
       "التصنيع التصديري",
@@ -14750,7 +14750,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 24.7675,
       "longitude": 121.2662
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "taiwan",
       "التصنيع التصديري",
@@ -14843,7 +14843,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.7339,
       "longitude": 113.3261
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "التصنيع التصديري",
@@ -14936,7 +14936,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.1125,
       "longitude": 120.521
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "التصنيع التصديري",
@@ -15029,7 +15029,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 32.2823,
       "longitude": 119.0969
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangsu",
       "التصنيع التصديري",
@@ -15122,7 +15122,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 37.0512,
       "longitude": 117.1148
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shandong",
       "التصنيع التصديري",
@@ -15215,7 +15215,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 26.2861,
       "longitude": 118.9571
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "fujian",
       "التصنيع التصديري",
@@ -15308,7 +15308,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 37.8715,
       "longitude": 114.1534
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hebei",
       "التصنيع التصديري",
@@ -15401,7 +15401,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 34.3499,
       "longitude": 113.5741
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "henan",
       "التصنيع التصديري",
@@ -15494,7 +15494,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.3354,
       "longitude": 114.6117
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hubei",
       "التصنيع التصديري",
@@ -15587,7 +15587,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.3467,
       "longitude": 113.3208
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hunan",
       "التصنيع التصديري",
@@ -15680,7 +15680,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 32.2467,
       "longitude": 117.3897
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "anhui",
       "التصنيع التصديري",
@@ -15773,7 +15773,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.981,
       "longitude": 115.5911
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangxi",
       "التصنيع التصديري",
@@ -15866,7 +15866,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.5094,
       "longitude": 103.6719
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "sichuan",
       "التصنيع التصديري",
@@ -15959,7 +15959,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 33.975,
       "longitude": 108.7798
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shaanxi",
       "التصنيع التصديري",
@@ -16052,7 +16052,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 41.473,
       "longitude": 123.6535
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "liaoning",
       "التصنيع التصديري",
@@ -16145,7 +16145,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 43.8242,
       "longitude": 125.7234
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jilin",
       "التصنيع التصديري",
@@ -16238,7 +16238,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 46.1442,
       "longitude": 126.7451
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "heilongjiang",
       "التصنيع التصديري",
@@ -16331,7 +16331,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.2313,
       "longitude": 112.376
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shanxi",
       "التصنيع التصديري",
@@ -16424,7 +16424,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 26.6971,
       "longitude": 106.2333
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guizhou",
       "التصنيع التصديري",
@@ -16517,7 +16517,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 24.7333,
       "longitude": 102.4562
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "yunnan",
       "التصنيع التصديري",
@@ -16610,7 +16610,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.4355,
       "longitude": 108.4867
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangxi",
       "التصنيع التصديري",
@@ -16703,7 +16703,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 40.7366,
       "longitude": 112.1371
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "inner-mongolia",
       "التصنيع التصديري",
@@ -16796,7 +16796,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 44.0937,
       "longitude": 87.9137
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "xinjiang",
       "التصنيع التصديري",
@@ -16889,7 +16889,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.4558,
       "longitude": 103.7691
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "gansu",
       "التصنيع التصديري",
@@ -16982,7 +16982,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 20.2024,
       "longitude": 109.8326
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hainan",
       "التصنيع التصديري",
@@ -17075,7 +17075,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.2637,
       "longitude": 105.8992
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "ningxia",
       "التصنيع التصديري",
@@ -17168,7 +17168,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.221,
       "longitude": 101.789
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "qinghai",
       "التصنيع التصديري",
@@ -17261,7 +17261,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.4439,
       "longitude": 91.5134
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "tibet",
       "التصنيع التصديري",
@@ -17354,7 +17354,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.4938,
       "longitude": 114.5293
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hong-kong",
       "التصنيع التصديري",
@@ -17447,7 +17447,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.5958,
       "longitude": 113.5916
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "macau",
       "التصنيع التصديري",
@@ -17540,7 +17540,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 25.2877,
       "longitude": 121.257
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "taiwan",
       "التصنيع التصديري",
@@ -17633,7 +17633,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.0072,
       "longitude": 112.8834
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "التصنيع التصديري",
@@ -17726,7 +17726,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.8877,
       "longitude": 120.0519
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "التصنيع التصديري",
@@ -17819,7 +17819,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 31.766,
       "longitude": 119.0326
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangsu",
       "التصنيع التصديري",
@@ -17912,7 +17912,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.7181,
       "longitude": 117.5145
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shandong",
       "التصنيع التصديري",
@@ -18005,7 +18005,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 26.4425,
       "longitude": 119.4532
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "fujian",
       "التصنيع التصديري",
@@ -18098,7 +18098,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.3735,
       "longitude": 114.2899
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hebei",
       "التصنيع التصديري",
@@ -18191,7 +18191,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 34.736,
       "longitude": 113.2254
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "henan",
       "التصنيع التصديري",
@@ -18284,7 +18284,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.2506,
       "longitude": 114.0984
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hubei",
       "التصنيع التصديري",
@@ -18377,7 +18377,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 27.869,
       "longitude": 113.1149
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hunan",
       "التصنيع التصديري",
@@ -18470,7 +18470,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 31.8153,
       "longitude": 117.6804
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "anhui",
       "التصنيع التصديري",
@@ -18563,7 +18563,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.9926,
       "longitude": 116.1112
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangxi",
       "التصنيع التصديري",
@@ -18656,7 +18656,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.9532,
       "longitude": 103.9432
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "sichuan",
       "التصنيع التصديري",
@@ -18749,7 +18749,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 34.4431,
       "longitude": 108.5529
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shaanxi",
       "التصنيع التصديري",
@@ -18842,7 +18842,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 41.535,
       "longitude": 123.137
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "liaoning",
       "التصنيع التصديري",
@@ -18935,7 +18935,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 43.423,
       "longitude": 125.3922
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jilin",
       "التصنيع التصديري",
@@ -19028,7 +19028,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 45.6487,
       "longitude": 126.9037
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "heilongjiang",
       "التصنيع التصديري",
@@ -19121,7 +19121,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.097,
       "longitude": 112.8786
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shanxi",
       "التصنيع التصديري",
@@ -19214,7 +19214,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 27.0475,
       "longitude": 106.6178
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guizhou",
       "التصنيع التصديري",
@@ -19307,7 +19307,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 25.2462,
       "longitude": 102.3692
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "yunnan",
       "التصنيع التصديري",
@@ -19400,7 +19400,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.6394,
       "longitude": 108.0081
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangxi",
       "التصنيع التصديري",
@@ -19493,7 +19493,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 40.4439,
       "longitude": 111.7069
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "inner-mongolia",
       "التصنيع التصديري",
@@ -19586,7 +19586,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 43.5736,
       "longitude": 87.9275
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "xinjiang",
       "التصنيع التصديري",
@@ -19679,7 +19679,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.1864,
       "longitude": 104.2142
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "gansu",
       "التصنيع التصديري",
@@ -19772,7 +19772,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 20.4313,
       "longitude": 110.2997
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hainan",
       "التصنيع التصديري",
@@ -19865,7 +19865,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.7805,
       "longitude": 105.9589
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "ningxia",
       "التصنيع التصديري",
@@ -19958,7 +19958,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.5505,
       "longitude": 101.3863
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "qinghai",
       "التصنيع التصديري",
@@ -20051,7 +20051,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.2831,
       "longitude": 91.0186
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "tibet",
       "التصنيع التصديري",
@@ -20144,7 +20144,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 21.9906,
       "longitude": 114.3973
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hong-kong",
       "التصنيع التصديري",
@@ -20237,7 +20237,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.2129,
       "longitude": 113.9436
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "macau",
       "التصنيع التصديري",
@@ -20330,7 +20330,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 25.377,
       "longitude": 121.7695
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "taiwan",
       "التصنيع التصديري",
@@ -20423,7 +20423,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.4867,
       "longitude": 113.0852
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "التصنيع التصديري",
@@ -20516,7 +20516,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.3165,
       "longitude": 119.7574
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "التصنيع التصديري",
@@ -20609,7 +20609,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 31.7499,
       "longitude": 118.5126
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangsu",
       "التصنيع التصديري",
@@ -20702,7 +20702,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.2719,
       "longitude": 117.2471
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shandong",
       "التصنيع التصديري",
@@ -20795,7 +20795,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 25.9764,
       "longitude": 119.6843
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "fujian",
       "التصنيع التصديري",
@@ -20888,7 +20888,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.3161,
       "longitude": 114.807
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hebei",
       "التصنيع التصديري",
@@ -20981,7 +20981,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 35.14,
       "longitude": 113.5531
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "henan",
       "التصنيع التصديري",
@@ -21074,7 +21074,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.7446,
       "longitude": 113.9354
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hubei",
       "التصنيع التصديري",
@@ -21167,7 +21167,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 27.9988,
       "longitude": 112.6111
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hunan",
       "التصنيع التصديري",
@@ -21260,7 +21260,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 31.4615,
       "longitude": 117.2989
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "anhui",
       "التصنيع التصديري",
@@ -21353,7 +21353,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.4805,
       "longitude": 116.2028
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangxi",
       "التصنيع التصديري",
@@ -21446,7 +21446,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.7536,
       "longitude": 104.4236
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "sichuan",
       "التصنيع التصديري",
@@ -21539,7 +21539,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 34.7395,
       "longitude": 108.9804
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shaanxi",
       "التصنيع التصديري",
@@ -21632,7 +21632,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 42.0549,
       "longitude": 123.1186
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "liaoning",
       "التصنيع التصديري",
@@ -21725,7 +21725,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 43.6885,
       "longitude": 124.9448
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jilin",
       "التصنيع التصديري",
@@ -21818,7 +21818,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 45.4156,
       "longitude": 126.4386
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "heilongjiang",
       "التصنيع التصديري",
@@ -21911,7 +21911,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 37.5797,
       "longitude": 112.8235
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shanxi",
       "التصنيع التصديري",
@@ -22004,7 +22004,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 26.7216,
       "longitude": 107.0233
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guizhou",
       "التصنيع التصديري",
@@ -22097,7 +22097,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 25.4113,
       "longitude": 102.8625
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "yunnan",
       "التصنيع التصديري",
@@ -22190,7 +22190,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.1437,
       "longitude": 108.1357
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangxi",
       "التصنيع التصديري",
@@ -22283,7 +22283,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 40.8238,
       "longitude": 111.3515
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "inner-mongolia",
       "التصنيع التصديري",
@@ -22376,7 +22376,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 43.4798,
       "longitude": 87.4158
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "xinjiang",
       "التصنيع التصديري",
@@ -22469,7 +22469,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 35.7051,
       "longitude": 104.0167
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "gansu",
       "التصنيع التصديري",
@@ -22562,7 +22562,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 20.0051,
       "longitude": 110.598
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hainan",
       "التصنيع التصديري",
@@ -22655,7 +22655,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.8012,
       "longitude": 106.4787
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "ningxia",
       "التصنيع التصديري",
@@ -22748,7 +22748,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.9991,
       "longitude": 101.6498
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "qinghai",
       "التصنيع التصديري",
@@ -22841,7 +22841,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.7472,
       "longitude": 90.7835
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "tibet",
       "التصنيع التصديري",
@@ -22934,7 +22934,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.0434,
       "longitude": 113.8798
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hong-kong",
       "التصنيع التصديري",
@@ -23027,7 +23027,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 21.8059,
       "longitude": 113.6196
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "macau",
       "التصنيع التصديري",
@@ -23120,7 +23120,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 24.8844,
       "longitude": 121.9368
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "taiwan",
       "التصنيع التصديري",
@@ -23213,7 +23213,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.3613,
       "longitude": 113.5901
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "التصنيع التصديري",
@@ -23306,7 +23306,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.6736,
       "longitude": 120.1356
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "التصنيع التصديري",
@@ -23399,7 +23399,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 32.2612,
       "longitude": 118.4165
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangsu",
       "التصنيع التصديري",
@@ -23492,7 +23492,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.4672,
       "longitude": 116.7649
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shandong",
       "التصنيع التصديري",
@@ -23585,7 +23585,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 25.6762,
       "longitude": 119.2594
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "fujian",
       "التصنيع التصديري",
@@ -23678,7 +23678,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 37.7964,
       "longitude": 114.83
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hebei",
       "التصنيع التصديري",
@@ -23771,7 +23771,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 34.8786,
       "longitude": 114.0029
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "henan",
       "التصنيع التصديري",
@@ -23864,7 +23864,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.9819,
       "longitude": 114.3984
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hubei",
       "التصنيع التصديري",
@@ -23957,7 +23957,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.5166,
       "longitude": 112.6616
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hunan",
       "التصنيع التصديري",
@@ -24050,7 +24050,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 31.7838,
       "longitude": 116.8906
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "anhui",
       "التصنيع التصديري",
@@ -24143,7 +24143,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.311,
       "longitude": 115.711
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangxi",
       "التصنيع التصديري",
@@ -24236,7 +24236,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.2482,
       "longitude": 104.3005
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "sichuan",
       "التصنيع التصديري",
@@ -24329,7 +24329,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 34.3628,
       "longitude": 109.3392
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shaanxi",
       "التصنيع التصديري",
@@ -24422,7 +24422,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 42.1533,
       "longitude": 123.6294
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "liaoning",
       "التصنيع التصديري",
@@ -24515,7 +24515,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 44.1715,
       "longitude": 125.138
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jilin",
       "التصنيع التصديري",
@@ -24608,7 +24608,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 45.8391,
       "longitude": 126.1366
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "heilongjiang",
       "التصنيع التصديري",
@@ -24701,7 +24701,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 37.5544,
       "longitude": 112.3039
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shanxi",
       "التصنيع التصديري",
@@ -24794,7 +24794,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 26.2707,
       "longitude": 106.7639
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guizhou",
       "التصنيع التصديري",
@@ -24887,7 +24887,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 24.9494,
       "longitude": 103.1018
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "yunnan",
       "التصنيع التصديري",
@@ -24980,7 +24980,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 23.0954,
       "longitude": 108.6537
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangxi",
       "التصنيع التصديري",
@@ -25073,7 +25073,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 41.2336,
       "longitude": 111.672
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "inner-mongolia",
       "التصنيع التصديري",
@@ -25166,7 +25166,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 43.9709,
       "longitude": 87.2441
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "xinjiang",
       "التصنيع التصديري",
@@ -25259,7 +25259,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 35.826,
       "longitude": 103.5107
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "gansu",
       "التصنيع التصديري",
@@ -25352,7 +25352,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 19.6447,
       "longitude": 110.2229
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hainan",
       "التصنيع التصديري",
@@ -25445,7 +25445,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.2908,
       "longitude": 106.5794
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "ningxia",
       "التصنيع التصديري",
@@ -25538,7 +25538,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.808,
       "longitude": 102.1336
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "qinghai",
       "التصنيع التصديري",
@@ -25631,7 +25631,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.0511,
       "longitude": 91.2057
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "tibet",
       "التصنيع التصديري",
@@ -25724,7 +25724,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.5629,
       "longitude": 113.8521
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hong-kong",
       "التصنيع التصديري",
@@ -25817,7 +25817,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.0634,
       "longitude": 113.1675
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "macau",
       "التصنيع التصديري",
@@ -25910,7 +25910,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 24.6431,
       "longitude": 121.4759
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "taiwan",
       "التصنيع التصديري",
@@ -26003,7 +26003,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.8431,
       "longitude": 113.5441
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "التصنيع التصديري",
@@ -26096,7 +26096,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.355,
       "longitude": 120.5468
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "التصنيع التصديري",
@@ -26189,7 +26189,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 32.435,
       "longitude": 118.9068
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangsu",
       "التصنيع التصديري",
@@ -26282,7 +26282,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.9738,
       "longitude": 116.8836
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shandong",
       "التصنيع التصديري",
@@ -26375,7 +26375,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 26.0497,
       "longitude": 118.8973
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "fujian",
       "التصنيع التصديري",
@@ -26468,7 +26468,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 37.6935,
       "longitude": 114.32
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hebei",
       "التصنيع التصديري",
@@ -26561,7 +26561,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 34.3939,
       "longitude": 113.814
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "henan",
       "التصنيع التصديري",
@@ -26654,7 +26654,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.561,
       "longitude": 114.7042
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hubei",
       "التصنيع التصديري",
@@ -26747,7 +26747,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.5465,
       "longitude": 113.181
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hunan",
       "التصنيع التصديري",
@@ -26840,7 +26840,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 32.237,
       "longitude": 117.146
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "anhui",
       "التصنيع التصديري",
@@ -26933,7 +26933,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 28.7708,
       "longitude": 115.4676
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangxi",
       "التصنيع التصديري",
@@ -27026,7 +27026,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 30.2918,
       "longitude": 103.7821
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "sichuan",
       "التصنيع التصديري",
@@ -27119,7 +27119,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 33.9502,
       "longitude": 109.0224
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shaanxi",
       "التصنيع التصديري",
@@ -27212,7 +27212,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 41.6637,
       "longitude": 123.8055
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "liaoning",
       "التصنيع التصديري",
@@ -27305,7 +27305,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 44.0551,
       "longitude": 125.645
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jilin",
       "التصنيع التصديري",
@@ -27398,7 +27398,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 46.2029,
       "longitude": 126.5085
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "heilongjiang",
       "التصنيع التصديري",
@@ -27491,7 +27491,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.0639,
       "longitude": 112.1987
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shanxi",
       "التصنيع التصديري",
@@ -27584,7 +27584,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 26.4575,
       "longitude": 106.2783
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guizhou",
       "التصنيع التصديري",
@@ -27677,7 +27677,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 24.6417,
       "longitude": 102.6822
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "yunnan",
       "التصنيع التصديري",
@@ -27770,7 +27770,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.5762,
       "longitude": 108.6859
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangxi",
       "التصنيع التصديري",
@@ -27863,7 +27863,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 40.9802,
       "longitude": 112.1263
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "inner-mongolia",
       "التصنيع التصديري",
@@ -27956,7 +27956,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 44.2162,
       "longitude": 87.7028
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "xinjiang",
       "التصنيع التصديري",
@@ -28049,7 +28049,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.3446,
       "longitude": 103.5521
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "gansu",
       "التصنيع التصديري",
@@ -28142,7 +28142,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 19.9597,
       "longitude": 109.8089
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hainan",
       "التصنيع التصديري",
@@ -28235,7 +28235,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.1126,
       "longitude": 106.0906
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "ningxia",
       "التصنيع التصديري",
@@ -28328,7 +28328,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.3004,
       "longitude": 102.0195
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "qinghai",
       "التصنيع التصديري",
@@ -28421,7 +28421,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.6808,
       "longitude": 91.5711
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "tibet",
       "التصنيع التصديري",
@@ -28514,7 +28514,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.6703,
       "longitude": 114.3612
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hong-kong",
       "التصنيع التصديري",
@@ -28607,7 +28607,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.5497,
       "longitude": 113.3521
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "macau",
       "التصنيع التصديري",
@@ -28700,7 +28700,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 25.0613,
       "longitude": 121.1664
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "taiwan",
       "التصنيع التصديري",
@@ -28793,7 +28793,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 22.8086,
       "longitude": 113.025
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "guangdong",
       "التصنيع التصديري",
@@ -28886,7 +28886,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 29.8995,
       "longitude": 120.2954
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "zhejiang",
       "التصنيع التصديري",
@@ -28979,7 +28979,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 31.9774,
       "longitude": 119.1542
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "jiangsu",
       "التصنيع التصديري",
@@ -29072,7 +29072,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 36.9347,
       "longitude": 117.4023
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "shandong",
       "التصنيع التصديري",
@@ -29165,7 +29165,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 26.4651,
       "longitude": 119.2104
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "fujian",
       "التصنيع التصديري",
@@ -29258,7 +29258,7 @@ export const CHINA_DIRECTORY_CITIES: IChinaDirectoryEntity[] = [
       "latitude": 38.1814,
       "longitude": 114.1397
     },
-    "coverImage": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=1200&auto=format&fit=crop&q=80",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hebei",
       "التصنيع التصديري",

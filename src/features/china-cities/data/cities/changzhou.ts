@@ -12,7 +12,7 @@ export const changzhouCity: ICity = {
   region: 'East China / Yangtze River Delta',
   tier: 'tier-2',
   commercialImportanceScore: 90,
-  heroImage: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1200&q=80',
+  heroImage: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80',
   description: {
     ar: 'عاصمة الطاقة الجديدة في الصين (China New Energy Capital) وأحد أسرع المراكز الصناعية نمواً في دلتا نهر يانغتسي. تحتضن مقرات عمالقة الطاقة الشمسية (Trina Solar) وبطاريات الليثيوم (CALB وSVOLT ومصانع CATL)، وتضم مصانع سيارات Li Auto الكهربائية، إلى جانب كونها عاصمة صناعة وتصدير أرضيات الفينيل والـ SPC والأرضيات الخشبية في هنغلين (横林) التي تغطي أكثر من 40% من صادرات الصين.',
     en: 'China official "New Energy Capital" and a powerhouse manufacturing city in the Yangtze River Delta. Home to solar photovoltaic leader Trina Solar, lithium battery giants CALB and SVOLT, the Li Auto mega-EV plant, and Henglin—the undisputed global capital for SPC luxury vinyl tile (LVT) and laminate flooring exporting to over 150 countries.'

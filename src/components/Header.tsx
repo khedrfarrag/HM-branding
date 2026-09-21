@@ -92,7 +92,7 @@ export default function Header({ locale }: HeaderProps) {
           </Link>
 
           {/* Nav links — Desktop */}
-          <nav className="hidden items-center gap-8 md:flex">
+          <nav className="hidden items-center gap-5 lg:gap-7 xl:gap-8 md:flex">
             {links.map((link) => (
               <Link
                 key={link.href}
@@ -139,33 +139,33 @@ export default function Header({ locale }: HeaderProps) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="fixed inset-0 z-40 bg-black/98 pt-[90px] px-sp-6 pb-sp-8 md:hidden flex flex-col justify-between"
+            className="fixed inset-0 z-40 bg-[#0B0C10] pt-[84px] px-sp-6 pb-sp-6 md:hidden flex flex-col justify-between overflow-y-auto"
           >
-            <nav className="flex flex-col gap-sp-4 mt-sp-4">
+            <nav className="flex flex-col gap-sp-3 mt-sp-2">
               {links.map((link, idx) => (
                 <motion.div
                   initial={{ opacity: 0, x: isAr ? 20 : -20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: idx * 0.05, duration: 0.3 }}
+                  transition={{ delay: idx * 0.03, duration: 0.25 }}
                   key={link.href}
                 >
                   <Link
                     href={link.href}
                     onClick={(e) => { handleNavClick(e, link.href); setMenuOpen(false); }}
-                    className="text-fs-h3 text-silver font-light hover:text-white transition-colors duration-300 border-b border-glass/40 pb-sp-3 flex items-center justify-between"
+                    className="text-lg sm:text-xl text-silver font-light hover:text-white transition-colors duration-300 border-b border-white/5 pb-2.5 flex items-center justify-between"
                   >
                     <span>{link.label}</span>
-                    <span className="text-gold-soft font-mono text-sm opacity-55">0{idx + 1}</span>
+                    <span className="text-gold-soft font-mono text-xs opacity-60">0{idx + 1}</span>
                   </Link>
                 </motion.div>
               ))}
             </nav>
             
-            <div className="flex flex-col gap-sp-4 pb-sp-4">
+            <div className="flex flex-col gap-sp-4 pt-sp-4 pb-sp-2 mt-auto shrink-0">
               <Link
                 href={cta.href}
                 onClick={() => setMenuOpen(false)}
-                className="flex h-[50px] w-full items-center justify-center rounded-full bg-gradient-to-b from-gold-soft to-gold text-sm font-medium text-black active:scale-98 transition-all duration-300"
+                className="flex h-[48px] w-full items-center justify-center rounded-full bg-gradient-to-b from-gold-soft to-gold text-sm font-semibold text-black active:scale-98 transition-all duration-300 shadow-lg shadow-gold/10"
               >
                 {cta.label}
               </Link>

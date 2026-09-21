@@ -89,13 +89,13 @@ export default function FAQExplorer({ locale }: FAQExplorerProps) {
       <div>
         <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-white">
           {isAr
-            ? "الأسئلة الشائعة عن حسام مبروك والتجارة (50 سؤالاً)"
-            : "Frequently Asked Questions & Trade Reference (50 Q&As)"}
+            ? "الأسئلة الشائعة وقاعدة المعرفة التجارية (200 سؤالاً)"
+            : "Frequently Asked Questions & Trade Knowledge Base (200 Q&As)"}
         </h2>
         <p className="text-silver text-xs sm:text-sm mt-1 leading-lh-relaxed">
           {isAr
-            ? "إجابات واضحة وموثقة حول حسام مبروك، خبرته، مجالات اهتمامه، والمحتوى المعرفي الذي يشاركه في التجارة الدولية والتوريد والتصنيع من الصين والتكنولوجيا."
-            : "Verified reference answers covering Hossam Mabrouk's expertise, China sourcing, factory audits, import operations, and AI for business."}
+            ? "إجابات استشارية واضحة وموثقة حول حسام مبروك، منهجيات التوريد، أسرار التصنيع في الصين، وتأسيس وتطوير الأعمال التجارية وإدارة سلاسل الإمداد."
+            : "Comprehensive reference answers covering Hossam Mabrouk's advisory, China sourcing, factory audits, import operations, and business scaling."}
         </p>
       </div>
 
@@ -108,8 +108,8 @@ export default function FAQExplorer({ locale }: FAQExplorerProps) {
           onChange={handleSearchChange}
           placeholder={
             isAr
-              ? "ابحث في 50 سؤالاً وإجابة (مثال: الصين، التوريد، الشحن، الموردين...)"
-              : "Search 50 Q&As (e.g. Sourcing, Freight, Factories, Customs...)"
+              ? "ابحث في 200 سؤالاً وإجابة (مثال: الصين، التوريد، الشحن، الموردين...)"
+              : "Search 200 Q&As (e.g. Sourcing, Freight, Factories, Customs...)"
           }
           className="w-full rounded-2xl border border-glass bg-black/60 pr-11 pl-4 py-3 text-xs sm:text-sm text-white placeholder:text-silver-dim focus:border-gold focus:outline-none transition-colors"
         />
@@ -181,22 +181,24 @@ export default function FAQExplorer({ locale }: FAQExplorerProps) {
                       {a}
                     </p>
 
-                    {/* Internal Link CTA */}
-                    {faq.internalLink && (
-                      <div className="mt-sp-4 pt-sp-3 border-t border-white/5 flex items-center justify-between">
-                        <span className="text-[11px] font-mono text-silver-dim">
-                          {isAr ? "بقلم: حسام مبروك" : "Author: Hossam Mabrouk"}
-                        </span>
+                    {/* Credibility Line and Internal Link CTA */}
+                    <div className="mt-sp-4 pt-sp-3 border-t border-white/5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                      <span className="text-[11px] font-mono text-gold/90">
+                        {isAr
+                          ? (faq.credibilityLineAr || "إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين")
+                          : "Advisory Guidance by Hossam Mabrouk — International Trade & Sourcing"}
+                      </span>
+                      {faq.internalLink && (
                         <Link
                           href={`/${locale}${faq.internalLink.href}`}
-                          className="inline-flex items-center gap-1.5 text-xs font-bold text-gold hover:underline"
+                          className="inline-flex items-center gap-1.5 text-xs font-bold text-gold hover:underline shrink-0"
                         >
                           {isAr
                             ? faq.internalLink.labelAr
                             : faq.internalLink.labelEn}
                         </Link>
-                      </div>
-                    )}
+                      )}
+                    </div>
                   </div>
                 )}
               </div>
