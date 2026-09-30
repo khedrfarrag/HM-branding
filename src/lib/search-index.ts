@@ -2,7 +2,6 @@ import { SearchDocument } from "@/integrations/search/provider";
 import { LocalFsKnowledgeRepository } from "@/repositories/local-fs/knowledge";
 import { LocalFsExperienceRepository } from "@/repositories/local-fs/experiences";
 import { LocalFsMediaRepository } from "@/repositories/local-fs/media";
-import { LocalFsTradeIntelRepository } from "@/repositories/local-fs/trade-intel";
 
 /**
  * Build-time search index compiler.
@@ -16,7 +15,6 @@ export async function buildSearchIndex(): Promise<SearchDocument[]> {
   const knowledge = new LocalFsKnowledgeRepository();
   const experiences = new LocalFsExperienceRepository();
   const media = new LocalFsMediaRepository();
-  const tradeIntel = new LocalFsTradeIntelRepository();
 
   for (const locale of locales) {
     // Articles
@@ -58,20 +56,6 @@ export async function buildSearchIndex(): Promise<SearchDocument[]> {
           excerpt: m.description,
           url: `/${locale}/media/${m.mediaType}/${m.slug}`,
           type: "media"
-        });
-      }
-    } catch { /* skip on failure */ }
-
-    // Trade Intelligence
-    try {
-      const items = await tradeIntel.getTradeIntelItems(locale);
-      for (const t of items) {
-        documents.push({
-          id: `${locale}-trade-intel-${t.slug}`,
-          title: t.title,
-          excerpt: t.body.slice(0, 160),
-          url: `/${locale}/trade-intelligence/${t.feedType}/${t.slug}`,
-          type: "trade-intel"
         });
       }
     } catch { /* skip on failure */ }

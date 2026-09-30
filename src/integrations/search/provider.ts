@@ -10,7 +10,7 @@ export interface SearchDocument {
   title: string;
   excerpt: string;
   url: string;
-  type: "article" | "experience" | "service" | "trade-intel" | "media" | "china";
+  type: "article" | "experience" | "service" | "media" | "china";
   tags?: string[];
 }
 

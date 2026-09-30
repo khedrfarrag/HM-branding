@@ -199,7 +199,7 @@ export const BIO_FAQS: FAQItem[] = [
     answerAr: 'نعم، يولي حسام مبروك اهتماماً خاصاً بتسخير التقنيات الحديثة وأدوات الذكاء الاصطناعي في تحليل سلاسل الإمداد، والتنبؤ بالأسعار، والترجمة الفنية للمواصفات، ومطابقة شهادات الجودة، وأتمتة البحث عن الموردين، مما يمنح الشركات مرونة وسرعة في اتخاذ القرارات التنافسية.',
     answerEn: 'Active research on AI integration for supplier discovery, spec translation, predictive freight cost models, and automated compliance auditing.',
     credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
-    internalLink: { href: '/trade-intelligence', labelAr: 'مركز ذكاء التجارة وتحليلات التقنية ←', labelEn: 'Trade Intelligence Center ←' }
+    internalLink: { href: '/knowledge', labelAr: 'مقالات المعرفة وتحليلات التقنية ←', labelEn: 'Knowledge & AI Insights ←' }
   },
   {
     id: 21,
@@ -429,7 +429,7 @@ export const BIO_FAQS: FAQItem[] = [
     answerAr: 'يشير حسام مبروك إلى أن قطاع التوريد يتجه نحو مزيد من الأتمتة والرقمنة والمعايير البيئية الصارمة (ESG). الصين تتطور بسرعة من مجرد مصنع للعمالة الرخيصة إلى مركز عالمي للتكنولوجيا العالية والمنتجات المتطورة، مما يتطلب من المستوردين فهماً أعمق للمواصفات الفنية وبناء علاقات استراتيجية تواكب التغيرات في سلاسل الإمداد العالمية.',
     answerEn: 'China is transitioning from low-cost labor to advanced tech manufacturing. Importers must master engineering specs, compliance audits, and digital workflows.',
     credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
-    internalLink: { href: '/trade-intelligence', labelAr: 'تحليلات مستقبل التجارة وسلاسل الإمداد العالمية ←', labelEn: 'Future of Global Trade Analysis ←' }
+    internalLink: { href: '/china', labelAr: 'دليل الصين وسلاسل الإمداد العالمية ←', labelEn: 'China Guide & Supply Chain ←' }
   },
   {
     id: 44,

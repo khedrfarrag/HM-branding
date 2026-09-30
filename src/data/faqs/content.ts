@@ -459,7 +459,7 @@ export const CONTENT_FAQS: FAQItem[] = [
     answerAr: 'التتبع الرقمي المستمر لحركة الحاويات ومراحل التصنيع يتيح لك الرؤية المسبقة لأي اختناقات محتملة في الموانئ أو تأخير في خطوط الإنتاج، مما يمكنك من اتخاذ قرارات بديلة فورية، مثل إعادة توجيه مسارات الشحن، أو إخطار العملاء المحليين بمواعيد التسليم الجديدة، وتفادي غرامات العقود المحلية. الشفافية اللوجستية ركيزة أساسية لأي عمل تجاري محترف.',
     answerEn: 'Real-time container tracking enables proactive rerouting, mitigation of port congestion, and transparent communication with downstream buyers.',
     credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
-    internalLink: { href: '/trade-intelligence', labelAr: 'أدوات تتبع الشحنات وإدارة سلاسل الإمداد ←', labelEn: 'Supply Chain Tracking Systems ←' }
+    internalLink: { href: '/tools', labelAr: 'أدوات وحاسبات الشحن واللوجستيات ←', labelEn: 'Freight & Logistics Tools ←' }
   },
   {
     id: 97,
@@ -499,6 +499,6 @@ export const CONTENT_FAQS: FAQItem[] = [
     answerAr: 'ينشر الموقع تحليلات دورية وقراءات استشرافية حول تقلبات أسعار الشحن البحري، وتأثير التوترات الجيوسياسية على الممرات الملاحية العالمية، وسياسات الموانئ الكبرى والتكتلات الصناعية. يمنح هذا المحتوى التاجر وعياً مبكراً بالأزمات قبل وقوعها، ويساعده على التخطيط الاستباقي للطلبيات، وتنويع مصادر التوريد، واختيار طرق شحن بديلة تحمي سلاسل إمداد مشروعه من الانقطاع.',
     answerEn: 'Provides proactive trade intelligence on shipping rate cycles, geopolitical maritime choke points, and port disruptions, enabling resilient supply chain pivoting.',
     credibilityLineAr: 'تمت مراجعة هذه الإجابة ضمن المحتوى الاستشاري لحسام مبروك',
-    internalLink: { href: '/trade-intelligence', labelAr: 'مركز ذكاء التجارة وسلاسل الإمداد العالمية ←', labelEn: 'Trade Intelligence Dashboard ←' }
+    internalLink: { href: '/china/ports', labelAr: 'دليل الموانئ وسلاسل الإمداد العالمية ←', labelEn: 'Global Ports & Supply Chain Guide ←' }
   }
 ];

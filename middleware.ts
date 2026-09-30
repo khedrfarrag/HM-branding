@@ -18,6 +18,6 @@ export const config = {
      * - robots.txt (robots.txt file)
      * - README.md (README file)
      */
-    "/((?!api|_next/static|_next/image|fonts|assets|favicon.ico|robots.txt|README.md).*)",
+    "/((?!api|_next/static|_next/image|fonts|assets|favicon.ico|robots.txt|sitemap.xml|llms.txt|llms-full.txt|README.md).*)",
   ],
 };

@@ -26,8 +26,8 @@ export const DIGITAL_FAQS: FAQItem[] = [
     category: 'digital',
     questionAr: 'ما هي الأقسام والميزات الرئيسية المتاحة لزوار الموقع؟',
     questionEn: 'What are the main sections and features available to site visitors?',
-    answerAr: 'يضم الموقع عدة أقسام رئيسية متكاملة: قسم "دليل الصين" الذي يقدم معلومات متعمقة عن المقاطعات والمدن الصناعية والموانئ والمعارض؛ قسم "مركز ذكاء التجارة" الذي يقدم تحليلات وتوقعات لسلاسل الإمداد العالمية؛ قسم "أدوات التاجر المجانية" مثل حاسبة تكلفة الوصول ومصفوفة المخاطر؛ قسم "الأسئلة الشائعة" الشامل؛ وبوابة حجز الاستشارات الخاصة المباشرة مع حسام مبروك.',
-    answerEn: 'Key sections: China Industrial Directory, Trade Intelligence Center, Free Merchant Calculation Tools, Comprehensive 200-FAQ Knowledge Base, and Strategy Booking.',
+    answerAr: 'يضم الموقع عدة أقسام رئيسية متكاملة: قسم "دليل الصين" الذي يقدم معلومات متعمقة عن المقاطعات والمدن الصناعية والموانئ والمعارض؛ قسم "قاعدة المعرفة والمقالات" الذي يقدم تحليلات متخصصة في التوريد والتجارة؛ قسم "أدوات التاجر المجانية" مثل حاسبة تكلفة الوصول ومصفوفة المخاطر؛ قسم "الأسئلة الشائعة" الشامل؛ وبوابة حجز الاستشارات الخاصة المباشرة مع حسام مبروك.',
+    answerEn: 'Key sections: China Industrial Directory, Knowledge & Article Hub, Free Merchant Calculation Tools, Comprehensive FAQ Knowledge Base, and Strategy Booking.',
     credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
     internalLink: { href: '/about/what-you-find', labelAr: 'خريطة أقسام ومحتويات الموقع بالتفصيل ←', labelEn: 'Explore Full Site Map ←' }
   },
@@ -79,7 +79,7 @@ export const DIGITAL_FAQS: FAQItem[] = [
     answerAr: 'النشرة البريدية المعرفية هي خدمة إخبارية وتحليلية دورية تصل للمشتركين عبر البريد الإلكتروني، وتتضمن: قراءات في حركة أسعار الشحن وسلاسل الإمداد العالمية، وتنبيهات بمواعيد المعارض الصينية الكبرى والعطلات الرسمية، وتحليلات لأحدث القرارات الجمركية والتنظيمية في الأسواق العربية. يمكنك الاشتراك فيها مجاناً عبر إدخال بريدك الإلكتروني في الصندوق المخصص أسفل صفحات الموقع.',
     answerEn: 'Delivers periodic market intelligence, freight index trends, China expo dates, and customs updates straight to your inbox. Free subscription available in page footers.',
     credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
-    internalLink: { href: '/trade-intelligence', labelAr: 'الاشتراك في نشرة ذكاء التجارة الدورية ←', labelEn: 'Subscribe to Trade Intelligence ←' }
+    internalLink: { href: '/tools', labelAr: 'استكشف أدوات وحاسبات التاجر المجانية ←', labelEn: 'Free Merchant Tools ←' }
   },
   {
     id: 159,
@@ -96,10 +96,10 @@ export const DIGITAL_FAQS: FAQItem[] = [
     category: 'digital',
     questionAr: 'كم مرة يتم تحديث البيانات والأدلة المنشورة على موقع حسام مبروك؟',
     questionEn: 'How frequently is the content and directory information updated?',
-    answerAr: 'تخضع محتويات الموقع وأدلته الرقمية لعمليات تدقيق وتحديث دورية مستمرة؛ حيث يتم تحديث أدلة المدن والمعارض ومؤشرات الشحن والأسئلة الشائعة لمواكبة التغيرات في السوق الصيني واللوائح الجمركية العربية، مع إضافة مقالات وتحليلات أسبوعية جديدة في مركز ذكاء التجارة لتقديم رؤى حديثة تواكب أحدث المستجدات الاقتصادية.',
-    answerEn: 'Content, city guides, and trade intelligence trackers undergo periodic audits and updates to reflect shifting regulations, freight dynamics, and industrial expo dates.',
+    answerAr: 'تخضع محتويات الموقع وأدلته الرقمية لعمليات تدقيق وتحديث دورية مستمرة؛ حيث يتم تحديث أدلة المدن والمعارض والأسئلة الشائعة لمواكبة التغيرات في السوق الصيني واللوائح الجمركية، مع إضافة مقالات وتحليلات دورية جديدة في قاعدة المعرفة لتقديم رؤى حديثة تواكب أحدث المستجدات الاقتصادية.',
+    answerEn: 'Content, city guides, and knowledge base articles undergo periodic audits and updates to reflect shifting regulations, freight dynamics, and industrial expo dates.',
     credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
-    internalLink: { href: '/trade-intelligence', labelAr: 'اطلع على أحدث المقالات والتحديثات المعرفية ←', labelEn: 'Latest Articles & Updates ←' }
+    internalLink: { href: '/knowledge', labelAr: 'اطلع على أحدث المقالات والتحديثات المعرفية ←', labelEn: 'Latest Articles & Updates ←' }
   },
   {
     id: 161,
@@ -214,12 +214,12 @@ export const DIGITAL_FAQS: FAQItem[] = [
   {
     id: 172,
     category: 'digital',
-    questionAr: 'ما هي مميزات مركز "ذكاء التجارة" المتاح على منصة حسام مبروك؟',
-    questionEn: 'What are the unique capabilities of the Trade Intelligence Center?',
-    answerAr: 'مركز ذكاء التجارة هو محرك معرفي يقدم تحليلات استشرافية للاتجاهات التجارية الكبرى؛ يشمل متابعة مؤشرات أسعار الحاويات العالمية (SCFI)، ورصد التغيرات في سياسات الموانئ الصينية والإقليمية، وتقديم تقارير متخصصة حول توظيف الذكاء الاصطناعي والتكنولوجيا في أتمتة عمليات الشراء والتوريد الدولي.',
-    answerEn: 'A strategic intelligence dashboard monitoring global container freight indices, geopolitical maritime choke points, and AI-driven procurement automation.',
+    questionAr: 'ما هي مميزات قسم "قاعدة المعرفة والمقالات" المتاح على منصة حسام مبروك؟',
+    questionEn: 'What are the unique capabilities of the Knowledge Base on the platform?',
+    answerAr: 'قسم قاعدة المعرفة هو محرك معرفي يقدم تحليلات متخصصة للاتجاهات التجارية الكبرى؛ يشمل متابعة حركة التجارة مع الصين، وتقديم تقارير عملية حول توظيف التكنولوجيا والذكاء الاصطناعي في أتمتة عمليات الشراء والتوريد الدولي وإدارة المخاطر.',
+    answerEn: 'A strategic knowledge hub providing specialized analyses on international trade, sourcing strategies, and AI-driven procurement automation.',
     credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
-    internalLink: { href: '/trade-intelligence', labelAr: 'استكشف مركز ذكاء التجارة العالمي ←', labelEn: 'Explore Trade Intelligence Center ←' }
+    internalLink: { href: '/knowledge', labelAr: 'استكشف مقالات وقاعدة المعرفة ←', labelEn: 'Explore Knowledge Base ←' }
   },
   {
     id: 173,
@@ -356,10 +356,10 @@ export const DIGITAL_FAQS: FAQItem[] = [
     category: 'digital',
     questionAr: 'كيف تتابع أحدث تحليلات حركة التجارة مع الصين عبر الموقع؟',
     questionEn: 'How to track the latest China trade intelligence and updates on the portal?',
-    answerAr: 'يمكن متابعة قسم "مركز ذكاء التجارة" الذي يتم تحديثه بتحليلات دورية تغطي: حركة الإنتاج في المقاطعات الصناعية الصينية، تقلبات أسعار صرف اليوان الصيني، مسارات الشحن البحري البديلة، ومواعيد المعارض التجارية الكبرى، مما يمنحك رؤية استباقية تسهم في تعزيز مرونة قراراتك الشرائية.',
-    answerEn: 'Access the Trade Intelligence hub regularly for structured updates on industrial output cycles, Yuan FX movements, ocean carrier blank sailings, and expos.',
+    answerAr: 'يمكن متابعة قسم "دليل الصين وقاعدة المعرفة" الذي يغطي: حركة الإنتاج في المقاطعات الصناعية الصينية، المعارض التجارية الكبرى، والموانئ والمصانع المعتمدة، مما يمنحك رؤية استباقية تسهم في تعزيز مرونة قراراتك الشرائية.',
+    answerEn: 'Access the China Guide and Knowledge Base regularly for structured updates on industrial hubs, verified factories, ports, and major expos.',
     credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
-    internalLink: { href: '/trade-intelligence', labelAr: 'زيارة قسم ذكاء التجارة وسلاسل الإمداد ←', labelEn: 'Visit Trade Intelligence Hub ←' }
+    internalLink: { href: '/china', labelAr: 'زيارة قسم دليل الصين الشامل ←', labelEn: 'Visit Comprehensive China Guide ←' }
   },
   {
     id: 187,
@@ -399,7 +399,7 @@ export const DIGITAL_FAQS: FAQItem[] = [
     answerAr: 'يخصص الموقع مساحة موسعة لتطبيقات التكنولوجيا الحديثة؛ حيث يقدم شروحات عملية لكيفية توظيف أدوات الذكاء الاصطناعي في صياغة كراسات المواصفات، والترجمة التقنية الدقيقة للمصانع، وتحليل مراجعات العملاء لاكتشاف عيوب المنتجات المنافسة، وأتمتة تتبع الشحنات وتوقع التكاليف لرفع كفاءة إدارة العمليات التجارية.',
     answerEn: 'Teaches actionable integration of generative AI for spec translation, customer review sentiment scraping, and predictive logistics scenario modeling.',
     credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
-    internalLink: { href: '/trade-intelligence', labelAr: 'أدلة وتطبيقات الذكاء الاصطناعي في التجارة والأعمال ←', labelEn: 'AI for Business Insights ←' }
+    internalLink: { href: '/knowledge', labelAr: 'أدلة وتطبيقات الذكاء الاصطناعي في التجارة والأعمال ←', labelEn: 'AI for Business Insights ←' }
   },
   {
     id: 191,

@@ -1,6 +1,8 @@
 import { getDictionary, type Locale } from "@/features/i18n";
 import { HomePage } from "@/features/home";
 import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { buildEntityGraph } from "@/lib/schema/entity-graph";
 
 // Force real-time dynamic rendering on production (Netlify) for instant consultation slot updates
 export const dynamic = "force-dynamic";
@@ -51,5 +53,12 @@ export async function generateMetadata({
 export default async function Home({ params }: PageProps) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  return <HomePage locale={locale} dict={dict} />;
+  const entityGraph = buildEntityGraph(locale);
+
+  return (
+    <>
+      <JsonLd schema={entityGraph} />
+      <HomePage locale={locale} dict={dict} />
+    </>
+  );
 }

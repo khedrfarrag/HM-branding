@@ -33,7 +33,6 @@ const HEADER_NAV = [
   { labelAr: "الخبرات",          labelEn: "Experiences",        href: "/#journey" },
   { labelAr: "دليل الصين",       labelEn: "China Guide",        href: "/china" },
   { labelAr: "الخبرة والتغطية",  labelEn: "Global Reach",       href: "/#global" },
-  { labelAr: "ذكاء التجارة",     labelEn: "Trade Intel",        href: "/trade-intelligence" },
   { labelAr: "أدوات التاجر",     labelEn: "Merchant Tools",     href: "/tools" },
 ] as const;
 
@@ -131,8 +130,6 @@ const FOOTER_COLUMNS = [
       { labelAr: "دليل الصين", labelEn: "China Guide", href: "/china" },
       { labelAr: "المدن والأسواق", labelEn: "Cities & Markets", href: "/china/cities" },
       { labelAr: "المصانع والموانئ", labelEn: "Factories & Ports", href: "/china/factories" },
-      { labelAr: "ذكاء التجارة", labelEn: "Trade Intel", href: "/trade-intelligence" },
-      { labelAr: "أخبار الشحن والجمارك", labelEn: "Shipping & Customs", href: "/trade-intelligence/shipping-news" },
     ],
   },
   {

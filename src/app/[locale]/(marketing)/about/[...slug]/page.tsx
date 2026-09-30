@@ -231,12 +231,12 @@ export default async function AboutCatchAllPage({ params }: PageProps) {
           schema={{
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            "mainEntity": FAQS_DATA.slice(0, 50).map((f) => ({
+            "mainEntity": FAQS_DATA.map((f) => ({
               "@type": "Question",
-              "name": isAr ? f.questionAr : f.questionEn,
+              "name": (isAr ? f.questionAr : f.questionEn).trim(),
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": isAr ? f.answerAr : f.answerEn,
+                "text": (isAr ? f.answerAr : f.answerEn).trim(),
               },
             })),
           } as Record<string, unknown>}
