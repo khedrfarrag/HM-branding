@@ -206,7 +206,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             </Link>
 
             <a
-              href="https://wa.me/201000000000"
+              href={`https://wa.me/201070707166?text=${encodeURIComponent(isAr ? `مرحباً أستاذ حسام، أود الاستفسار عن خدمة: ${service.title}` : `Hello Mr. Hussam, I would like to inquire about the service: ${service.title}`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-zinc-900 hover:bg-zinc-800 text-white font-bold px-7 py-3.5 rounded-xl border border-zinc-700 transition-all"
