@@ -8,7 +8,7 @@ import TypingHeadline from "@/components/TypingHeadline";
 import FloatingSocials from "@/components/FloatingSocials";
 import BookingSection from "./BookingSection";
 import InteractiveGlobeMap from "./InteractiveGlobeMap";
-import TrustBar from "./TrustBar";
+
 import AnimatedCounter from "@/components/AnimatedCounter";
 import {
   RevealSection,
@@ -55,11 +55,7 @@ const SECTOR_IMAGE_MAP: Record<string, string> = {
   "pet-products": "/images/sectors/pet-products.png",
 };
 
-interface HeroDict {
-  trustBar?: {
-    labels?: string[];
-  };
-}
+
 
 interface AboutDict {
   paragraph2?: string;
@@ -160,10 +156,7 @@ export default function HomePage({ locale, dict }: HomePageProps) {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════════════════════════════════
-          1.5 TRUST BAR — Interactive Motion Marquee below Hero
-      ══════════════════════════════════════════════════════════════════════ */}
-      <TrustBar labels={(dict.hero as HeroDict).trustBar?.labels} locale={locale} />
+
 
       {/* ══════════════════════════════════════════════════════════════════════
           2. ABOUT SECTION — "Who is Hossam Mabrouk?" Summary with CTA to /about
