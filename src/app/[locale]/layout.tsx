@@ -40,7 +40,7 @@ const jetbrains = JetBrains_Mono({
   display: "swap",
 });
 
-const siteTitle = "حسام مبروك | خبير الاستيراد والتجارة الدولية — Meridian & Co.";
+const siteTitle = "حسام مبروك | خبير التجارة والتوريد والتصنيع";
 const siteDescription = "شريكك المستمر لتأمين سلاسل التوريد، حلول الاستيراد المباشر من الصين، وتنفيذ الصفقات التجارية بأعلى معايير الجودة والأمان.";
 
 export const metadata: Metadata = {
@@ -54,13 +54,19 @@ export const metadata: Metadata = {
     title: siteTitle,
     description: siteDescription,
     url: "/",
-    siteName: "Hussam Mabrouk",
+    siteName: "حسام مبروك",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "حسام مبروك — خبير التجارة الدولية وسلاسل التوريد",
+        alt: "حسام مبروك | خبير التجارة والتوريد والتصنيع",
+      },
+      {
+        url: "/images/hossam-mabrouk-hero.jpg",
+        width: 1000,
+        height: 1000,
+        alt: "حسام مبروك | خبير التجارة والتوريد والتصنيع",
       },
     ],
     locale: "ar_EG",
@@ -71,6 +77,10 @@ export const metadata: Metadata = {
     title: siteTitle,
     description: siteDescription,
     images: ["/og-image.png"],
+  },
+  other: {
+    thumbnail: "https://hossammabrouk.com/images/hossam-mabrouk-hero.jpg",
+    "image_src": "https://hossammabrouk.com/images/hossam-mabrouk-hero.jpg",
   },
 };
 

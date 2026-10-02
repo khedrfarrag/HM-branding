@@ -11,7 +11,8 @@ export const buildPersonSchema = (locale: Locale): WithContext<Person> => {
     "@id": `${siteUrl}/#person`,
     "name": isAr ? "حسام مبروك" : "Hussam Mabrouk",
     "alternateName": isAr ? "Hussam Mabrouk" : "حسام مبروك",
-    "jobTitle": isAr ? "مستشار التجارة الدولية ومؤسس دلتا للاستيراد والتصدير" : "International Trade Consultant & Founder of Delta Import & Export",
+    "jobTitle": isAr ? "خبير التجارة والتوريد والتصنيع ومؤسس دلتا للاستيراد والتصدير" : "International Trade, Sourcing & Manufacturing Specialist & Founder of Delta Import & Export",
+    "image": `${siteUrl}/images/hossam-mabrouk-hero.jpg`,
     "url": siteUrl,
     "sameAs": [
       "https://wa.me/201070707166",

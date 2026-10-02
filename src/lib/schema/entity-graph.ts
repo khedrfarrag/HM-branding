@@ -18,7 +18,7 @@ export function buildEntityGraph(locale: Locale): EntityGraph {
     "@type": "WebSite",
     "@id": `${siteUrl}/#website`,
     "url": siteUrl,
-    "name": isAr ? "حسام مبروك | خبير الاستيراد والتجارة الدولية" : "Hussam Mabrouk | China Sourcing Specialist",
+    "name": isAr ? "حسام مبروك | خبير التجارة والتوريد والتصنيع" : "Hussam Mabrouk | Global Trade, Sourcing & Manufacturing Specialist",
     "description": isAr
       ? "المنصة الرسمية للمستشار حسام مبروك لتأمين صفقات الاستيراد المباشر من الصين، ودليل المدن الصناعية، وحاسبات التاجر المجانية."
       : "Official portal of Hossam Mabrouk for direct China sourcing, industrial cluster guides, and free merchant calculators.",

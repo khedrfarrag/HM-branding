@@ -19,8 +19,8 @@ export async function generateMetadata({
   const isAr = locale === "ar";
 
   const title = isAr
-    ? "حسام مبروك | خبير الاستيراد والتجارة الدولية — Meridian & Co."
-    : "Hussam Mabrouk | Global Trade & Supply Chain Specialist — Meridian & Co.";
+    ? "حسام مبروك | خبير التجارة والتوريد والتصنيع"
+    : "Hussam Mabrouk | Global Trade, Sourcing & Manufacturing Specialist";
 
   const description = isAr
     ? "عقدان من الخبرة في تأمين سلاسل التوريد والاستيراد المباشر من الصين لخدمة المستثمرين والمصنعين عبر 40+ دولة."
@@ -37,6 +37,12 @@ export async function generateMetadata({
           url: "/og-image.png",
           width: 1200,
           height: 630,
+          alt: title,
+        },
+        {
+          url: "/images/hossam-mabrouk-hero.jpg",
+          width: 1000,
+          height: 1000,
           alt: title,
         },
       ],
