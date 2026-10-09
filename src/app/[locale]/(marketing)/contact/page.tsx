@@ -69,7 +69,7 @@ export default async function ContactPage({ params }: PageProps) {
                 <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider">
                   {isAr ? "البريد الإلكتروني" : "Email"}
                 </p>
-                <p className="text-lg">office@meridian-co.com</p>
+                <p className="text-lg">support@hossammabrouk.com</p>
               </div>
               <div>
                 <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider">

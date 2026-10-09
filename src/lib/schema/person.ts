@@ -8,8 +8,9 @@ export const buildPersonSchema = (locale: Locale): WithContext<Person> => {
     "@type": "Person",
     "@id": "https://hussam-mabrouk.com/#person",
     "name": isAr ? "حسام مبروك" : "Hussam Mabrouk",
-    "jobTitle": isAr ? "مؤسس دلتا للاستيراد والتصدير" : "Founder of Delta Import & Export",
+    "jobTitle": isAr ? "مستشار التجارة الدولية والاستيراد والتوريد من الصين" : "International Trade & China Sourcing Advisor",
     "url": "https://hussam-mabrouk.com",
+    "email": "support@hossammabrouk.com",
     "sameAs": [
       "https://wa.me/201070707166",
       "https://www.instagram.com/hossam.mabrouk9",
@@ -18,8 +19,8 @@ export const buildPersonSchema = (locale: Locale): WithContext<Person> => {
       "https://www.tiktok.com/@hossammabrouk9"
     ],
     "description": isAr
-      ? "خبير ومستشار الاستيراد من الصين ومؤسس شركة دلتا للاستيراد والتصدير والخدمات اللوجستية"
-      : "China Sourcing Consultant, Import Specialist, and Founder of Delta Import & Export.",
+      ? "مستشار التجارة الدولية والاستيراد والتوريد من الصين. متخصص في فحص المصانع، تأسيس التجارة وإدارة الصفقات الدولية."
+      : "International Trade & China Sourcing Advisor. Specializing in Factory Audits, Trade Setup & Global Deal Management.",
     "worksFor": {
       "@type": "Organization",
       "@id": "https://hussam-mabrouk.com/#organization"

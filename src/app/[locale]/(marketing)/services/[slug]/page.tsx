@@ -175,7 +175,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 <span>{isAr ? "قصة نجاح حقيقية" : "Verified Case Study"}</span>
               </div>
               <h4 className="text-white font-bold text-lg mb-2">{relatedStory.clientName}</h4>
-              <p className="text-zinc-300 text-sm mb-3 italic">"{relatedStory.testimonialQuote}"</p>
+              <p className="text-zinc-300 text-sm mb-3 italic">&quot;{relatedStory.testimonialQuote}&quot;</p>
               <div className="inline-flex items-center gap-2 text-amber-300 text-xs font-semibold bg-amber-500/20 px-3 py-1.5 rounded-lg border border-amber-500/30">
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 <span>{relatedStory.result}</span>

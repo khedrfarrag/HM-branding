@@ -17,8 +17,8 @@ export async function generateMetadata({
   const isAr = locale === "ar";
 
   const title = isAr
-    ? "حسام مبروك | خبير الاستيراد والتجارة الدولية — Meridian & Co."
-    : "Hussam Mabrouk | Global Trade & Supply Chain Specialist — Meridian & Co.";
+    ? "حسام مبروك | خبير الاستيراد والتجارة الدولية والحلول اللوجستية"
+    : "Hussam Mabrouk | Global Trade & Supply Chain Specialist";
 
   const description = isAr
     ? "عقدان من الخبرة في تأمين سلاسل التوريد والاستيراد المباشر من الصين لخدمة المستثمرين والمصنعين عبر 40+ دولة."
@@ -51,5 +51,43 @@ export async function generateMetadata({
 export default async function Home({ params }: PageProps) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  return <HomePage locale={locale} dict={dict} />;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://hussam-mabrouk.com/#person",
+    "name": "Hussam Mabrouk",
+    "alternateName": "حسام مبروك",
+    "url": "https://hussam-mabrouk.com",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": dict.testimonials?.items?.length?.toString() || "15",
+      "bestRating": "5",
+      "worstRating": "1",
+    },
+    "review": dict.testimonials?.items?.map((item) => ({
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": (item.rating || 5).toString(),
+        "bestRating": "5",
+      },
+      "author": {
+        "@type": "Person",
+        "name": item.author,
+      },
+      "reviewBody": item.quote,
+    })),
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <HomePage locale={locale} dict={dict} />
+    </>
+  );
 }

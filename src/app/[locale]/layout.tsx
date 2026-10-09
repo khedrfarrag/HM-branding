@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cairo, Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import CursorGlow from "@/components/CursorGlow";
+import ChatWidget from "@/components/chat/ChatWidget";
 
 /**
  * ==============================================================================
@@ -40,7 +41,7 @@ const jetbrains = JetBrains_Mono({
   display: "swap",
 });
 
-const siteTitle = "حسام مبروك | خبير الاستيراد والتجارة الدولية — Meridian & Co.";
+const siteTitle = "حسام مبروك | خبير الاستيراد والتجارة الدولية والحلول اللوجستية";
 const siteDescription = "شريكك المستمر لتأمين سلاسل التوريد، حلول الاستيراد المباشر من الصين، وتنفيذ الصفقات التجارية بأعلى معايير الجودة والأمان.";
 
 export const metadata: Metadata = {
@@ -102,6 +103,7 @@ export default async function LocaleLayout({
       <div className="noise" />
       <CursorGlow />
       {children}
+      <ChatWidget locale={locale} />
     </div>
   );
 }

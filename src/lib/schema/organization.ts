@@ -7,7 +7,7 @@ export const buildOrganizationSchema = (locale: Locale): WithContext<Organizatio
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://hussam-mabrouk.com/#organization",
-    "name": isAr ? "دلتا للاستيراد والتصدير" : "Delta Import & Export",
+    "name": isAr ? "مجموعة دلتا للاستيراد والتصدير" : "Delta Group Import & Export",
     "url": "https://hussam-mabrouk.com",
     "logo": "https://hussam-mabrouk.com/images/logo.png",
     "description": isAr

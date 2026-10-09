@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import { LocalFsKnowledgeRepository } from "@/repositories/local-fs/knowledge";
 import { SupabaseExperienceRepository } from "@/repositories/supabase/experiences";
 import { Locale } from "@/domains/shared/value-objects";
+import { CHINA_CITIES_DATA } from "@/features/china-cities/data/cities";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://hussam-mabrouk.com";
@@ -26,7 +27,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/knowledge/glossary",
     "/knowledge/faq",
     "/trade-intelligence",
-    "/media"
+    "/media",
+    "/china-cities",
+    "/china-cities/all",
+    "/china-cities/compare",
+    "/china-cities/products"
   ];
 
   for (const locale of locales) {
@@ -40,7 +45,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       });
     }
 
-    // 2. Dynamic Article Routes
+    // 2. Dynamic China Cities Routes (35+ Cities & Directory Hubs)
+    for (const city of CHINA_CITIES_DATA) {
+      sitemapEntries.push({
+        url: `${baseUrl}/${locale}/china-cities/${city.slug}`,
+        lastModified: new Date().toISOString(),
+        changeFrequency: "weekly",
+        priority: 0.85
+      });
+    }
+
+    // 3. Dynamic Article Routes
     try {
       const articles = await knowledgeRepo.getAllArticleSlugs(locale);
       for (const item of articles) {
@@ -55,7 +70,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       // Ignore sitemap query failures
     }
 
-    // 3. Dynamic Experience Routes
+    // 4. Dynamic Experience Routes
     try {
       const experiences = await experienceRepo.getAllSlugs(locale);
       for (const item of experiences) {

@@ -4,6 +4,7 @@ import { getNavigationConfig } from "@/config/navigation";
 import type { Locale } from "@/domains/shared/value-objects";
 
 import {
+  EmailIcon,
   FacebookIcon,
   InstagramIcon,
   SnapchatIcon,
@@ -17,6 +18,7 @@ const SOCIAL_ICON_MAP: Record<string, React.ComponentType<{ className?: string }
   Snapchat: SnapchatIcon,
   TikTok: TikTokIcon,
   Facebook: FacebookIcon,
+  Email: EmailIcon,
 };
 
 interface FooterProps {
@@ -38,13 +40,15 @@ export default function Footer({ locale }: FooterProps) {
               HM
             </span>
             <span className="font-bold text-white text-lg">
-              {isAr ? "حسام مبروك" : "Hussam Mabrouk"}
+              {isAr
+                ? "حسام مبروك | مستشار التجارة الدولية والاستيراد والتوريد من الصين"
+                : "Hussam Mabrouk | International Trade & China Sourcing Advisor"}
             </span>
           </Link>
-          <p className="text-gray-400 text-sm leading-relaxed max-w-md">
+          <p className="text-gray-400 text-sm leading-relaxed max-w-lg">
             {isAr
-              ? "مستشار الاستيراد من الصين — مؤسس شركة دلتا للاستيراد والتصدير."
-              : "China Import Consultant — Founder of Delta Import & Export."}
+              ? "متخصص في فحص المصانع، تأسيس التجارة وإدارة الصفقات الدولية."
+              : "Specializing in Factory Audits, Trade Setup & Global Deal Management."}
           </p>
           <div className="flex flex-wrap gap-2.5 mt-5">
             {nav.footer.socials.map((s) => {

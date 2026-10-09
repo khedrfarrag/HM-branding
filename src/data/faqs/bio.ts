@@ -500,5 +500,505 @@ export const BIO_FAQS: FAQItem[] = [
     answerEn: 'Through verified channels on HossamMabrouk.com: the formal consultation booking engine and official business correspondence channels.',
     credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
     internalLink: { href: '/contact', labelAr: 'تواصل معنا أو احجز جلسة استشارية ←', labelEn: 'Official Contact & Booking Portal ←' }
+  },
+  {
+    id: 51,
+    category: 'bio',
+    questionAr: 'ما هي أهمية الخبرة الميدانية المباشرة لحسام مبروك في مدينة قوانغتشو؟',
+    questionEn: 'Why is Hossam Mabrouk’s hands-on experience in Guangzhou critical?',
+    answerAr: 'تعد قوانغتشو العاصمة التجارية واللوجستية لجنوب الصين، وخبرة حسام مبروك الميدانية بها تمكن المستوردين من الوصول المباشر إلى أكبر أسواق الجملة والمعارض الدولية، وفهم ديناميكيات حركة الشحن والتفاوض مع كبار الموردين والمصانع المباشرة بدلاً من الوسائط التجارية.',
+    answerEn: 'Guangzhou is the sourcing heart of South China. Hossam Mabrouk’s on-ground presence allows importers direct access to wholesale hubs and factory verification.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/china-directory', labelAr: 'استكشف دليل مدينة قوانغتشو والتوريد المباشر ←', labelEn: 'Explore Guangzhou Sourcing Guide ←' }
+  },
+  {
+    id: 52,
+    category: 'bio',
+    questionAr: 'كيف يساعد حسام مبروك المستوردين في التوريد من مدينة إيوو (Yiwu)؟',
+    questionEn: 'How does Hossam Mabrouk assist importers sourcing from Yiwu?',
+    answerAr: 'إيوو هي أكبر مركز لبيع السلع الاستهلاكية والبضائع الخفيفة بالجملة عالمياً. يقدم حسام مبروك توجيهاً استشارياً دقيقاً حول كيفية تجميع الشحنات المتنوعة (LCL)، واختيار الوكلاء المعتمدين، وفحص الجودة لضمان مطابقة الشحنة للمواصفات دون تكاليف زائدة.',
+    answerEn: 'Yiwu is the world capital of small commodities. Hossam provides strategic guidance on multi-item LCL consolidation, agent verification, and quality checks.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/china-directory', labelAr: 'دليل أسواق وسوق إيوو الدولي للسلع ←', labelEn: 'Yiwu Commodity Markets Guide ←' }
+  },
+  {
+    id: 53,
+    category: 'bio',
+    questionAr: 'ما هو دور حسام مبروك في فحص صفقات الإلكترونيات والتقنية في شنجن (Shenzhen)؟',
+    questionEn: 'What is his role in auditing tech and electronics deals in Shenzhen?',
+    answerAr: 'تعتبر شنجن عاصمة الابتكار والتصنيع الإلكتروني في العالم. يساعد حسام مبروك المستوردين والتجار في توثيق شهادات الجودة للمنتجات الإلكترونية (CE, RoHS)، والتحقق من قدرات المصانع التكنولوجية وحماية التصاميم الهندسية من النسخ والتقليد.',
+    answerEn: 'Shenzhen is the global hardware capital. Hossam helps clients audit electronics suppliers, verify compliance certificates (CE, RoHS), and safeguard IP.',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/china-directory', labelAr: 'دليل شنجن للمنتجات الإلكترونية والتكنولوجيا ←', labelEn: 'Shenzhen Electronics Directory ←' }
+  },
+  {
+    id: 54,
+    category: 'bio',
+    questionAr: 'كيف يوجه حسام مبروك مستوردي مواد البناء والأثاث في فوشان (Foshan)؟',
+    questionEn: 'How does he guide building materials and furniture importers in Foshan?',
+    answerAr: 'تتميز فوشان بكونها المركز الأول عالمياً لصناعة الأثاث والسيراميك ومواد الإكسسوارات الإنشائية. يقدم حسام مبروك استشارات تخصصية في فحص خطوط الإنتاج الكبرى، وتنسيق الفحص الفني للكميات الضخمة، وضبط شروط التعبئة لمنع الكسر أثناء الشحن البحري.',
+    answerEn: 'Foshan dominates global furniture and ceramics manufacturing. Hossam assists buyers with heavy production line audits, packaging integrity checks, and logistics safeguards.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/china-directory', labelAr: 'دليل فوشان للأثاث ومواد البناء ←', labelEn: 'Foshan Furniture & Building Materials Guide ←' }
+  },
+  {
+    id: 55,
+    category: 'bio',
+    questionAr: 'ما هي اتفاقيات NNN الصينية وكيف يعتمدها حسام مبروك لحماية حقوق التجار؟',
+    questionEn: 'What are PRC NNN Agreements and how does Hossam implement them?',
+    answerAr: 'اتفاقية NNN (Non-disclosure, Non-use, Non-circumvention) هي الإطار القانوني المعتمد في المحاكم الصينية لحماية سرية المنتجات ومنع المصنع الصيني من تقليد فكرتك أو بيعها لمنافسيك. يوصي حسام مبروك دائماً بتوثيق هذه الاتفاقيات باللغة الصينية قبل مشاركة التصاميم.',
+    answerEn: 'PRC NNN agreements protect non-disclosure, non-use, and non-circumvention in Chinese courts. Hossam mandates these bilingual legal frameworks before sharing IP.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/services', labelAr: 'تعرف على حماية الملكية الفكرية والعقود التجارية ←', labelEn: 'IP Protection & NNN Advisory ←' }
+  },
+  {
+    id: 56,
+    category: 'bio',
+    questionAr: 'كيف يفحص حسام مبروك السجل التجاري الصيني عبر المنظومة الحكومية GSXT؟',
+    questionEn: 'How does Hossam audit Chinese business licenses via GSXT?',
+    answerAr: 'منظومة National Enterprise Credit Information Publicity System (GSXT) هي القيد الحكومي الرسمي في الصين. يقوم حسام مبروك بالتحقق من التاريخ القانوني للمصنع، ورأس المال المدفوع، وأسماء المالكين الحقيقيين، وهل الكيان مصنع حقيقي أم مجرد شركة وساطة مسجلة حديثاً.',
+    answerEn: 'GSXT is China’s official corporate registry. Hossam audits capital registration, true ownership, legal disputes, and verifies whether an entity is a manufacturer or middleman.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/services', labelAr: 'فحص وتدقيق رخص المصانع والشركات الصينية ←', labelEn: 'Supplier Verification & Audit Services ←' }
+  },
+  {
+    id: 57,
+    category: 'bio',
+    questionAr: 'ما الذي يميز منهجية حسام مبروك في إدارة مخاطر التوريد الدولي؟',
+    questionEn: 'What distinguishes Hossam Mabrouk’s risk management methodology?',
+    answerAr: 'تعتمد منهجية حسام مبروك على مبدأ "الوقاية المبكرة". لا يتم انتظار مشكلة الجودة عند وصول الشحنة إلى ميناء الوصول، بل يتم تطبيق فحص الجودة الميداني في 3 مراحل: فحص المواد الخام قبل التصنيع، فحص خط الإنتاج، وفحص قبل التحميل بالحاوية (DPI & PSI).',
+    answerEn: 'His risk framework relies on early prevention through 3-stage audits: raw material pre-inspection, in-line production monitoring, and Pre-Shipment Inspection (PSI).',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/services', labelAr: 'خدمات ضبط الجودة والفحص الميداني للشحنات ←', labelEn: 'Quality Control & Inspection Services ←' }
+  },
+  {
+    id: 58,
+    category: 'bio',
+    questionAr: 'كيف يتعامل حسام مبروك مع حالات تأخير تصنيع الشحنات في الصين؟',
+    questionEn: 'How does Hossam Mabrouk handle factory production delays in China?',
+    answerAr: 'يتم وضع بند واضح لخطة الإنتاج والجدول الزمني (Production Timeline) في العقد التجاري، مع ربط دفعات السداد بإنجاز المراحل. وفي حال حدوث تأخير غير مبرر، يتم التواصل المباشر مع إدارة المصنع واستخدام أدوات الضغط القانوني المعتمدة في الصين لحماية حقوق المستورد.',
+    answerEn: 'By binding milestone payments to verified production timelines in contracts. Delays are directly escalated using PRC contract enforcement mechanisms.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/services', labelAr: 'استكشف آليات إدارة العقود والتأخير التوريدي ←', labelEn: 'Contract Management & Resolution ←' }
+  },
+  {
+    id: 59,
+    category: 'bio',
+    questionAr: 'هل يساعد حسام مبروك المستوردين في التوافق مع أنظمة التخليص الجمركي الخليجية؟',
+    questionEn: 'Does Hossam assist with GCC customs compliance regulations?',
+    answerAr: 'نعم، يحرص حسام مبروك في استشاراته على ضمان توافق الشحنات مع أنظمة هيئة المواصفات والمقاييس بالدول الخليجية، مثل نظام سابر (SABER) في السعودية، وشهادات المطابقة الخليجية (G-Mark)، لتجنب إرجاع الشحنة أو فرض غرامات جمركية.',
+    answerEn: 'Yes, ensuring cargo compliance with GCC standardization protocols such as SABER in KSA and G-Mark certification to prevent port rejections and fines.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/knowledge', labelAr: 'دليل أنظمة التخليص الجمركي في دول الخليج ←', labelEn: 'GCC Customs Compliance Manual ←' }
+  },
+  {
+    id: 60,
+    category: 'bio',
+    questionAr: 'ما هو موقف حسام مبروك من الشركات التي تعد بأرباح خيالية من الاستيراد؟',
+    questionEn: 'What is Hossam Mabrouk’s stance on companies promising unrealistic profits?',
+    answerAr: 'يحذر حسام مبروك باستمرار من الوعود التسويقية المضللة والأرباح الوهمية. التجارة الدولية عملية حقيقية تتطلب دراسة جدوى دقيقة، وفهماً للتكاليف اللوجستية والضرائب والجودة، وحساب هامش الربح الحقيقي بعيداً عن المبالغات والاندفاع العشوائي.',
+    answerEn: 'Hossam strictly cautions against inflated marketing promises. Global trade requires realistic feasibility studies, landed cost math, and market validation.',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/articles', labelAr: 'حقيقة أرباح الاستيراد وكيف تحسب أرباحك بذكاء ←', labelEn: 'Calculating Real Import Profitability ←' }
+  },
+  {
+    id: 61,
+    category: 'bio',
+    questionAr: 'كيف يساهم حسام مبروك في توعية رواد الأعمال بآليات الاستيراد لأول مرة؟',
+    questionEn: 'How does he educate first-time entrepreneurs entering cross-border trade?',
+    answerAr: 'يقدم حسام مبروك أدلة استرشادية خطوة بخطوة تبدأ من اختيار المنتج، وتقييم حجم الطلب بالسوق المحلي، وصولاً إلى كيفية طلب العينات وتجربتها والتحقق من المورد قبل ضخ رؤوس الأموال الكبيرة.',
+    answerEn: 'He provides structured step-by-step frameworks starting from product choice and local market validation to sample auditing before capital deployment.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/knowledge', labelAr: 'دليل المستورد المبتدئ لتأسيس نشاط توريد ناجح ←', labelEn: 'Beginner Import Execution Guide ←' }
+  },
+  {
+    id: 62,
+    category: 'bio',
+    questionAr: 'ما هي القطاعات الصناعية التي يملك حسام مبروك فيها خبرة استشارية عميقة؟',
+    questionEn: 'Which industrial sectors does Hossam Mabrouk specialize in?',
+    answerAr: 'تشمل خبراته الاستشارية خطوط إنتاج ومعدات التعبئة والتغليف، الآلات الصناعية، مواد البناء والتشطيبات، الأثاث المنزلي والتجاري، المعدات الكهربائية والإلكترونيات، والسلع الاستهلاكية سريعة الدوران (FMCG).',
+    answerEn: 'His advisory depth spans packaging machinery, industrial lines, building materials, commercial furniture, power electronics, and fast-moving consumer goods.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/services', labelAr: 'استكشف التخصصات الصناعية والقطاعات المغطاة ←', labelEn: 'Covered Industrial Sectors ←' }
+  },
+  {
+    id: 63,
+    category: 'bio',
+    questionAr: 'كيف يساعد حسام مبروك الشركات في تأسيس خطوط الإنتاج والآلات المصنعة حسب الطلب؟',
+    questionEn: 'How does Hossam assist businesses in custom machinery line setup?',
+    answerAr: 'يتطلب توريد خطوط الإنتاج مراجعة دقيقة للمواصفات الهندسية، والتأكد من مطابقة الجهد الكهربائي ومقاييس الأمان، وفحص التشغيل التجريبي (FAT - Factory Acceptance Test) بالمصنع في الصين قبل تفكيك الآلات وشحنها.',
+    answerEn: 'Custom machinery setup requires engineering spec validation, power voltage verification, and Factory Acceptance Testing (FAT) before machinery shipment.',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/services', labelAr: 'خدمات توريد وفحص خطوط الإنتاج والمعدات ←', labelEn: 'Machinery & Production Line Advisory ←' }
+  },
+  {
+    id: 64,
+    category: 'bio',
+    questionAr: 'ما هو نهج حسام مبروك في مراجعة العقود التجارية المبرمة مع المصانع الصينية؟',
+    questionEn: 'What is his approach to reviewing purchase contracts with Chinese factories?',
+    answerAr: 'يركز حسام مبروك على دمج كافة المواصفات الفنية الدقيقة، وشروط الفحص قبل الشحن، وبنود جزاءات التأخير، وصياغة العقد باللغتين الصينية والإنجليزي، مع تحديد المحكمة المختصة داخل جمهورية الصين الشعبية لضمان القوة التنفيذية.',
+    answerEn: 'He focuses on detailing technical specs, pre-shipment inspection clauses, delay penalties, and bilingual PRC court jurisdiction for legal enforceability.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/services', labelAr: 'استشارة مراجعة وتقييم العقود التجارية الدولية ←', labelEn: 'International Trade Contract Audit ←' }
+  },
+  {
+    id: 65,
+    category: 'bio',
+    questionAr: 'كيف يفرق حسام مبروك بين المصنع المباشر (Direct Factory) وشركة الوساطة (Trading Company)؟',
+    questionEn: 'How does Hossam distinguish between direct factories and trading companies?',
+    answerAr: 'يستخدم حسام مبروك أدوات فحص ميدانية ورسمية مثل مراجعة رخصة العمل (Business Scope)، وفحص عنوان الإنتاج الفعلي، والتثبت من الملكية الفكرية لبراءات الاختراع، للتأكد مما إذا كانت المنشأة تصنع المنتج بنفسها أم تشتري من طرف ثالث.',
+    answerEn: 'Through field audits and GSXT registry checks verifying Business Scope, physical production facilities, and IP patents to confirm true manufacturing identity.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/articles', labelAr: 'كيف تميز بين المصنع المباشر والوسيط التجاري ←', labelEn: 'Factory vs Trading Company Audit ←' }
+  },
+  {
+    id: 66,
+    category: 'bio',
+    questionAr: 'ما هي أهم الأخطاء التي يصححها حسام مبروك للمستوردين في طريقة دفع عربون الصفقات؟',
+    questionEn: 'What critical deposit payment mistakes does Hossam correct for importers?',
+    answerAr: 'أبرز الأخطاء هو تحويل المبالغ لحسابات شخصية أو حسابات خارج الصين بدلاً من الحساب البنكي الرسمي المسجل باسم الشركة الصينية. يؤكد حسام مبروك على وجوب مطابقة اسم المستفيد في الفاتورة مع اسم الشركة في السجل التجاري الرسمي.',
+    answerEn: 'The biggest mistake is wiring funds to personal or offshore accounts. Hossam enforces strict matching between the beneficiary bank account and official GSXT entity.',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/articles', labelAr: 'الطرق الآمنة لتحويل الأموال ودفع العربون في الصين ←', labelEn: 'Safe Banking & Deposit Protocols ←' }
+  },
+  {
+    id: 67,
+    category: 'bio',
+    questionAr: 'كيف يساهم حسام مبروك في دعم المستوردين الخليجيين في التعامل مع نظام ACI المصري؟',
+    questionEn: 'How does he assist regional traders dealing with Egypt’s ACI customs system?',
+    answerAr: 'يقدم حسام مبروك توضيحاً دقيقاً لخطوات التسجيل على نافذة، وإصدار رقم ACID، والتأكد من قيام المورد الصيني بشحن المستندات عبر منظومة CargoX المعتمدة لتجنب رفض دخول البضائع بموانئ الوصول.',
+    answerEn: 'Providing structured guides for Egypt’s Nafeza portal, ACID generation, and enforcing supplier documentation compliance via CargoX digital shipment systems.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/knowledge', labelAr: 'دليل نظام ACI والشحن المباشر لمصر ←', labelEn: 'Egypt ACI & Nafeza System Guide ←' }
+  },
+  {
+    id: 68,
+    category: 'bio',
+    questionAr: 'ما هو المبدأ الاستشاري لحسام مبروك في التعامل مع عينات المنتجات (Samples)؟',
+    questionEn: 'What is Hossam’s advisory principle regarding product samples?',
+    answerAr: 'يرى حسام مبروك أن العينة ليست مجرد شكل تجريبي، بل هي "المرجع الفني الأول" للعقد (Master Sample). يجب اعتماد عينتين مختومتين: واحدة لدى المصنع والأخرى لدى المستورد، لتقييم الشحنة النهائية بناءً عليهما.',
+    answerEn: 'A sample is not just a demo; it is the legal benchmark (Master Sample). Two sealed samples must be approved—one with the factory and one with the importer.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/articles', labelAr: 'طريقة اعتماد العينات وتحويلها لمرجع قانوني ←', labelEn: 'Master Sample Protocol & Legal Benchmarks ←' }
+  },
+  {
+    id: 69,
+    category: 'bio',
+    questionAr: 'كيف يساهم حسام مبروك في نقل المعرفة عبر مقالاته وأدلته التجارية؟',
+    questionEn: 'How does Hossam transfer trade knowledge through his published articles?',
+    answerAr: 'ينشر حسام مبروك أدلة عملية مبسطة تشرح المصطلحات التجارية، وقوانين الشحن، وتحليل الأسواق، لتمكين التاجر العربي من امتلاك المعرفة المستقلة واتخاذ قرارات تجارية قائمة على الفهم وليس الاعتماد الكلي على الآخرين.',
+    answerEn: 'He publishes actionable guides breaking down trade jargon, shipping laws, and market analysis, empowering Arab merchants with self-reliant decision frameworks.',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/articles', labelAr: 'اقرأ أحدث المقالات والأدلة التجارية الميدانية ←', labelEn: 'Read Field Articles & Trade Manuals ←' }
+  },
+  {
+    id: 70,
+    category: 'bio',
+    questionAr: 'ما هي الرؤية الاستراتيجية لحسام مبروك لتطوير منصة HM Branding المعرفية؟',
+    questionEn: 'What is his strategic vision for the HM Branding Knowledge Platform?',
+    answerAr: 'تهدف الرؤية الاستراتيجية إلى بناء أكبر مرجع استشاري ومعرفي باللغة العربية للتجارة الدولية والتوريد من الصين، يقدم أدوات تفاعلية، وأدلة مدن صناعية، وأبحاثاً سوقية ترفع تنافسية التجار والمستوردين العرب عالمياً.',
+    answerEn: 'Building the premier Arabic trade intelligence ecosystem, delivering interactive calculators, industrial directories, and empirical research to boost Arab trade competitiveness.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/about/bio', labelAr: 'تعرف على رؤية وأهداف منصة HM Branding ←', labelEn: 'HM Branding Vision & Mission ←' }
+  },
+  {
+    id: 71,
+    category: 'bio',
+    questionAr: 'كيف يساعد حسام مبروك في اختيار طريقة الشحن المناسبة (FCL vs LCL)؟',
+    questionEn: 'How does Hossam help buyers choose between FCL and LCL shipping?',
+    answerAr: 'يقوم حسام مبروك بتحليل حجم الشحنة بالـ CBM وتكلفة النولون ورسوم التخلّيص بالميناء. إذا كان الحجم يزيد عن 15 CBM، فغالباً ما تكون الحاوية الكاملة (FCL) أقل تكلفة وأسرع وأكثر أماناً من الشحن الجزئي (LCL).',
+    answerEn: 'By analyzing volume in CBM and port handling fees. If cargo exceeds 15 CBM, Full Container Load (FCL) is usually more cost-effective and secure than LCL.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/tools/landed-cost-calculator', labelAr: 'احسب حجم شحنتك وقارن تكاليف الشحن ←', labelEn: 'Compare FCL vs LCL Freight Costs ←' }
+  },
+  {
+    id: 72,
+    category: 'bio',
+    questionAr: 'ما هي أهمية مراجعة مواصفات التعبئة والتغليف حسب توجيهات حسام مبروك؟',
+    questionEn: 'Why is packaging specification audit critical per Hossam’s guidance?',
+    answerAr: 'التغليف المعتمد يحمي البضاعة من التلف أثناء النقل البحري والتحميل. يوصي حسام مبروك بإنشاء كرتون مقوى عالي الجودة (5-ply / 7-ply) واستخدام المنصات الخشبية المعاملة حرارياً (Fumigated Pallets) للبضائع الثقيلة.',
+    answerEn: 'Proper packaging prevents transit damage. Hossam advises 5-ply/7-ply heavy-duty cartons and fumigated wooden pallets for heavy or fragile items.',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/services', labelAr: 'معايير ضبط التغليف وفحص الجودة قبل الشحن ←', labelEn: 'Packaging Standards & Inspection Advisory ←' }
+  },
+  {
+    id: 73,
+    category: 'bio',
+    questionAr: 'كيف يضمن حسام مبروك مطابقة المنتجات للمواصفات السعودية (SABER PCoC/SCoC)؟',
+    questionEn: 'How does Hossam guarantee product compliance with Saudi SABER?',
+    answerAr: 'يتم التأكد من إصدار شهادة المطابقة للمنتج (PCoC) عبر المختبرات المعتمدة قبل بدء التصنيع، ثم إصدار شهادة الإرسالية (SCoC) لكل شحنة، لضمان دخول البضاعة للمملكة بدون عوائق جمركية.',
+    answerEn: 'Ensuring Product Certificates of Conformity (PCoC) are issued before production via accredited labs, followed by Shipment Certificates (SCoC) per bill of lading.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/knowledge', labelAr: 'خطوات إصدار شهادات سابر للشحنات السعودية ←', labelEn: 'Saudi SABER Certification Framework ←' }
+  },
+  {
+    id: 74,
+    category: 'bio',
+    questionAr: 'ما هو التوجيه الاستشاري لحسام مبروك بشأن فترة الأعياد الصينية (Chinese New Year)؟',
+    questionEn: 'What is Hossam’s advisory rule regarding Chinese New Year holidays?',
+    answerAr: 'تتوقف المصانع في الصين لعدة أسابيع خلال عطلة رأس السنة الصينية. ينصح حسام مبروك بتخطيط الطلبيات قبل العطلة بـ 60 يوماً على الأقل، وتجنب الشحن في الأسابيع المباشرة قبل أو بعد العطلة لمنع الازدحام وارتفاع النولون.',
+    answerEn: 'Factories shut down for weeks during CNY. Hossam advises booking production 60 days ahead and avoiding rush shipping around holiday shutdown dates.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/articles', labelAr: 'خطة التخطيط الموسمية وتجنب اختناقات الأعياد الصينية ←', labelEn: 'Chinese New Year Supply Chain Planning ←' }
+  },
+  {
+    id: 75,
+    category: 'bio',
+    questionAr: 'كيف يساهم حسام مبروك في توجيه التنسيق بين المستورد وخطوط الشحن البحري؟',
+    questionEn: 'How does Hossam advise buyers on shipping line selection?',
+    answerAr: 'يوجه حسام مبروك باختيار خطوط الشحن ذات الرحلات المباشرة والمدة الزمنية المستقرة، مع التفاوض على فترة سماح مجانية لتأخير الحاويات في ميناء الوصول (Free Demurrage Days) لا تقل عن 14-21 يوماً.',
+    answerEn: 'Advising selection of direct ocean carriers and negotiating generous free demurrage windows (14–21 days) at destination ports to avoid storage penalties.',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/china-directory', labelAr: 'دليل خطوط الشحن والشركات اللوجستية ←', labelEn: 'Ocean Shipping Lines & Logistics Directory ←' }
+  },
+  {
+    id: 76,
+    category: 'bio',
+    questionAr: 'ما هي النصيحة الاستشارية لحسام مبروك عند التعامل مع طلبات التعديل على المنتجات (OEM/ODM)؟',
+    questionEn: 'What is Hossam’s rule for custom OEM/ODM product modifications?',
+    answerAr: 'تغيير المواصفات يتطلب دراسة دقيقة لتأثيره على تكلفة القطعة وزمن الإنتاج. يوصي حسام مبروك بتوثيق كل تعديل في ملف فني مستمر (Tech Pack) معتمد كتابياً من الطرفين لمنع أي اجتهاد فردي من المصنع.',
+    answerEn: 'Custom modifications impact cost and timeline. Hossam mandates documenting changes in a formal Tech Pack signed by both parties to eliminate factory ambiguity.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/services', labelAr: 'خدمات الاستشارة في تصنيع OEM و ODM بالصين ←', labelEn: 'OEM & ODM Manufacturing Advisory ←' }
+  },
+  {
+    id: 77,
+    category: 'bio',
+    questionAr: 'كيف يوجه حسام مبروك المستوردين لتجنب الفواتير التجارية المنخفضة بشكل وهمي؟',
+    questionEn: 'How does Hossam caution against illegally undervalued commercial invoices?',
+    answerAr: 'تخفيض الفاتورة بشكل وهمي يعرض الشحنة لإعادة التقييم الجمركي والغرامات ومصادرة البضائع. ينصح حسام مبروك بالالتزام بالفواتير الحقيقية وتفادي أساليب التهرب التي تضر بسمعة المنشأة التجارية.',
+    answerEn: 'Underinvoicing leads to customs reassessment, heavy fines, and cargo seizures. Hossam strictly advises declared invoice values reflecting true transaction costs.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/articles', labelAr: 'مخاطر التقييم الجمركي وكيف تحمي نشاطك تجارياً ←', labelEn: 'Customs Valuation Rules & Compliance ←' }
+  },
+  {
+    id: 78,
+    category: 'bio',
+    questionAr: 'ما هي أهمية وجود علامة بلد المنشأ (Made in China) حسب توجيهات حسام مبروك؟',
+    questionEn: 'Why is Country of Origin marking mandatory per Hossam’s instructions?',
+    answerAr: 'تقتضي التشريعات الجمركية العالمية وجود طباعة أو ملصق غير قابل للإزالة يوضح "صنع في الصين" على المنتج والكرتون الخارجي. غياب هذه العلامة يسبب حجز الشحنة في الجمارك ومنع دخولها.',
+    answerEn: 'Global customs laws mandate indelible "Made in China" markings on products and master cartons. Missing labels cause immediate port holds.',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/knowledge', labelAr: 'اشتراطات التغليف وعلامة بلد المنشأ الجمركية ←', labelEn: 'Country of Origin Marking Requirements ←' }
+  },
+  {
+    id: 79,
+    category: 'bio',
+    questionAr: 'كيف يوجه حسام مبروك المستوردين في التعامل مع التأمين البحري للشحنات؟',
+    questionEn: 'How does Hossam advise importers on marine cargo insurance?',
+    answerAr: 'التأمين البحري الشامل (Institute Cargo Clauses A) يحمي القيمة المالية للشحنة ضد مخاطر الغرق، الحريق، وتلف الحاويات. يوصي حسام مبروك بإصدار وثيقة التأمين قبل مغادرة السفينة لميناء الشحن الصيني.',
+    answerEn: 'Comprehensive Marine Insurance (ICC A) covers cargo against sinking, fire, and total loss. Hossam mandates issuing policies before vessel departure.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/articles', labelAr: 'شروط وإجراءات التأمين البحري على البضائع ←', labelEn: 'Marine Cargo Insurance Policy Guide ←' }
+  },
+  {
+    id: 80,
+    category: 'bio',
+    questionAr: 'ما هي الضمانات التي يوفرها حسام مبروك عند مراجعة عروض أسعار المصانع الصينية؟',
+    questionEn: 'What checks does Hossam perform when auditing Chinese factory quotes?',
+    answerAr: 'يقوم حسام مبروك بتحليل بنود العرض (EXW vs FOB)، والتأكد من شمول السعر للتعبئة والتغليف القياسي، ومقارنة مواصفات الخامات المقدمة مع أسعار السوق السائدة لمنع تخفيض الجودة الخفي.',
+    answerEn: 'Auditing EXW vs FOB breakdowns, verifying standard export packaging inclusions, and benchmarking raw material specs against current market prices.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/services', labelAr: 'خدمات تحليل وتسعير عروض الموردين في الصين ←', labelEn: 'Supplier Quote & Cost Audit Services ←' }
+  },
+  {
+    id: 81,
+    category: 'bio',
+    questionAr: 'كيف يساعد حسام مبروك المستوردين في تحديد وتثبيت شروط التسليم (Incoterms 2020)؟',
+    questionEn: 'How does Hossam help buyers define Incoterms 2020 delivery terms?',
+    answerAr: 'يشرح حسام مبروك الفروق بين FOB (التسليم على متن السفينة) و CIF (شامل الشحن والتأمين)، ويوصي عادةً بـ FOB ليحتفظ المستورد بالتحكم الكامل في اختيار خط الشحن والوكيل اللوجستي.',
+    answerEn: 'Clarifying FOB vs CIF obligations. He generally recommends FOB terms so buyers retain full control over carrier choice and freight rate negotiation.',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/articles', labelAr: 'دليل مصطلحات التجارة الدولية Incoterms 2020 ←', labelEn: 'Incoterms 2020 Selection Manual ←' }
+  },
+  {
+    id: 82,
+    category: 'bio',
+    questionAr: 'ما هي الاستراتيجية التي يعتمدها حسام مبروك للتفاوض على الحد الأدنى للطلب (MOQ)؟',
+    questionEn: 'What strategy does Hossam use to negotiate Minimum Order Quantities (MOQ)?',
+    answerAr: 'التفاوض على خفض الـ MOQ يتطلب تقديم خطة شراء مستقبلي واضحة للمصنع، أو قبول دفع زيادة طفيفة في تكلفة القطعة الواحدة في التجربة الأولى مقابل تخفيض الكمية وتوفير رأس المال.',
+    answerEn: 'Lowering MOQs requires presenting a structured growth roadmap or agreeing to a minor unit cost adjustment for the initial trial run.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/articles', labelAr: 'طرق التفاوض الفعال لخفض الـ MOQ مع المصانع ←', labelEn: 'MOQ Negotiation Strategies ←' }
+  },
+  {
+    id: 83,
+    category: 'bio',
+    questionAr: 'كيف يساعد حسام مبروك في تقييم خطوط التعبئة والتغليف الخاصة بالمنتجات الغذائية والجمالية؟',
+    questionEn: 'How does Hossam audit packaging lines for food and cosmetics?',
+    answerAr: 'تتطلب المنتجات الغذائية والجمالية التزاماً صارماً بمعايير الخلو من التلوث والتعقيم (Cleanroom Standard). يوجه حسام مبروك بفحص تراخيص التصنيع والشهادات الصحية الصادرة من الهيئات الصينية والدولية.',
+    answerEn: 'Food and cosmetics require certified cleanrooms and sanitary standards. Hossam audits production hygiene, cleanroom grades, and regulatory health certificates.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/services', labelAr: 'فحص خطوط إنتاج التعبئة والتغليف والتصنيع الدقيق ←', labelEn: 'Cleanroom & Sanitary Line Audits ←' }
+  },
+  {
+    id: 84,
+    category: 'bio',
+    questionAr: 'ما هو التوجيه الاستشاري لحسام مبروك بشأن اختبارات الجودة المستقلة (Third-Party Testing)؟',
+    questionEn: 'What is Hossam’s guidance on independent lab testing?',
+    answerAr: 'عدم الاعتماد المباشر على تقارير المصنع الداخلية، بل سحب عينات عشوائية عبر شركات فحص مستقلة (مثل SGS, Intertek, TÜV) واختبارها في مختبرات محايدة لضمان سلامة النتائج.',
+    answerEn: 'Never rely solely on internal factory test reports. Hossam mandates third-party random sampling and independent lab testing (SGS, Intertek, TÜV).',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/services', labelAr: 'تنسيق الفحص المخبري المستقل واختبارات الجودة ←', labelEn: 'Independent Lab Testing & Sampling ←' }
+  },
+  {
+    id: 85,
+    category: 'bio',
+    questionAr: 'كيف يساهم حسام مبروك في حماية المستوردين من تغيير خامات التصنيع أثناء الإنتاج؟',
+    questionEn: 'How does Hossam protect buyers from raw material substitution?',
+    answerAr: 'يتم تحديد درجـة الخامة (Raw Material Grade) بالرمز الكيميائي أو المعيار الصناعي الدقيق داخل العقد، مع فحص خامات التصنيع قبل البدء في تجميع المنتجات (Pre-Production Inspection).',
+    answerEn: 'By explicitly defining raw material chemical grades in contracts and conducting Pre-Production Inspections (PPI) before assembly begins.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/services', labelAr: 'فحص الخامات الأولية قبل بدء عمليات التصنيع ←', labelEn: 'Pre-Production Raw Material Audits ←' }
+  },
+  {
+    id: 86,
+    category: 'bio',
+    questionAr: 'ما هي النصيحة الذهبية التي يقدمها حسام مبروك حول اختيار وكلاء الشحن في الصين؟',
+    questionEn: 'What is Hossam’s core advice on selecting freight forwarders in China?',
+    answerAr: 'اختيار وكيل شحن مرخص رسمياً في الصين يملك مكتباً في ميناء المغادرة وميناء الوصول، ويقدم أسعار نولون شفافة دون تكاليف خفية عند تفريغ البضاعة (Hidden Destination Charges).',
+    answerEn: 'Choose licensed forwarders with physical offices at both origin and destination ports offering transparent landed freight quotes without hidden destination fees.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/china-directory', labelAr: 'دليل الوكلاء اللوجستيين وشركات الشحن المعتمدة ←', labelEn: 'Vetted Freight Forwarders Directory ←' }
+  },
+  {
+    id: 87,
+    category: 'bio',
+    questionAr: 'كيف يوجه حسام مبروك المستوردين لتفادي تكاليف غرامات الأرضيات والموانئ (Demurrage & Detention)؟',
+    questionEn: 'How does Hossam guide importers to avoid demurrage and detention fees?',
+    answerAr: 'تجهيز كافة المستندات الجمركية ونماذج الإفساح قبل وصول السفينة بـ 5 أيام على الأقل، واستغلال فترة الأيام المجانية الممنوحة من خط الشحن لإتمام التخليص بسرعة.',
+    answerEn: 'Pre-clearing documentation at least 5 days before vessel berth and utilizing extended line free days to clear cargo swiftly without storage penalty.',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/articles', labelAr: 'استراتيجيات تجنب أرضيات الموانئ وغرامات التأخير ←', labelEn: 'Port Demurrage Avoidance Manual ←' }
+  },
+  {
+    id: 88,
+    category: 'bio',
+    questionAr: 'ما هو دور حسام مبروك في توجيه المستوردين بشأن شهادات الاعتماد البيئي في أوروبا والخليج؟',
+    questionEn: 'What is Hossam’s role in advising on environmental compliance?',
+    answerAr: 'مراجعة المتطلبات البيئية مثل شهادات RoHS و REACH للأسواق الأوروبية والخليجية، والتأكد من خلو البلاستيك والمواد الكيميائية من المواد الحظورة قانونياً.',
+    answerEn: 'Reviewing environmental regulations (RoHS, REACH) for European and GCC destinations, auditing plastics and chemical formulations for banned substances.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/knowledge', labelAr: 'دليل الشهادات البيئية والمعايير التنظيمية ←', labelEn: 'Environmental Standards & Compliance Guide ←' }
+  },
+  {
+    id: 89,
+    category: 'bio',
+    questionAr: 'كيف يوجه حسام مبروك المستوردين للتعامل مع تغيرات سعر صرف العملات (CNY / USD)؟',
+    questionEn: 'How does Hossam advise handling currency exchange fluctuations (CNY/USD)?',
+    answerAr: 'تثبيت سعر الصرف في العقود التجارية طويلة الأمد أو تحرير العقد بالدولار الأمريكي (USD) مع تحديد هامش تذبذب مسموح به لمنع طلب المصنع لزيادات مفاجئة عند التغيرات الحادة.',
+    answerEn: 'Fixing currency terms in long-term purchase contracts or defining allowable currency fluctuation bands to prevent sudden factory price hikes.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/articles', labelAr: 'إدارة مخاطر العملات وتحركات اليوان الصيني ←', labelEn: 'Currency Risk & Yuan FX Management ←' }
+  },
+  {
+    id: 90,
+    category: 'bio',
+    questionAr: 'ما هي أهمية الفحص الفني للحاويات قبل التحميل حسب إرشادات حسام مبروك؟',
+    questionEn: 'Why is container technical inspection before loading critical?',
+    answerAr: 'التأكد من سلامة هيكل الحاوية من الثقوب أو الرطوبة أو روائح البضائع السابقة، لضمان عدم تسرب مياه البحر وتلف البضائع أثناء الرحلة المباشرة.',
+    answerEn: 'Inspecting container structural integrity for holes, humidity, and odor before loading prevents seawater leaks and cargo damage during oceanic transit.',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/services', labelAr: 'خدمات فحص وإشراف تحميل الحاويات بالشحنات ←', labelEn: 'Container Loading Inspection (CLI) Services ←' }
+  },
+  {
+    id: 91,
+    category: 'bio',
+    questionAr: 'كيف يساعد حسام مبروك التجار في حماية العلامات التجارية من التعدي بالصين؟',
+    questionEn: 'How does Hossam help merchants register and protect trademarks in China?',
+    answerAr: 'تسجيل العلامة التجارية رسمياً لدى مكتب الملكية الفكرية الصيني (CTMO)، مما يمنع المصانع المنافسة أو الوكلاء غير المصرح لهم من تسجيل علامتك باسمهم داخل الصين.',
+    answerEn: 'Registering trademarks with China Trademark Office (CTMO) prevents rogue factories or unauthorized agents from squatting on your brand in China.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/services', labelAr: 'تسجيل وتأمين العلامات التجارية في الصين ←', labelEn: 'China Trademark Registration & Protection ←' }
+  },
+  {
+    id: 92,
+    category: 'bio',
+    questionAr: 'ما هو منهج حسام مبروك في التعامل مع النزاعات التجارية مع الموردين الصينيين؟',
+    questionEn: 'What is Hossam’s approach to resolving trade disputes with Chinese suppliers?',
+    answerAr: 'البدء بالتفاوض الودي المدعوم بالأدلة الفنية وتقارير الفحص المعتمدة، ثم اللجوء إلى لجان التحكيم التجاري الصينية (CIETAC) كحل قانوني فعال ومباشر.',
+    answerEn: 'Initial amicable negotiation backed by technical audit reports, followed by CIETAC arbitration as an effective, legally binding resolution mechanism.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/services', labelAr: 'خدمات إدارة وتسوية النزاعات التجارية الدولية ←', labelEn: 'Trade Dispute Resolution & Arbitration ←' }
+  },
+  {
+    id: 93,
+    category: 'bio',
+    questionAr: 'كيف يوجه حسام مبروك التخصيص الصحيح لأرقام التنسيق الجمركي (HS Code)؟',
+    questionEn: 'How does Hossam guide proper HS Code classification?',
+    answerAr: 'تحديد الـ HS Code الصحيح يمنع إعادة التقييم الجمركي أو فرض رسوم حماية إغراق. يوصي حسام مبروك بمطابقة البند الجمركي مع التعريفة الجمركية المحلية بدولة المستورد.',
+    answerEn: 'Accurate HS Code classification avoids customs revaluation and anti-dumping tariffs. Hossam advises cross-matching items with destination tariff schedules.',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/articles', labelAr: 'دليل تحديد البند الجمركي وشجرة الـ HS Code ←', labelEn: 'HS Code Classification & Tariff Manual ←' }
+  },
+  {
+    id: 94,
+    category: 'bio',
+    questionAr: 'ما هي النصيحة الاستشارية لحسام مبروك بشأن استيراد قطع الغيار الصناعية؟',
+    questionEn: 'What is Hossam’s core advice for sourcing industrial spare parts?',
+    answerAr: 'اشتراط توفير قائمة قطع الغيار الحرجـة (Critical Spare Parts Package) مع الآلات والمعدات الرئيسية لتجنب تعطل خطوط الإنتاج أثناء التشغيل التشغيلي.',
+    answerEn: 'Mandating inclusion of critical spare parts packages alongside capital machinery orders to eliminate operational downtime during plant execution.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/services', labelAr: 'خدمات توريد وفحص المعدات وقطع الغيار الصناعية ←', labelEn: 'Industrial Spare Parts & Machinery Advisory ←' }
+  },
+  {
+    id: 95,
+    category: 'bio',
+    questionAr: 'كيف يوجه حسام مبروك المستوردين لتطبيق الاستيراد الأخلاقي والمسؤول المستدام؟',
+    questionEn: 'How does Hossam advise on sustainable and ethical sourcing?',
+    answerAr: 'التحقق من التزام المصنع بالمعايير العمالية والبيئية (BSCI / SEDEX Audits)، لضمان جودة المنتجات وبناء سمعة تجارية مستدامة للمنشأة المستوردة.',
+    answerEn: 'Verifying factory social and environmental audits (BSCI/SEDEX) to guarantee ethical labor practices and protect brand equity in home markets.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/articles', labelAr: 'معايير التدقيق الاجتماعي والمسؤولية البيئية للمصانع ←', labelEn: 'Ethical Sourcing & Social Compliance Audits ←' }
+  },
+  {
+    id: 96,
+    category: 'bio',
+    questionAr: 'ما هي أهمية الفحص النهائي للمنتج (Final Random Inspection - FRI) في رؤية حسام مبروك؟',
+    questionEn: 'Why is Final Random Inspection (FRI) vital in Hossam’s vision?',
+    answerAr: 'إجراء الفحص الميداني عند اكتمال 80% على الأقل من التعبئة والتغليف، لسحب عينات عشوائية والتأكد من مطابقة الجودة النهائية والمواصفات المحددة قبل الإفراج عن الدفعة الأخيرة من المال.',
+    answerEn: 'Conducting FRI when at least 80% of packaging is complete allows statistically valid sampling before releasing final balance payments.',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/services', labelAr: 'فحص الجودة النهائي السريع للمنتجات FRI ←', labelEn: 'Final Random Inspection (FRI) Protocol ←' }
+  },
+  {
+    id: 97,
+    category: 'bio',
+    questionAr: 'كيف يساهم حسام مبروك في تنمية المهارات التفاوضية للمستورد العربي؟',
+    questionEn: 'How does Hossam elevate negotiation skills for Arab merchants?',
+    answerAr: 'من خلال تعليم التاجر كيفية بناء البدائل الشراء الموازية (BATNA)، واستغلال المنافسة بين المصانع للحصول على أفضل سعر دون التنازل عن معايير الجودة الفنية.',
+    answerEn: 'By teaching merchants to leverage strong purchasing alternatives (BATNA) and pit competing factories against each other to secure optimal terms.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/articles', labelAr: 'استراتيجيات التفاوض الفني والمالي مع الموردين ←', labelEn: 'Technical & Commercial Negotiation Tactics ←' }
+  },
+  {
+    id: 98,
+    category: 'bio',
+    questionAr: 'ما هو دور حسام مبروك في توجيه التخطيط اللوجستي للمشاريع الكبرى والمصانع؟',
+    questionEn: 'What is Hossam’s role in megaproject logistics planning?',
+    answerAr: 'تخطيط شحنات المعدات الضخمة (Project Cargo / Breakbulk)، وتنسيق مسارات التمرير بالموانئ وتأمين المعدات التخصصية لضمان وصول مكونات المشروع بسلام.',
+    answerEn: 'Planning oversized project cargo logistics, heavy lift charters, and breakbulk sea routing to safely deliver industrial turnkey plant components.',
+    credibilityLineAr: 'محتوى إرشادي بإشراف المستشار التجاري حسام مبروك',
+    internalLink: { href: '/services', labelAr: 'خدمات الاستشارات اللوجستية للمشاريع والمصانع الكبرى ←', labelEn: 'Project Cargo & Industrial Logistics Advisory ←' }
+  },
+  {
+    id: 99,
+    category: 'bio',
+    questionAr: 'كيف يضمن حسام مبروك الشفافية الكاملة في الاستشارات التجارية المقدمة؟',
+    questionEn: 'How does Hossam guarantee absolute transparency in advisory engagements?',
+    answerAr: 'تقديم تقارير فحص ومستندات محايدة وموثقة بالصور والفيديوهات الميدانية، والعمل بصفة استشارية مستقلة تركز حصرياً على مصلحة العميل وحماية استثماراته.',
+    answerEn: 'Delivering empirical, photo/video-backed inspection reports and maintaining independent advisory neutrality strictly aligned with client commercial interest.',
+    credibilityLineAr: 'رؤية عملية من خبرة حسام مبروك في التوريد والتجارة الدولية',
+    internalLink: { href: '/about/bio', labelAr: 'مبادئ الشفافية والحياد الاستشاري لحسام مبروك ←', labelEn: 'Advisory Neutrality & Ethics Commitment ←' }
+  },
+  {
+    id: 100,
+    category: 'bio',
+    questionAr: 'كيف تحجز استشارة تنفيذية خاصة ومباشرة مع المستشار حسام مبروك؟',
+    questionEn: 'How do you book a direct executive consultation with Hossam Mabrouk?',
+    answerAr: 'يمكن حجز الجلسة الاستشارية بسهولة عبر بوابة الحجز التفاعلية على الموقع، باختيار التخصص المناسب والموعد المتاح، لتتلقى تحليلاً مستهدفاً وتوجيهاً مباشراً لصفقتك التجارية.',
+    answerEn: 'Easily book a direct 1-on-1 strategy session via the website booking portal by selecting your trade domain and scheduled slot for project-specific guidance.',
+    credibilityLineAr: 'إجابة استشارية مقدّمة من حسام مبروك — التجارة الدولية والتوريد من الصين',
+    internalLink: { href: '/contact', labelAr: 'احجز جلسة استشارية مباشرة مع حسام مبروك الآن ←', labelEn: 'Book Direct Executive Session Now ←' }
   }
 ];

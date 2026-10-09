@@ -11,13 +11,13 @@ export class LocalFsAuthorRepository implements IAuthorRepository {
       publishedAt: "2026-07-08T00:00:00Z",
       updatedAt: "2026-07-08T00:00:00Z",
       seo: {
-        title: isAr ? "حسام مبروك - الملف الشخصي" : "Hussam Mabrouk - Professional Profile",
-        description: isAr ? "الصفحة الشخصية لحسام مبروك خبير ومستشار الاستيراد من الصين" : "Professional profile of Hussam Mabrouk, China Import consultant",
+        title: isAr ? "حسام مبروك | مستشار التجارة الدولية والاستيراد والتوريد من الصين" : "Hussam Mabrouk | International Trade & China Sourcing Advisor",
+        description: isAr ? "حسام مبروك — مستشار التجارة الدولية والاستيراد والتوريد من الصين. متخصص في فحص المصانع، تأسيس التجارة وإدارة الصفقات الدولية." : "Hussam Mabrouk — International Trade & China Sourcing Advisor. Specializing in Factory Audits, Trade Setup & Global Deal Management.",
         canonicalPath: `/${locale}/about/bio`
       },
       name: isAr ? "حسام مبروك" : "Hussam Mabrouk",
       nameEn: "Hussam Mabrouk",
-      title: isAr ? "مؤسس شركة دلتا للاستيراد والتصدير" : "Founder of Delta Import & Export",
+      title: isAr ? "مستشار التجارة الدولية والاستيراد والتوريد من الصين" : "International Trade & China Sourcing Advisor",
       bio: isAr 
         ? "مستشار استيراد وتأمين سلاسل إمداد مقيم في الصين منذ أكثر من عقد، ساعد مئات الشركات العربية في شحن بضائعها وتجنب النصب."
         : "Sourcing consultant and supply chain security specialist based in China for over a decade.",

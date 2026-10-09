@@ -89,8 +89,8 @@ export default function FAQExplorer({ locale }: FAQExplorerProps) {
       <div>
         <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-white">
           {isAr
-            ? "الأسئلة الشائعة وقاعدة المعرفة التجارية (200 سؤالاً)"
-            : "Frequently Asked Questions & Trade Knowledge Base (200 Q&As)"}
+            ? "الأسئلة الشائعة وقاعدة المعرفة التجارية (400 سؤالاً)"
+            : "Frequently Asked Questions & Trade Knowledge Base (400 Q&As)"}
         </h2>
         <p className="text-silver text-xs sm:text-sm mt-1 leading-lh-relaxed">
           {isAr
@@ -108,8 +108,8 @@ export default function FAQExplorer({ locale }: FAQExplorerProps) {
           onChange={handleSearchChange}
           placeholder={
             isAr
-              ? "ابحث في 200 سؤالاً وإجابة (مثال: الصين، التوريد، الشحن، الموردين...)"
-              : "Search 200 Q&As (e.g. Sourcing, Freight, Factories, Customs...)"
+              ? "ابحث في 400 سؤالاً وإجابة (مثال: الصين، التوريد، الشحن، الموردين...)"
+              : "Search 400 Q&As (e.g. Sourcing, Freight, Factories, Customs...)"
           }
           className="w-full rounded-2xl border border-glass bg-black/60 pr-11 pl-4 py-3 text-xs sm:text-sm text-white placeholder:text-silver-dim focus:border-gold focus:outline-none transition-colors"
         />

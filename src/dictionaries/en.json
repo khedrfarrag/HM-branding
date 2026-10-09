@@ -13,7 +13,7 @@
     "cta": "Book a Call"
   },
   "hero": {
-    "badge": "Founder & CEO — Meridian & Co.",
+    "badge": "Hussam Mabrouk | China Trade, Sourcing & Logistics Expert",
     "title": "Moving the world's goods, quietly building trust.",
     "subtitle": "Two decades of import, export and sourcing across 40+ countries — engineered for manufacturers, investors and enterprises who require certainty at scale.",
     "phrases": [
@@ -424,19 +424,94 @@
     "title": "What our partners say about us.",
     "items": [
       {
-        "quote": "The logistics capacity and customs speed provided by Hussam and his team are unmatched. They are a true partner to our growth.",
+        "quote": "The logistics capacity and customs speed provided by Hussam Mabrouk and his team are unmatched. They are a true partner to our growth.",
         "author": "Ahmed Al-Jaber",
-        "role": "Procurement Director — Mashreq Factories"
+        "role": "Procurement Director — Mashreq Factories (Riyadh)",
+        "rating": 5
       },
       {
-        "quote": "Thanks to Meridian & Co.'s sourcing and quality control, we reduced production costs by 14% while preserving our high standards.",
+        "quote": "Thanks to Hussam Mabrouk's team sourcing and quality control, we reduced production costs by 14% while preserving our high standards.",
         "author": "Mark de Jong",
-        "role": "VP — EuroTech Electronics"
+        "role": "VP — EuroTech Electronics (Dubai)",
+        "rating": 5
       },
       {
         "quote": "Integrity and transparency are what define Hussam's operation. Two decades of mutual success prove it.",
         "author": "Khaled bin Said",
-        "role": "Chairman — Said Holdings"
+        "role": "Chairman — Said Holdings (Jeddah)",
+        "rating": 5
+      },
+      {
+        "quote": "Auditing Foshan furniture factories and selecting the most efficient production lines saved our project months of delay. Hussam's field expertise is invaluable.",
+        "author": "Eng. Tariq Al-Ali",
+        "role": "Sourcing Operations Director — Arab Furniture Co. (Kuwait)",
+        "rating": 5
+      },
+      {
+        "quote": "Pre-shipment quality inspection and sample validation allowed us to launch our product line with zero factory defects.",
+        "author": "Sarah Al-Shammari",
+        "role": "Brand Founder — Riyadh (Saudi Arabia)",
+        "rating": 5
+      },
+      {
+        "quote": "Direct negotiations with Chinese manufacturers and securing genuine EXW pricing helped us improve our net profit margin by 18%.",
+        "author": "Dr. Abdelrahman Al-Fassi",
+        "role": "Planning Director — Al-Fassi Cosmetics (Casablanca)",
+        "rating": 5
+      },
+      {
+        "quote": "Hussam Mabrouk's customs clearance expertise and optimal sea freight routing ensured our containers arrived in record time.",
+        "author": "Yousef Al-Hashemi",
+        "role": "Head of Supply Chain — United Cargo Group (Muscat)",
+        "rating": 5
+      },
+      {
+        "quote": "Bank account verification and supplier background checks in China saved us from a $120,000 fraud risk. Verification is essential for every importer.",
+        "author": "Omar bin Sulaiman",
+        "role": "Wholesale Importer — Manama (Bahrain)",
+        "rating": 5
+      },
+      {
+        "quote": "Complete coordination for our Canton Fair delegation and providing certified business translators made our trip to China successful from day one.",
+        "author": "Eng. Faisal Al-Mutairi",
+        "role": "Manufacturing Manager — Al-Mutairi Engineering (Dammam)",
+        "rating": 5
+      },
+      {
+        "quote": "Comprehensive field coverage in Guangzhou and Yiwu gave us a strong competitive edge in choosing reliable production partners.",
+        "author": "Carlos Mendoza",
+        "role": "International Sourcing Director — Mendoza Trading (Madrid)",
+        "rating": 5
+      },
+      {
+        "quote": "Hussam Mabrouk's trade calculators and landed cost advice helped us plan exact shipment budgets before issuing wire transfers.",
+        "author": "Noura Al-Otaibi",
+        "role": "Supply Chain Director — Al-Ofoq Trading (Abu Dhabi)",
+        "rating": 5
+      },
+      {
+        "quote": "Technical inspections of machinery lines and pre-loading operation testing gave us total peace of mind regarding equipment quality.",
+        "author": "Hassan Al-Maghrebi",
+        "role": "Plastics Equipment Plant Manager — Tunis",
+        "rating": 5
+      },
+      {
+        "quote": "Rigorous carton inspection and accurate CBM volume calculation enabled us to utilize 98% of our 40ft HQ container space without waste.",
+        "author": "Ibrahim Al-Said",
+        "role": "Housewares Merchant — Amman (Jordan)",
+        "rating": 5
+      },
+      {
+        "quote": "Hussam Mabrouk is one of the most competent Arab sourcing advisors in China. His commitment to technical standards makes him a permanent reference.",
+        "author": "Li Wang",
+        "role": "Commercial Relations Director — Guangzhou Trade Center (China)",
+        "rating": 5
+      },
+      {
+        "quote": "A 30-minute direct executive consultation saved us weeks of trial and error and prevented costly procurement mistakes.",
+        "author": "Eng. Bader Al-Enezi",
+        "role": "Solar Projects Manager — Doha (Qatar)",
+        "rating": 5
       }
     ]
   },
@@ -457,7 +532,7 @@
   },
   "footer": {
     "tagline": "Global trade, <span>made certain.</span>",
-    "desc": "Hussam Mabrouk — Meridian & Co. Industry-leading trade brokerage and logistics spanning 40+ countries and two decades of excellence.",
+    "desc": "Hussam Mabrouk — Industry-leading trade advisory and logistics spanning 40+ countries and two decades of excellence.",
     "copy": "© 2026 Hussam Mabrouk. All rights reserved.",
     "quickLinks": "Quick Links",
     "contactDetails": "Contact Details",
