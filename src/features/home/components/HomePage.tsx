@@ -9,7 +9,6 @@ import FloatingSocials from "@/components/FloatingSocials";
 import BookingSection from "./BookingSection";
 import InteractiveGlobeMap from "./InteractiveGlobeMap";
 import TestimonialsCarousel from "./TestimonialsCarousel";
-
 import AnimatedCounter from "@/components/AnimatedCounter";
 import {
   RevealSection,
@@ -55,7 +54,6 @@ const SECTOR_IMAGE_MAP: Record<string, string> = {
   "office-supplies": "/images/sectors/office-supplies.png",
   "pet-products": "/images/sectors/pet-products.png",
 };
-
 
 
 interface AboutDict {
@@ -156,7 +154,6 @@ export default function HomePage({ locale, dict }: HomePageProps) {
 
         </div>
       </section>
-
 
 
       {/* ══════════════════════════════════════════════════════════════════════

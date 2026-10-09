@@ -11,7 +11,6 @@ import type {
   AlertSeverity,
   ExperienceType,
   MediaType,
-  TradeIntelType,
   ChinaSubdomain,
   BookingTargetType,
   BookingStatus,
@@ -25,7 +24,6 @@ export type {
   AlertSeverity,
   ExperienceType,
   MediaType,
-  TradeIntelType,
   ChinaSubdomain,
   BookingTargetType,
   BookingStatus,
@@ -157,19 +155,6 @@ export interface ExperienceContent extends BaseContent {
   citySlug: string | null;
 }
 
-// ---------------------------------------------------------------------------
-// Trade Intelligence domain content types
-// ---------------------------------------------------------------------------
-
-export interface TradeIntelContent extends BaseContent {
-  feedType: TradeIntelType;
-  title: string;
-  body: string;
-  severity?: AlertSeverity;
-  active?: boolean;
-  region?: string;
-  sourceUrl?: string | null;
-}
 
 // ---------------------------------------------------------------------------
 // Media domain content types

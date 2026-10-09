@@ -104,7 +104,7 @@ export default function FloatingSocials({ locale }: FloatingSocialsProps) {
         <div className="relative w-full h-full rounded-full overflow-hidden">
           {/* Hussam's Photo */}
           <Image
-            src="/images/WhatsApp Image 2026-08-12 at 6.58.46 PM.jpeg"
+            src="/images/hossam-mabrouk-hero.jpg"
             alt="Hussam Mabrouk"
             fill
             className="object-cover object-top transition-transform duration-700 group-hover:scale-105"

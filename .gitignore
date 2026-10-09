@@ -29,3 +29,11 @@ Thumbs.db
 .idea/
 *.tmp
 *.swp
+
+# SpecKit & AI Agent Workspace
+.agents/
+.specify/
+specs/
+AGENTS.md
+.ai/
+PROJECT_STATE.json

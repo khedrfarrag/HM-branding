@@ -16,7 +16,7 @@ async function getProvider(): Promise<FuseSearchProvider> {
 
 export async function GET(request: NextRequest): Promise<NextResponse> {
   const query = request.nextUrl.searchParams.get("q");
-  const type = request.nextUrl.searchParams.get("type") as "article" | "experience" | "service" | "trade-intel" | "media" | "china" | undefined;
+  const type = request.nextUrl.searchParams.get("type") as "article" | "experience" | "service" | "media" | "china" | undefined;
   const limit = parseInt(request.nextUrl.searchParams.get("limit") ?? "10", 10);
 
   if (!query || query.trim().length < 2) {

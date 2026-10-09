@@ -75,6 +75,16 @@ export const updateSession = async (request: NextRequest) => {
   }
 
   // ─── Locale Routing: all non-admin, non-api public routes ──────────────────
+  if (
+    pathname.includes(".") ||
+    pathname === "/robots.txt" ||
+    pathname === "/sitemap.xml" ||
+    pathname === "/llms.txt" ||
+    pathname === "/llms-full.txt"
+  ) {
+    return supabaseResponse;
+  }
+
   const pathnameHasLocale = locales.some(
     (locale) =>
       pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`

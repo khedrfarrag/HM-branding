@@ -3,13 +3,17 @@ import { Locale } from "@/domains/shared/value-objects";
 
 export const buildPersonSchema = (locale: Locale): WithContext<Person> => {
   const isAr = locale === "ar";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.hossammabrouk.com";
+
   return {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://hussam-mabrouk.com/#person",
+    "@id": `${siteUrl}/#person`,
     "name": isAr ? "حسام مبروك" : "Hussam Mabrouk",
-    "jobTitle": isAr ? "مستشار التجارة الدولية والاستيراد والتوريد من الصين" : "International Trade & China Sourcing Advisor",
-    "url": "https://hussam-mabrouk.com",
+    "alternateName": isAr ? "Hussam Mabrouk" : "حسام مبروك",
+    "jobTitle": isAr ? "خبير التجارة والتوريد والتصنيع ومؤسس دلتا للاستيراد والتصدير" : "International Trade, Sourcing & Manufacturing Specialist & Founder of Delta Import & Export",
+    "image": `${siteUrl}/images/hossam-mabrouk-hero.jpg`,
+    "url": siteUrl,
     "email": "support@hossammabrouk.com",
     "sameAs": [
       "https://wa.me/201070707166",
@@ -18,12 +22,33 @@ export const buildPersonSchema = (locale: Locale): WithContext<Person> => {
       "https://www.facebook.com/share/1Buf9pVnFe/?mibextid=wwXIfr",
       "https://www.tiktok.com/@hossammabrouk9"
     ],
+    "knowsAbout": isAr
+      ? [
+          "الاستيراد من الصين",
+          "التجارة الدولية",
+          "التصنيع وتطوير المنتجات OEM و ODM",
+          "فحص المصانع ومراقبة الجودة",
+          "مصطلحات الشحن والتجارة Incoterms",
+          "التخليص الجمركي واللوائح التجارية",
+          "حساب تكلفة الوصول Landed Cost",
+          "شحن الحاويات وسلاسل الإمداد"
+        ]
+      : [
+          "China Sourcing",
+          "International Trade",
+          "OEM & ODM Manufacturing",
+          "Factory Auditing & Quality Inspection",
+          "Incoterms 2020",
+          "Customs Clearance",
+          "Landed Cost Calculation",
+          "Container Logistics & Ocean Freight"
+        ],
     "description": isAr
-      ? "مستشار التجارة الدولية والاستيراد والتوريد من الصين. متخصص في فحص المصانع، تأسيس التجارة وإدارة الصفقات الدولية."
-      : "International Trade & China Sourcing Advisor. Specializing in Factory Audits, Trade Setup & Global Deal Management.",
+      ? "خبير ومستشار الاستيراد المباشر من الصين، إدارة سلاسل الإمداد، ومؤسس مؤسسة دلتا للاستيراد والتصدير. متخصص في فحص المصانع وإدارة الصفقات الدولية."
+      : "China Sourcing Consultant, International Trade Specialist, and Founder of Delta Import & Export. Specializing in Factory Audits, Trade Setup & Global Deal Management.",
     "worksFor": {
       "@type": "Organization",
-      "@id": "https://hussam-mabrouk.com/#organization"
+      "@id": `${siteUrl}/#organization`
     }
   };
 };

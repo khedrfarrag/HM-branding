@@ -4,9 +4,26 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hossammabrouk.com";
+
 export const metadata: Metadata = {
-  title: "HM Admin",
-  robots: { index: false, follow: false },
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "حسام مبروك | خبير الاستيراد والتجارة الدولية",
+    template: "%s | حسام مبروك",
+  },
+  description: "شريكك المستمر لتأمين سلاسل التوريد، حلول الاستيراد المباشر من الصين، وتنفيذ الصفقات التجارية بأعلى معايير الجودة والأمان.",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 /**

@@ -1,17 +1,17 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://hussam-mabrouk.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.hossammabrouk.com";
 
   return {
     rules: [
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/admin/", "/api/"],
+        disallow: ["/admin/", "/admin/*", "/api/", "/api/*"],
       },
       {
-        // Explicit Allowance for AI Crawlers & Generative Engines
+        // Explicit Allowance for AI Crawlers & Search Engines
         userAgent: [
           "GPTBot",
           "ChatGPT-User",
@@ -19,13 +19,17 @@ export default function robots(): MetadataRoute.Robots {
           "PerplexityBot",
           "ClaudeBot",
           "Claude-Web",
+          "anthropic-ai",
           "Bytespider",
           "CCBot",
           "cohere-ai",
+          "Bingbot",
         ],
         allow: "/",
+        disallow: ["/admin/", "/admin/*", "/api/", "/api/*"],
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: `${siteUrl}/sitemap.xml`,
+    host: siteUrl,
   };
 }

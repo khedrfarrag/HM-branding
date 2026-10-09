@@ -1,6 +1,8 @@
 import { getDictionary, type Locale } from "@/features/i18n";
 import { HomePage } from "@/features/home";
 import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { buildEntityGraph } from "@/lib/schema/entity-graph";
 
 // Force real-time dynamic rendering on production (Netlify) for instant consultation slot updates
 export const dynamic = "force-dynamic";
@@ -17,8 +19,8 @@ export async function generateMetadata({
   const isAr = locale === "ar";
 
   const title = isAr
-    ? "حسام مبروك | خبير الاستيراد والتجارة الدولية والحلول اللوجستية"
-    : "Hussam Mabrouk | Global Trade & Supply Chain Specialist";
+    ? "حسام مبروك | خبير التجارة والتوريد والتصنيع"
+    : "Hussam Mabrouk | Global Trade, Sourcing & Manufacturing Specialist";
 
   const description = isAr
     ? "عقدان من الخبرة في تأمين سلاسل التوريد والاستيراد المباشر من الصين لخدمة المستثمرين والمصنعين عبر 40+ دولة."
@@ -37,6 +39,12 @@ export async function generateMetadata({
           height: 630,
           alt: title,
         },
+        {
+          url: "/images/hossam-mabrouk-hero.jpg",
+          width: 1000,
+          height: 1000,
+          alt: title,
+        },
       ],
     },
     twitter: {
@@ -51,14 +59,16 @@ export async function generateMetadata({
 export default async function Home({ params }: PageProps) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.hossammabrouk.com";
+  const entityGraph = buildEntityGraph(locale);
 
-  const jsonLd = {
+  const testimonialsJsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://hussam-mabrouk.com/#person",
+    "@id": `${siteUrl}/#person`,
     "name": "Hussam Mabrouk",
     "alternateName": "حسام مبروك",
-    "url": "https://hussam-mabrouk.com",
+    "url": siteUrl,
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
@@ -83,10 +93,8 @@ export default async function Home({ params }: PageProps) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd schema={entityGraph} />
+      <JsonLd schema={testimonialsJsonLd} />
       <HomePage locale={locale} dict={dict} />
     </>
   );
