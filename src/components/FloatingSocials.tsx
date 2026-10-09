@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
+  EmailIcon,
   FacebookIcon,
   InstagramIcon,
   SnapchatIcon,
@@ -74,6 +75,17 @@ export default function FloatingSocials({ locale }: FloatingSocialsProps) {
       position: "-top-3 sm:-top-4 left-1/2 -translate-x-1/2",
       duration: 5.8,
       delay: 0.6,
+    },
+    {
+      id: "email",
+      icon: EmailIcon,
+      url: "mailto:support@hossammabrouk.com",
+      label: isAr ? "راسلني بالبريد الإلكتروني" : "Send me an Email",
+      colorClass:
+        "hover:bg-amber-500 hover:text-black hover:border-amber-500 hover:shadow-[0_0_20px_rgba(245,158,11,0.5)]",
+      position: "-bottom-3 sm:-bottom-4 left-1/2 -translate-x-1/2",
+      duration: 6.2,
+      delay: 1.0,
     },
   ];
 

@@ -157,6 +157,7 @@ const SOCIALS = [
   { platform: "Snapchat", url: "https://snapchat.com/t/EwaOf46A" },
   { platform: "Facebook", url: "https://www.facebook.com/share/1Buf9pVnFe/?mibextid=wwXIfr" },
   { platform: "TikTok", url: "https://www.tiktok.com/@hossammabrouk9" },
+  { platform: "Email", url: "mailto:support@hossammabrouk.com" },
 ] as const;
 
 const CTA = {

@@ -8,6 +8,7 @@ import TypingHeadline from "@/components/TypingHeadline";
 import FloatingSocials from "@/components/FloatingSocials";
 import BookingSection from "./BookingSection";
 import InteractiveGlobeMap from "./InteractiveGlobeMap";
+import TestimonialsCarousel from "./TestimonialsCarousel";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import {
   RevealSection,
@@ -53,6 +54,7 @@ const SECTOR_IMAGE_MAP: Record<string, string> = {
   "office-supplies": "/images/sectors/office-supplies.png",
   "pet-products": "/images/sectors/pet-products.png",
 };
+
 
 interface AboutDict {
   paragraph2?: string;
@@ -152,6 +154,7 @@ export default function HomePage({ locale, dict }: HomePageProps) {
 
         </div>
       </section>
+
 
       {/* ══════════════════════════════════════════════════════════════════════
           2. ABOUT SECTION — "Who is Hossam Mabrouk?" Summary with CTA to /about
@@ -568,24 +571,7 @@ export default function HomePage({ locale, dict }: HomePageProps) {
             </div>
           </RevealSection>
 
-          <StaggerReveal className="grid grid-cols-1 gap-sp-5 md:grid-cols-3">
-            {dict.testimonials.items.map((item, idx) => (
-              <StaggerItem key={idx}>
-                <div className="flex flex-col justify-between min-h-[260px] rounded-lg border border-glass bg-graphite-900/50 p-sp-6 transition-transform hover:-translate-y-1 h-full">
-                  <p className="font-display text-fs-body-lg leading-lh-relaxed text-white italic">
-                    &ldquo;{item.quote}&rdquo;
-                  </p>
-                  <div className="mt-sp-5 flex items-center gap-sp-3">
-                    <div className="h-10 w-10 rounded-full bg-gradient-to-br from-gold to-blue-deep border border-glass" />
-                    <div className="flex flex-col items-start text-start">
-                      <b className="text-fs-small font-medium text-white">{item.author}</b>
-                      <span className="font-mono text-fs-micro text-silver-dim mt-sp-1">{item.role}</span>
-                    </div>
-                  </div>
-                </div>
-              </StaggerItem>
-            ))}
-          </StaggerReveal>
+          <TestimonialsCarousel items={dict.testimonials.items} locale={locale} />
         </div>
       </section>
 

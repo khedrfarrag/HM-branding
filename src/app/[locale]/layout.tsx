@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cairo, Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import CursorGlow from "@/components/CursorGlow";
+import ChatWidget from "@/components/chat/ChatWidget";
 
 /**
  * ==============================================================================
@@ -112,6 +113,7 @@ export default async function LocaleLayout({
       <div className="noise" />
       <CursorGlow />
       {children}
+      <ChatWidget locale={locale} />
     </div>
   );
 }

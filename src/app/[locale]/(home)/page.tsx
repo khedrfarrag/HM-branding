@@ -59,11 +59,42 @@ export async function generateMetadata({
 export default async function Home({ params }: PageProps) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.hossammabrouk.com";
   const entityGraph = buildEntityGraph(locale);
+
+  const testimonialsJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${siteUrl}/#person`,
+    "name": "Hussam Mabrouk",
+    "alternateName": "حسام مبروك",
+    "url": siteUrl,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": dict.testimonials?.items?.length?.toString() || "15",
+      "bestRating": "5",
+      "worstRating": "1",
+    },
+    "review": dict.testimonials?.items?.map((item) => ({
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": (item.rating || 5).toString(),
+        "bestRating": "5",
+      },
+      "author": {
+        "@type": "Person",
+        "name": item.author,
+      },
+      "reviewBody": item.quote,
+    })),
+  };
 
   return (
     <>
       <JsonLd schema={entityGraph} />
+      <JsonLd schema={testimonialsJsonLd} />
       <HomePage locale={locale} dict={dict} />
     </>
   );

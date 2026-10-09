@@ -14,6 +14,7 @@ import {
   Globe,
 } from "lucide-react";
 import {
+  EmailIcon,
   FacebookIcon,
   InstagramIcon,
   SnapchatIcon,
@@ -146,6 +147,12 @@ export default async function AboutCatchAllPage({ params }: PageProps) {
       url: "https://www.facebook.com/share/1Buf9pVnFe/?mibextid=wwXIfr",
       handle: "Hossam Mabrouk",
       icon: FacebookIcon,
+    },
+    {
+      name: isAr ? "البريد الإلكتروني" : "Email",
+      url: "mailto:support@hossammabrouk.com",
+      handle: "support@hossammabrouk.com",
+      icon: EmailIcon,
     },
   ];
 

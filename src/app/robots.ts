@@ -11,13 +11,18 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/admin/", "/admin/*", "/api/", "/api/*"],
       },
       {
+        // Explicit Allowance for AI Crawlers & Search Engines
         userAgent: [
           "GPTBot",
           "ChatGPT-User",
+          "Google-Extended",
           "PerplexityBot",
           "ClaudeBot",
+          "Claude-Web",
           "anthropic-ai",
-          "Google-Extended",
+          "Bytespider",
+          "CCBot",
+          "cohere-ai",
           "Bingbot",
         ],
         allow: "/",
