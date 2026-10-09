@@ -32,8 +32,23 @@ export async function GET() {
 `
   ).join("\n---\n\n");
 
+  interface DirectoryEntry {
+    name?: { ar?: string; en?: string; zh?: string };
+    description?: { ar?: string; en?: string };
+    summary?: { ar?: string; en?: string };
+    subdomain?: string;
+    slug?: string;
+  }
+
+  interface TestimonialItem {
+    author: string;
+    role: string;
+    quote: string;
+    rating?: number;
+  }
+
   // 2. Full Master China Directory (2,962 Verified Entries Across 13 Subdomains)
-  const formatSection = (title: string, items: any[]) => {
+  const formatSection = (title: string, items: DirectoryEntry[]) => {
     const list = items
       .map(
         (item) =>
@@ -46,25 +61,25 @@ export async function GET() {
   };
 
   const directorySections = [
-    formatSection("1. Chinese Cities & Prefectures (المدن والمحافظات)", CHINA_DIRECTORY_CITIES),
-    formatSection("2. Seaports & Inland River Ports (الموانئ البحرية والنهرية)", CHINA_DIRECTORY_PORTS),
-    formatSection("3. Shipping Lines & Ocean Carriers (خطوط الملاحة البحرية)", CHINA_DIRECTORY_SHIPPING_LINES),
-    formatSection("4. Wholesale Markets & Commercial Hubs (أسوق الجملة)", CHINA_DIRECTORY_MARKETS),
-    formatSection("5. Factories & Manufacturing Bases (المصانع وقواعد التصنيع)", CHINA_DIRECTORY_FACTORIES),
-    formatSection("6. Industrial Parks & Manufacturing Clusters (المجمعات الصناعية)", CHINA_DIRECTORY_INDUSTRIAL_ZONES),
-    formatSection("7. Special Economic Zones & Free Trade Zones (المناطق الاقتصادية SEZ/FTZ)", CHINA_DIRECTORY_ECONOMIC_ZONES),
-    formatSection("8. Freight & Passenger Airports (مطارات الشحن والسفر)", CHINA_DIRECTORY_AIRPORTS),
-    formatSection("9. Trade Fairs & International Expos (المعارض والمؤتمرات)", CHINA_DIRECTORY_TRADE_FAIRS),
-    formatSection("10. Business & Executive Hotels (فنادق رجال الأعمال)", CHINA_DIRECTORY_HOTELS),
-    formatSection("11. Verified Halal & Middle Eastern Restaurants (مطاعم الحلال والعربية)", CHINA_DIRECTORY_RESTAURANTS),
-    formatSection("12. Certified Translators & Commercial Services (المترجمون والخدمات التجارية)", CHINA_DIRECTORY_TRANSLATORS),
-    formatSection("13. Freight Forwarders & Logistics Providers (شركات الشحن واللوجستيات)", CHINA_DIRECTORY_LOGISTICS),
+    formatSection("1. Chinese Cities & Prefectures (المدن والمحافظات)", CHINA_DIRECTORY_CITIES as unknown as DirectoryEntry[]),
+    formatSection("2. Seaports & Inland River Ports (الموانئ البحرية والنهرية)", CHINA_DIRECTORY_PORTS as unknown as DirectoryEntry[]),
+    formatSection("3. Shipping Lines & Ocean Carriers (خطوط الملاحة البحرية)", CHINA_DIRECTORY_SHIPPING_LINES as unknown as DirectoryEntry[]),
+    formatSection("4. Wholesale Markets & Commercial Hubs (أسوق الجملة)", CHINA_DIRECTORY_MARKETS as unknown as DirectoryEntry[]),
+    formatSection("5. Factories & Manufacturing Bases (المصانع وقواعد التصنيع)", CHINA_DIRECTORY_FACTORIES as unknown as DirectoryEntry[]),
+    formatSection("6. Industrial Parks & Manufacturing Clusters (المجمعات الصناعية)", CHINA_DIRECTORY_INDUSTRIAL_ZONES as unknown as DirectoryEntry[]),
+    formatSection("7. Special Economic Zones & Free Trade Zones (المناطق الاقتصادية SEZ/FTZ)", CHINA_DIRECTORY_ECONOMIC_ZONES as unknown as DirectoryEntry[]),
+    formatSection("8. Freight & Passenger Airports (مطارات الشحن والسفر)", CHINA_DIRECTORY_AIRPORTS as unknown as DirectoryEntry[]),
+    formatSection("9. Trade Fairs & International Expos (المعارض والمؤتمرات)", CHINA_DIRECTORY_TRADE_FAIRS as unknown as DirectoryEntry[]),
+    formatSection("10. Business & Executive Hotels (فنادق رجال الأعمال)", CHINA_DIRECTORY_HOTELS as unknown as DirectoryEntry[]),
+    formatSection("11. Verified Halal & Middle Eastern Restaurants (مطاعم الحلال والعربية)", CHINA_DIRECTORY_RESTAURANTS as unknown as DirectoryEntry[]),
+    formatSection("12. Certified Translators & Commercial Services (المترجمون والخدمات التجارية)", CHINA_DIRECTORY_TRANSLATORS as unknown as DirectoryEntry[]),
+    formatSection("13. Freight Forwarders & Logistics Providers (شركات الشحن واللوجستيات)", CHINA_DIRECTORY_LOGISTICS as unknown as DirectoryEntry[]),
   ].join("\n\n---\n\n");
 
   // 3. Client Testimonials (15 Verified Client Reviews)
-  const testimonialsSection = arDict.testimonials.items
-    .map((item: any, idx: number) => {
-      const enItem = enDict.testimonials.items[idx] || {};
+  const testimonialsSection = (arDict.testimonials.items as TestimonialItem[])
+    .map((item: TestimonialItem, idx: number) => {
+      const enItem = (enDict.testimonials.items as TestimonialItem[])[idx] || {};
       return `- **${item.author} (${item.role})** — Verified Rating: 5.0/5.0 ⭐⭐⭐⭐⭐
   - Quote (AR): "${item.quote}"
   - Quote (EN): "${enItem.quote || ""}"`;
