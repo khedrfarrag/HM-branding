@@ -158,6 +158,21 @@ export type MediaType =
   | "gallery"
   | "press";
 
+// ---------------------------------------------------------------------------
+// Trade Intelligence Feed Types
+// ---------------------------------------------------------------------------
+
+export type TradeIntelType =
+  | "shipping-news"
+  | "customs-updates"
+  | "currency-rates"
+  | "market-updates"
+  | "trade-regulations"
+  | "factory-news"
+  | "global-trade-news"
+  | "china-exhibitions"
+  | "supply-chain-alerts";
+
 
 // ---------------------------------------------------------------------------
 // China Subdomain Types
